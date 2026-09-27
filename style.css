@@ -22,6 +22,8 @@ html{scroll-behavior:smooth;scroll-padding-top:90px;background:#070707}
 body{
   margin:0;background:var(--bg);color:var(--ink);
   font-family:var(--sans);font-size:16px;line-height:1.55;
+  /* todo o texto do site em caixa baixa */
+  text-transform:lowercase;
   -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
   padding-top:env(safe-area-inset-top,0px);
 }
@@ -444,3 +446,10 @@ html[data-lang="pt"] .menu-panel .lang span[data-on="pt"]{opacity:1;background:r
   .project{transition:none}
   html{scroll-behavior:auto}
 }
+
+/* o conteúdo que roda dentro de um iframe (páginas de caso) mantém a caixa original */
+/* botões e campos não herdam a caixa por padrão do navegador */
+button,input,select,textarea,optgroup{text-transform:inherit}
+iframe{text-transform:none}
+/* siglas e marcas que devem manter a caixa: adicione a classe .keep no elemento */
+.keep{text-transform:none}
