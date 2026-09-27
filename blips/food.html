@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blips Food — Equipamentos Vuze para o seu negócio</title>
+<!-- =========================================================
+     BLIPS FOOD · PÁGINA COMPLETA (cópia para o portfólio)
+     Imagens carregadas do site publicado: food.blips.com.br
+     ========================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#fff}
+body{font-family:"Inter",ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.bfoot{background:#111;color:#fff;padding:32px 20px 40px;font-family:"Poppins",ui-sans-serif,system-ui,sans-serif;font-size:12.5px;line-height:1.5}
+.bfoot__in{max-width:1140px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.bfoot img{height:22px;width:auto;filter:brightness(0) invert(1)}
+.bfoot p{margin:0;color:rgba(255,255,255,.72)}
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     DOBRA 01 — MENU BAR
+     ========================================================= -->
+
+<style>
+.bnav-root{
+  --bnav-h:56px;
+  --bnav-top:12px;
+  --bnav-pad:12px;
+  --bnav-max:1140px;
+  --bnav-amarelo:#fcba28;
+  --bnav-preto:#000000;
+  --bnav-texto:#111111;
+  --bnav-suave:#6b6b6b;
+  --bnav-linha:#e8e8e8;
+  --bnav-fundo:#f5f5f5;
+  --bnav-branco:#ffffff;
+  --bnav-ease:cubic-bezier(.25,1,.5,1);
+  --bnav-font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (min-width:768px){
+  .bnav-root{ --bnav-h:64px; --bnav-top:16px; --bnav-pad:24px; }
+}
+.bnav-root,
+.bnav-root *,
+.bnav-root *::before,
+.bnav-root *::after{ box-sizing:border-box; }
+.bnav-root{ font-family:var(--bnav-font); line-height:1.5; -webkit-font-smoothing:antialiased; }
+.bnav-root a{ text-decoration:none !important; color:inherit; }
+.bnav-root img{ max-width:100%; display:block; }
+.bnav-root button{ font:inherit; color:inherit; margin:0; background:none; border:0; padding:0; cursor:pointer; -webkit-appearance:none; appearance:none; }
+.bnav-root p{ margin:0; }
+html.bnav-locked{ overflow:hidden !important; }
+
+.bnav{
+  position:fixed; top:var(--bnav-top); left:0; right:0; z-index:9990;
+  padding:0 var(--bnav-pad); padding-top:env(safe-area-inset-top);
+  transition:transform 260ms var(--bnav-ease); will-change:transform;
+}
+.bnav.is-hidden{ transform:translateY(calc(-1 * (var(--bnav-h) + var(--bnav-top) + 24px))); }
+.bnav__wrap{ position:relative; max-width:var(--bnav-max); margin:0 auto; }
+
+.bnav__pill{
+  position:relative; z-index:2; height:var(--bnav-h);
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:0 8px 0 18px; border-radius:999px;
+  background:rgba(255,255,255,.94); border:1px solid rgba(0,0,0,.06);
+  box-shadow:0 2px 10px rgba(0,0,0,.06);
+  transition:box-shadow 200ms var(--bnav-ease), background 200ms var(--bnav-ease);
+}
+@supports (backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px)){
+  .bnav__pill{ -webkit-backdrop-filter:saturate(180%) blur(20px); backdrop-filter:saturate(180%) blur(20px); }
+}
+.bnav.is-scrolled .bnav__pill,
+.bnav.is-open .bnav__pill{ background:rgba(255,255,255,.98); box-shadow:0 6px 24px rgba(0,0,0,.10); }
+@media (min-width:768px){ .bnav__pill{ padding:0 10px 0 24px; } }
+
+.bnav__logo{ display:flex; align-items:center; flex:none; }
+.bnav__logo img{ height:22px; width:auto; }
+@media (min-width:768px){ .bnav__logo img{ height:26px; } }
+.bnav__acoes{ display:flex; align-items:center; gap:6px; flex:none; }
+
+.bnav__cta{
+  display:none; align-items:center; justify-content:center;
+  height:36px; padding:0 16px; border-radius:999px;
+  background:var(--bnav-amarelo); color:var(--bnav-preto) !important;
+  font-size:13px; font-weight:600; letter-spacing:-.01em; white-space:nowrap;
+  transition:background 150ms var(--bnav-ease);
+}
+.bnav__cta:hover{ background:#e8a814; }
+@media (min-width:768px){ .bnav__cta{ display:inline-flex; height:40px; padding:0 20px; font-size:14px; } }
+
+.bnav__toggle{ position:relative; width:40px; height:40px; display:grid; place-items:center; border-radius:999px; color:var(--bnav-texto); transition:background 150ms var(--bnav-ease); }
+.bnav__toggle:hover{ background:rgba(0,0,0,.05); }
+.bnav__toggle svg{ width:22px; height:22px; fill:currentColor; grid-area:1/1; transition:opacity 200ms var(--bnav-ease), transform 200ms var(--bnav-ease); }
+.bnav__toggle .bnav-ic-x{ opacity:0; transform:rotate(-90deg) scale(.7); }
+.bnav.is-open .bnav__toggle .bnav-ic-menu{ opacity:0; transform:rotate(90deg) scale(.7); }
+.bnav.is-open .bnav__toggle .bnav-ic-x{ opacity:1; transform:none; }
+
+.bnav__menu{
+  position:absolute; top:calc(var(--bnav-h) + 8px); left:0; right:0; z-index:1;
+  border-radius:20px; background:rgba(255,255,255,.96); border:1px solid rgba(0,0,0,.06);
+  box-shadow:0 12px 40px rgba(0,0,0,.14); padding:8px;
+  opacity:0; visibility:hidden; transform:translateY(-10px) scale(.98); transform-origin:top center;
+  transition:opacity 220ms var(--bnav-ease), transform 220ms var(--bnav-ease), visibility 0s linear 220ms;
+}
+@supports (backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px)){
+  .bnav__menu{ -webkit-backdrop-filter:saturate(180%) blur(24px); backdrop-filter:saturate(180%) blur(24px); }
+}
+.bnav.is-open .bnav__menu{ opacity:1; visibility:visible; transform:none; transition:opacity 220ms var(--bnav-ease), transform 220ms var(--bnav-ease), visibility 0s; }
+@media (min-width:768px){ .bnav__menu{ border-radius:24px; padding:16px; } }
+
+.bnav__scroll{ max-height:calc(100dvh - var(--bnav-h) - var(--bnav-top) - 40px); overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+.bnav__cats{ display:flex; flex-direction:column; }
+.bnav__cat{
+  position:relative; display:grid; grid-template-columns:40px 1fr auto; align-items:center; gap:14px;
+  padding:12px; border-radius:14px; opacity:0; transform:translateY(-6px);
+  transition:opacity 200ms var(--bnav-ease), transform 200ms var(--bnav-ease), background 150ms var(--bnav-ease);
+}
+.bnav.is-open .bnav__cat{ opacity:1; transform:none; transition-delay:calc(70ms + var(--i) * 32ms); }
+.bnav__cat + .bnav__cat::before{ content:""; position:absolute; left:66px; right:12px; top:0; height:1px; background:var(--bnav-linha); }
+.bnav__cat:hover{ background:var(--bnav-fundo); }
+.bnav__cat:hover::before,
+.bnav__cat:hover + .bnav__cat::before{ background:transparent; }
+.bnav__ic{ width:40px; height:40px; display:grid; place-items:center; border-radius:10px; background:var(--bnav-fundo); color:var(--bnav-texto); transition:background 150ms var(--bnav-ease), color 150ms var(--bnav-ease); }
+.bnav__ic svg{ width:20px; height:20px; fill:currentColor; }
+.bnav__cat:hover .bnav__ic{ background:var(--bnav-amarelo); color:var(--bnav-preto); }
+.bnav__txt{ min-width:0; display:flex; flex-direction:column; gap:2px; }
+.bnav__nome{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:16px; font-weight:600; letter-spacing:-.01em; color:var(--bnav-texto); }
+.bnav__meta{ font-size:12.5px; color:var(--bnav-suave); }
+.bnav__selo{ font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; background:var(--bnav-amarelo); color:var(--bnav-preto); padding:2px 7px; border-radius:999px; }
+.bnav__seta{ color:var(--bnav-suave); transition:transform 150ms var(--bnav-ease), color 150ms var(--bnav-ease); }
+.bnav__seta svg{ width:16px; height:16px; fill:currentColor; }
+.bnav__cat:hover .bnav__seta{ transform:translateX(3px); color:var(--bnav-texto); }
+.bnav__rodape{ margin-top:8px; padding:16px 12px 8px; border-top:1px solid var(--bnav-linha); opacity:0; transform:translateY(-6px); transition:opacity 200ms var(--bnav-ease), transform 200ms var(--bnav-ease); }
+.bnav.is-open .bnav__rodape{ opacity:1; transform:none; transition-delay:300ms; }
+.bnav__nota{ font-size:13px; color:var(--bnav-suave); }
+.bnav__ghost{ display:flex; align-items:center; justify-content:center; height:44px; margin-top:12px; border-radius:12px; border:1px solid var(--bnav-linha); font-size:14px; font-weight:600; color:var(--bnav-texto) !important; transition:background 150ms var(--bnav-ease), border-color 150ms var(--bnav-ease); }
+.bnav__ghost:hover{ background:var(--bnav-fundo); border-color:#c9c9c9; }
+@media (min-width:768px){
+  .bnav__cats{ display:grid; grid-template-columns:repeat(3,1fr); gap:0 12px; }
+  .bnav__cat{ grid-template-columns:40px 1fr; padding:14px 12px; }
+  .bnav__cat + .bnav__cat::before{ display:none; }
+  .bnav__seta{ display:none; }
+  .bnav__rodape{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 12px 8px; }
+  .bnav__ghost{ margin-top:0; padding:0 20px; }
+}
+.bnav.is-amarela .bnav__pill{ background:rgba(252,186,40,.94); border-color:rgba(0,0,0,.08); box-shadow:0 2px 12px rgba(0,0,0,.10); }
+.bnav.is-amarela.is-scrolled .bnav__pill,
+.bnav.is-amarela.is-open .bnav__pill{ background:rgba(252,186,40,.98); box-shadow:0 6px 24px rgba(0,0,0,.14); }
+.bnav.is-amarela .bnav__toggle:hover{ background:rgba(0,0,0,.08); }
+.bnav.is-amarela .bnav__cta{ background:var(--bnav-preto); color:#ffffff !important; }
+.bnav.is-amarela .bnav__cta:hover{ background:#1c1c1c; }
+.bnav-scrim{ position:fixed; inset:0; z-index:9980; background:rgba(0,0,0,.34); opacity:0; visibility:hidden; transition:opacity 260ms var(--bnav-ease), visibility 0s linear 260ms; }
+.bnav-root.is-open .bnav-scrim{ opacity:1; visibility:visible; transition:opacity 260ms var(--bnav-ease), visibility 0s; }
+.bnav-root a:focus-visible,
+.bnav-root button:focus-visible{ outline:none; box-shadow:0 0 0 3px rgba(0,0,0,.25); }
+@media (prefers-reduced-motion:reduce){
+  .bnav-root *{ transition-duration:1ms !important; }
+  .bnav__cat,.bnav__rodape{ opacity:1; transform:none; }
+}
+</style>
+
+<div class="bnav-root" data-bnav-root>
+  <div class="bnav-scrim" data-bnav-close></div>
+  <header class="bnav" data-bnav>
+    <div class="bnav__wrap">
+      <div class="bnav__pill">
+        <a class="bnav__logo" href="#topo" aria-label="Blips — página inicial">
+          <img src="https://food.blips.com.br/wp-content/uploads/2026/03/logotipo-blips-sorvete-1.webp" alt="Blips" width="160" height="52" referrerpolicy="no-referrer">
+        </a>
+        <div class="bnav__acoes">
+          <a class="bnav__cta" href="#formulario">Quero agora</a>
+          <button class="bnav__toggle" type="button" data-bnav-toggle aria-expanded="false" aria-controls="bnav-menu" aria-label="Abrir menu de categorias">
+            <svg class="bnav-ic-menu" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg>
+            <svg class="bnav-ic-x" viewBox="0 0 256 256" aria-hidden="true"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="bnav__menu" id="bnav-menu" inert>
+        <div class="bnav__scroll">
+          <nav class="bnav__cats" aria-label="Categorias de equipamentos">
+            <a class="bnav__cat" href="#lava-louca" style="--i:0">
+              <span class="bnav__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"/></svg></span>
+              <span class="bnav__txt"><span class="bnav__nome">Lava louça <span class="bnav__selo">Lançamento</span></span><span class="bnav__meta">Vuze Industrial</span></span>
+              <span class="bnav__seta"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span>
+            </a>
+            <a class="bnav__cat" href="#maquina-de-suco" style="--i:1">
+              <span class="bnav__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M248,80H8a8,8,0,0,0-8,8,128,128,0,0,0,256,0A8,8,0,0,0,248,80ZM77.4,149.91l42.6-42.6V167.6A79.59,79.59,0,0,1,77.4,149.91ZM66.09,138.6A79.59,79.59,0,0,1,48.4,96h60.29ZM136,107.31l42.6,42.6A79.59,79.59,0,0,1,136,167.6Zm53.91,31.29L147.31,96H207.6A79.59,79.59,0,0,1,189.91,138.6ZM128,200A112.15,112.15,0,0,1,16.28,96H32.34a96,96,0,0,0,191.32,0h16.06A112.15,112.15,0,0,1,128,200Z"/></svg></span>
+              <span class="bnav__txt"><span class="bnav__nome">Máquina de suco</span><span class="bnav__meta">Vuze Juice V01</span></span>
+              <span class="bnav__seta"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span>
+            </a>
+            <a class="bnav__cat" href="#maquina-de-gelo" style="--i:2">
+              <span class="bnav__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M223.77,150.09a8,8,0,0,1-5.86,9.68l-24.64,6,6.46,24.11a8,8,0,0,1-5.66,9.8A8.25,8.25,0,0,1,192,200a8,8,0,0,1-7.72-5.93l-7.72-28.8L136,141.86v46.83l21.66,21.65a8,8,0,0,1-11.32,11.32L128,203.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L120,188.69V141.86L79.45,165.27l-7.72,28.8A8,8,0,0,1,64,200a8.25,8.25,0,0,1-2.08-.27,8,8,0,0,1-5.66-9.8l6.46-24.11-24.64-6a8,8,0,0,1,3.82-15.54l29.45,7.23L112,128,71.36,104.54l-29.45,7.23A7.85,7.85,0,0,1,40,112a8,8,0,0,1-1.91-15.77l24.64-6L56.27,66.07a8,8,0,0,1,15.46-4.14l7.72,28.8L120,114.14V67.31L98.34,45.66a8,8,0,0,1,11.32-11.32L128,52.69l18.34-18.35a8,8,0,0,1,11.32,11.32L136,67.31v46.83l40.55-23.41,7.72-28.8a8,8,0,0,1,15.46,4.14l-6.46,24.11,24.64,6A8,8,0,0,1,216,112a7.85,7.85,0,0,1-1.91-.23l-29.45-7.23L144,128l40.64,23.46,29.45-7.23A8,8,0,0,1,223.77,150.09Z"/></svg></span>
+              <span class="bnav__txt"><span class="bnav__nome">Máquina de gelo</span><span class="bnav__meta">Ice 112 e Ice 150 · 2 modelos</span></span>
+              <span class="bnav__seta"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span>
+            </a>
+            <a class="bnav__cat" href="#fritadeira-eletrica" style="--i:3">
+              <span class="bnav__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M173.79,51.48a221.25,221.25,0,0,0-41.67-34.34,8,8,0,0,0-8.24,0A221.25,221.25,0,0,0,82.21,51.48C54.59,80.48,40,112.47,40,144a88,88,0,0,0,176,0C216,112.47,201.41,80.48,173.79,51.48ZM96,184c0-27.67,22.53-47.28,32-54.3,9.48,7,32,26.63,32,54.3a32,32,0,0,1-64,0Zm77.27,15.93A47.8,47.8,0,0,0,176,184c0-44-42.09-69.79-43.88-70.86a8,8,0,0,0-8.24,0C122.09,114.21,80,140,80,184a47.8,47.8,0,0,0,2.73,15.93A71.88,71.88,0,0,1,56,144c0-34.41,20.4-63.15,37.52-81.19A216.21,216.21,0,0,1,128,33.54a215.77,215.77,0,0,1,34.48,29.27C193.49,95.5,200,125,200,144A71.88,71.88,0,0,1,173.27,199.93Z"/></svg></span>
+              <span class="bnav__txt"><span class="bnav__nome">Fritadeira elétrica</span><span class="bnav__meta">Vuze Crisp B2</span></span>
+              <span class="bnav__seta"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span>
+            </a>
+            <a class="bnav__cat" href="#seladora-a-vacuo" style="--i:4">
+              <span class="bnav__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"/></svg></span>
+              <span class="bnav__txt"><span class="bnav__nome">Seladora à vácuo</span><span class="bnav__meta">40x40 e 60x60 · 4 modelos</span></span>
+              <span class="bnav__seta"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span>
+            </a>
+            <a class="bnav__cat" href="#ultracongelador" style="--i:5">
+              <span class="bnav__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M248.91,77.72l-20,6.49,12.34,17a8,8,0,1,1-12.94,9.4L216,93.61l-12.34,17a8,8,0,0,1-12.94-9.4l12.34-17-20-6.49A8,8,0,0,1,188,62.5L208,69V48a8,8,0,0,1,16,0V69l20-6.49a8,8,0,0,1,4.95,15.22ZM152,184a32,32,0,1,1-40-31V120a8,8,0,0,1,16,0v33A32.06,32.06,0,0,1,152,184Zm-16,0a16,16,0,1,0-16,16A16,16,0,0,0,136,184Zm48,0A64,64,0,1,1,80,134V48a40,40,0,0,1,80,0v86A64.08,64.08,0,0,1,184,184Zm-16,0a48.08,48.08,0,0,0-20.58-39.4A8,8,0,0,1,144,138V48a24,24,0,0,0-48,0v90a8,8,0,0,1-3.42,6.56A48,48,0,1,0,168,184Z"/></svg></span>
+              <span class="bnav__txt"><span class="bnav__nome">Ultracongelador</span><span class="bnav__meta">Freeze3, Freeze5 e Freeze10</span></span>
+              <span class="bnav__seta"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg></span>
+            </a>
+          </nav>
+          <div class="bnav__rodape">
+            <p class="bnav__nota">Entrada a partir de R$ 2.233 e o restante em até 36x.</p>
+            <a class="bnav__ghost" href="#formulario">Falar com especialista</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<script>
+(function () {
+  function init(root) {
+    if (root.dataset.bnavReady === '1') return;
+    root.dataset.bnavReady = '1';
+    var nav    = root.querySelector('[data-bnav]');
+    var toggle = root.querySelector('[data-bnav-toggle]');
+    var menu   = root.querySelector('#bnav-menu');
+    var scrim  = root.querySelector('[data-bnav-close]');
+    var html   = document.documentElement;
+    var mobile = window.matchMedia('(max-width: 767px)');
+    var aberto = false, ultimoY = window.scrollY || 0, rodando = false;
+
+    function setMenu(novo) {
+      if (novo === aberto) return;
+      aberto = novo;
+      root.classList.toggle('is-open', aberto);
+      nav.classList.toggle('is-open', aberto);
+      toggle.setAttribute('aria-expanded', String(aberto));
+      toggle.setAttribute('aria-label', aberto ? 'Fechar menu de categorias' : 'Abrir menu de categorias');
+      if (aberto) { menu.removeAttribute('inert'); nav.classList.remove('is-hidden'); if (mobile.matches) html.classList.add('bnav-locked'); }
+      else { menu.setAttribute('inert', ''); html.classList.remove('bnav-locked'); }
+      ultimoY = window.scrollY || 0;
+    }
+    toggle.addEventListener('click', function () { setMenu(!aberto); });
+    scrim.addEventListener('click', function () { setMenu(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && aberto) { setMenu(false); toggle.focus(); } });
+
+    menu.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href^="#"]'); if (!link) return;
+      var id = link.getAttribute('href').slice(1);
+      var alvo = id ? document.getElementById(id) : null;
+      setMenu(false); if (!alvo) return;
+      e.preventDefault();
+      var folga = nav.offsetHeight + 24;
+      var y = alvo.getBoundingClientRect().top + window.scrollY - folga;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+
+    var pill = root.querySelector('.bnav__pill');
+    var LIMITE = 60;
+    function lerFundo(x, y) {
+      var els = document.elementsFromPoint(x, y) || [];
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (root.contains(el)) continue;
+        var forcado = el.closest ? el.closest('[data-bnav-fundo]') : null;
+        if (forcado) return forcado.getAttribute('data-bnav-fundo') === 'branco';
+        var c = getComputedStyle(el).backgroundColor;
+        var m = c.match(/rgba?\(([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)(?:[,/\s]+([\d.]+))?\)/);
+        if (!m) continue;
+        if (m[4] !== undefined && parseFloat(m[4]) < 0.5) continue;
+        var dr = 255 - parseFloat(m[1]), dg = 255 - parseFloat(m[2]), db = 255 - parseFloat(m[3]);
+        return Math.sqrt(dr * dr + dg * dg + db * db) < LIMITE;
+      }
+      return null;
+    }
+    function adaptar() {
+      if (nav.classList.contains('is-hidden')) return;
+      var r = pill.getBoundingClientRect();
+      var y = r.top + r.height / 2;
+      var pontos = [(r.left + r.right) / 2, r.left + 28, r.right - 28];
+      for (var i = 0; i < pontos.length; i++) {
+        var achou = lerFundo(pontos[i], y);
+        if (achou !== null) { nav.classList.toggle('is-amarela', achou); return; }
+      }
+    }
+    function aoRolar() {
+      var y = Math.max(0, window.scrollY || 0);
+      nav.classList.toggle('is-scrolled', y > 4);
+      adaptar();
+      if (aberto) { if (!mobile.matches) setMenu(false); ultimoY = y; return; }
+      if (!mobile.matches) { nav.classList.remove('is-hidden'); ultimoY = y; return; }
+      var delta = y - ultimoY;
+      if (Math.abs(delta) < 6) return;
+      if (delta > 0 && y > 72) nav.classList.add('is-hidden');
+      else if (delta < 0) nav.classList.remove('is-hidden');
+      ultimoY = y;
+    }
+    window.addEventListener('scroll', function () {
+      if (rodando) return; rodando = true;
+      window.requestAnimationFrame(function () { aoRolar(); rodando = false; });
+    }, { passive: true });
+    mobile.addEventListener('change', function () { setMenu(false); nav.classList.remove('is-hidden'); adaptar(); });
+    window.addEventListener('resize', function () { clearTimeout(init._t); init._t = setTimeout(adaptar, 150); });
+    aoRolar();
+    setTimeout(adaptar, 400);
+    window.addEventListener('load', adaptar);
+  }
+  function boot() { document.querySelectorAll('[data-bnav-root]').forEach(init); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+</script>
+
+
+<!-- =========================================================
+     DOBRA 02 — HEAD
+     ========================================================= -->
+
+<style>
+.bhero-root{
+  --bh-amarelo:#fcba28; --bh-preto:#000000; --bh-texto:rgba(0,0,0,.74);
+  --bh-gutter:12px; --bh-raio:28px; --bh-topo:24px; --bh-acima:62px; --bh-lado:20px; --bh-max:1140px;
+  --bh-ease:cubic-bezier(.25,1,.5,1);
+  --bh-sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --bh-display:"Quicksand",var(--bh-sans);
+}
+@media (min-width:768px){ .bhero-root{ --bh-gutter:24px; --bh-raio:36px; --bh-topo:48px; --bh-lado:40px; --bh-acima:72px; } }
+.bhero-root,.bhero-root *,.bhero-root *::before,.bhero-root *::after{ box-sizing:border-box; }
+.bhero-root{ font-family:var(--bh-sans); line-height:1.5; -webkit-font-smoothing:antialiased; padding:0 var(--bh-gutter) var(--bh-gutter); }
+.bhero-root h1{ margin:0; } .bhero-root p{ margin:0; } .bhero-root a{ text-decoration:none !important; } .bhero-root img{ display:block; max-width:100%; }
+.bhero{ position:relative; overflow:hidden; border-radius:var(--bh-raio); background:var(--bh-amarelo); color:var(--bh-preto); min-height:calc(100dvh - var(--bh-gutter) - var(--bh-acima)); display:flex; }
+@supports not (min-height:100dvh){ .bhero{ min-height:calc(100vh - var(--bh-gutter) - var(--bh-acima)); } }
+.bhero__in{ width:100%; max-width:var(--bh-max); margin:0 auto; padding:var(--bh-topo) var(--bh-lado) 20px; display:grid; grid-template-columns:1fr; grid-template-areas:"img" "txt" "cta"; grid-template-rows:1fr auto auto; row-gap:14px; }
+.bhero__img{ grid-area:img; min-height:0; margin-inline:calc(-1 * var(--bh-lado)); display:flex; align-items:flex-start; justify-content:center; }
+.bhero__img img{ width:100%; height:auto; max-height:100%; object-fit:contain; }
+.bhero__txt{ grid-area:txt; }
+.bhero__selo{ display:inline-flex; align-items:center; height:28px; padding:0 12px; border-radius:999px; border:1px solid rgba(0,0,0,.22); font-size:12px; font-weight:600; letter-spacing:.01em; color:var(--bh-preto); }
+.bhero__h1{ font-family:var(--bh-display); font-weight:700; font-size:clamp(30px,8.6vw,56px); line-height:1.04; letter-spacing:-.03em; margin-top:10px !important; text-wrap:balance; }
+.bhero__sub{ margin-top:10px !important; font-size:15px; line-height:1.5; color:var(--bh-texto); max-width:34ch; }
+@media (min-width:768px){ .bhero__sub{ font-size:17px; max-width:38ch; } }
+.bhero__box{ margin-top:14px; max-width:440px; display:grid; grid-template-columns:1fr 1px 1fr; grid-template-areas:"l1 div l2" "v1 div v2"; align-items:end; column-gap:14px; row-gap:2px; padding:12px 14px; border-radius:18px; background:#fff; border:1px solid rgba(0,0,0,.06); box-shadow:0 2px 12px rgba(0,0,0,.07); }
+.bhero__box-div{ grid-area:div; align-self:stretch; background:rgba(0,0,0,.1); }
+.bhero__box-l1{ grid-area:l1; } .bhero__box-v1{ grid-area:v1; } .bhero__box-l2{ grid-area:l2; } .bhero__box-v2{ grid-area:v2; }
+.bhero__box-label{ font-size:12px; line-height:1.3; color:rgba(0,0,0,.58); }
+.bhero__box-valor{ font-size:clamp(25px,7.2vw,32px); font-weight:700; letter-spacing:-.025em; line-height:1.1; font-variant-numeric:tabular-nums; white-space:nowrap; }
+@media (min-width:768px){ .bhero__box{ padding:14px 18px; column-gap:18px; } .bhero__box-valor{ font-size:34px; } }
+.bhero__ast{ font-size:.52em; font-weight:600; vertical-align:super; margin-left:1px; }
+.bhero__acao{ grid-area:cta; }
+.bhero__nota{ margin-top:10px !important; max-width:440px; font-size:11.5px; line-height:1.4; color:rgba(0,0,0,.6); }
+.bhero__cta{ display:inline-flex; align-items:center; justify-content:center; gap:8px; width:100%; max-width:440px; height:54px; padding:0 26px; border-radius:999px; background:var(--bh-preto); color:#fff !important; font-size:15px; font-weight:600; letter-spacing:-.01em; white-space:nowrap; transition:background 150ms var(--bh-ease), transform 150ms var(--bh-ease); }
+.bhero__cta:hover{ background:#1c1c1c; } .bhero__cta:active{ transform:scale(.99); } .bhero__cta svg{ width:16px; height:16px; fill:currentColor; }
+@media (min-width:900px){
+  .bhero{ min-height:min(860px, calc(100vh - var(--bh-gutter) - var(--bh-acima))); }
+  .bhero__in{ grid-template-columns:minmax(0,1fr) minmax(0,1.18fr); grid-template-areas:"txt img" "cta img"; grid-template-rows:auto auto; align-content:center; column-gap:40px; row-gap:24px; padding-bottom:32px; }
+  .bhero__txt{ max-width:600px; } .bhero__h1{ max-width:18ch; }
+  .bhero__img{ margin-inline:0; align-self:center; } .bhero__img img{ height:auto; max-height:none; }
+  .bhero__cta{ width:auto; }
+}
+@media (max-height:700px) and (max-width:899px){
+  .bhero__in{ row-gap:10px; padding-bottom:16px; }
+  .bhero__h1{ font-size:clamp(26px,7.4vw,34px); margin-top:8px !important; }
+  .bhero__sub{ display:none; }
+  .bhero__box{ margin-top:10px; padding:10px 14px; } .bhero__box-valor{ font-size:clamp(22px,6.4vw,26px); }
+  .bhero__cta{ height:48px; } .bhero__nota{ margin-top:8px !important; font-size:11px; }
+}
+@media (prefers-reduced-motion:reduce){ .bhero-root *{ transition-duration:1ms !important; } }
+</style>
+
+<section class="bhero-root" id="topo">
+  <div class="bhero">
+    <div class="bhero__in">
+      <div class="bhero__img">
+        <img src="https://food.blips.com.br/wp-content/uploads/2026/09/group_59.webp" alt="Linha Vuze: máquina de suco, ultracongelador, seladora a vácuo e forno esteira" width="1214" height="780" loading="eager" decoding="async" fetchpriority="high" referrerpolicy="no-referrer">
+      </div>
+      <div class="bhero__txt">
+        <span class="bhero__selo">Receita de sucesso</span>
+        <h1 class="bhero__h1">Mais produção, menos desperdício, mais lucro.</h1>
+        <p class="bhero__sub">Equipamentos Vuze de alta performance, com instalação gratuita e suporte do começo ao fim.</p>
+        <div class="bhero__box">
+          <span class="bhero__box-label bhero__box-l1">Entrada a partir de</span>
+          <span class="bhero__box-valor bhero__box-v1">R$&nbsp;2.233<span class="bhero__ast">*</span></span>
+          <span class="bhero__box-div"></span>
+          <span class="bhero__box-label bhero__box-l2">E o restante em</span>
+          <span class="bhero__box-valor bhero__box-v2">até 36x</span>
+        </div>
+      </div>
+      <div class="bhero__acao">
+        <a class="bhero__cta" href="#maquina-de-suco" data-bhero-link>
+          Explorar equipamentos
+          <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+        </a>
+        <p class="bhero__nota">*Entrada referente à Seladora a Vácuo Vuze 40x40 Banc, sujeita a análise de crédito.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('[data-bhero-link]'); if (!link) return;
+    var id = (link.getAttribute('href') || '').slice(1);
+    var alvo = id ? document.getElementById(id) : null; if (!alvo) return;
+    e.preventDefault();
+    var barra = document.querySelector('[data-bnav]');
+    var folga = (barra ? barra.offsetHeight : 64) + 24;
+    var y = alvo.getBoundingClientRect().top + window.scrollY - folga;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+})();
+</script>
+
+
+<!-- ===== DOBRA 03 — PRODUTOS ===== -->
+
+<style>
+.bcat-root{ --bp-amarelo:#fcba28; --bp-coral:#ea5037; --bp-amarelo-claro:#fdefcf; --bp-preto:#000000; --bp-texto:#111111; --bp-suave:#6b6b6b; --bp-linha:#e6e6e6; --bp-palco:#f4f3f1; --bp-gutter:16px; --bp-raio:20px; --bp-max:1140px; --bp-ease:cubic-bezier(.25,1,.5,1); --bp-sans:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; --bp-display:var(--bp-sans); }
+@media (min-width:768px){ .bcat-root{ --bp-gutter:24px; --bp-raio:24px; } }
+.bcat-root,.bcat-root *,.bcat-root *::before,.bcat-root *::after{ box-sizing:border-box; }
+.bcat-root,.bcat-root *{ font-family:var(--bp-sans) !important; }
+.bcat-root{ line-height:1.5; color:var(--bp-texto); -webkit-font-smoothing:antialiased; }
+.bcat-root h2,.bcat-root h3,.bcat-root h4{ margin:0; } .bcat-root p{ margin:0; } .bcat-root a{ text-decoration:none !important; } .bcat-root img{ display:block; max-width:100%; }
+.bcat{ scroll-margin-top:92px; padding:48px var(--bp-gutter); background:#fff; }
+.bcat + .bcat{ border-top:1px solid var(--bp-linha); }
+@media (min-width:900px){ .bcat{ padding:80px var(--bp-gutter); } }
+.bcat__in{ max-width:var(--bp-max); margin:0 auto; }
+.bcat__head{ padding-bottom:24px; margin-bottom:28px; border-bottom:1px solid var(--bp-linha); }
+@media (min-width:900px){ .bcat__head{ display:flex; align-items:flex-end; justify-content:space-between; gap:32px; padding-bottom:28px; margin-bottom:36px; } }
+.bcat__marca{ position:relative; width:var(--bcat-larg, 160px); max-width:100%; height:4px; margin:12px 0 0; overflow:hidden; }
+.bcat__par{ position:absolute; top:0; left:0; height:100%; display:flex; align-items:stretch; will-change:transform; animation:bcatCorre var(--bcat-dur, 9s) linear var(--bcat-atraso, 0s) infinite; }
+.bcat__par > i{ flex:none; height:100%; margin-right:10px; border-radius:999px; }
+.bcat__par > i:nth-child(odd){ background:var(--bp-amarelo); animation:bcatTrimA var(--bcat-resp, 5s) cubic-bezier(.45,0,.55,1) var(--bcat-atraso, 0s) infinite; }
+.bcat__par > i:nth-child(even){ background:var(--bp-coral); animation:bcatTrimB var(--bcat-resp, 5s) cubic-bezier(.45,0,.55,1) var(--bcat-atraso, 0s) infinite; }
+@keyframes bcatCorre{ from { transform:translateX(0); } to { transform:translateX(-33.3333%); } }
+@keyframes bcatTrimA{ 0%, 100% { width:calc(var(--bcat-larg, 160px) * .20); } 50% { width:calc(var(--bcat-larg, 160px) * .52); } }
+@keyframes bcatTrimB{ 0%, 100% { width:calc(var(--bcat-larg, 160px) * .52); } 50% { width:calc(var(--bcat-larg, 160px) * .20); } }
+.bcat:nth-of-type(1) .bcat__marca{ --bcat-dur:11s; --bcat-resp:6.2s; --bcat-atraso:-0.6s; }
+.bcat:nth-of-type(2) .bcat__marca{ --bcat-dur:14.5s; --bcat-resp:8.1s; --bcat-atraso:-3.8s; }
+.bcat:nth-of-type(3) .bcat__marca{ --bcat-dur:9.8s; --bcat-resp:5.4s; --bcat-atraso:-1.9s; }
+.bcat:nth-of-type(4) .bcat__marca{ --bcat-dur:16.2s; --bcat-resp:9.3s; --bcat-atraso:-6.2s; }
+.bcat:nth-of-type(5) .bcat__marca{ --bcat-dur:12.6s; --bcat-resp:7.1s; --bcat-atraso:-2.7s; }
+.bcat:nth-of-type(6) .bcat__marca{ --bcat-dur:15.1s; --bcat-resp:8.8s; --bcat-atraso:-7.5s; }
+.bcat__titulo{ font-family:var(--bp-display); font-size:clamp(26px,6.4vw,40px); font-weight:700; letter-spacing:-.03em; line-height:1.1; }
+.bcat__linha{ margin-top:8px !important; font-size:15px; color:var(--bp-suave); max-width:46ch; }
+.bcat__contagem{ flex:none; font-size:13px; font-weight:600; color:var(--bp-suave); white-space:nowrap; margin-top:12px; }
+@media (min-width:900px){ .bcat__contagem{ margin-top:0; padding-bottom:4px; } }
+.bgrid{ display:grid; grid-template-columns:1fr; gap:16px; align-items:start; }
+@media (min-width:720px){ .bgrid{ gap:20px; } .bgrid--multi{ grid-template-columns:repeat(2,1fr); } .bgrid--3 > :last-child{ grid-column:span 2; max-width:calc(50% - 10px); margin-inline:auto; } }
+.bcard{ display:flex; flex-direction:column; background:#fff; border:1px solid var(--bp-linha); border-radius:var(--bp-raio); overflow:hidden; transition:border-color 200ms var(--bp-ease), box-shadow 200ms var(--bp-ease); }
+.bcard:hover{ border-color:color-mix(in srgb, var(--bp-coral) 45%, transparent); box-shadow:0 8px 28px rgba(0,0,0,.06); }
+.bcard__palco{ position:relative; background:var(--bp-palco); height:210px; padding:18px; display:flex; align-items:center; justify-content:center; }
+.bcard__palco img{ width:100%; height:100%; max-height:100%; object-fit:contain; }
+@media (min-width:720px){ .bcard__palco{ height:240px; } } @media (min-width:1024px){ .bcard__palco{ height:264px; } }
+.bcard__badge{ position:absolute; left:14px; bottom:14px; display:inline-flex; align-items:center; height:26px; padding:0 11px; border-radius:999px; background:var(--bp-amarelo); color:var(--bp-preto); font-size:11.5px; font-weight:600; letter-spacing:-.01em; white-space:nowrap; }
+.bcard__badge--destaque{ background:var(--bp-coral); color:#fff; }
+.bcard__body{ padding:18px; display:flex; flex-direction:column; flex:1; }
+@media (min-width:768px){ .bcard__body{ padding:22px; } }
+.bcard__nome{ font-size:17px; font-weight:600; letter-spacing:-.02em; line-height:1.25; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:2.5em; }
+.bcard__kicker{ margin-top:5px !important; font-size:13.5px; color:var(--bp-suave); line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:2.9em; }
+.bcard__specs{ margin-top:16px; display:grid; grid-template-columns:1fr 1fr; background:var(--bp-amarelo-claro); border:1px solid rgba(252,186,40,.55); border-radius:14px; padding:12px 14px; }
+.bspec{ min-width:0; padding-left:14px; border-left:1px solid rgba(0,0,0,.12); }
+.bspec:first-child{ padding-left:0; padding-right:14px; border-left:0; }
+.bspec span{ display:block; font-size:10px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--bp-coral); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.bspec strong{ display:block; margin-top:2px; font-size:13.5px; font-weight:600; letter-spacing:-.015em; line-height:1.3; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.bficha{ margin-top:14px; border-top:1px solid var(--bp-linha); }
+.bficha > summary{ list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; font-size:14px; font-weight:500; }
+.bficha > summary::-webkit-details-marker{ display:none; }
+.bficha > summary:hover,.bficha[open] > summary{ color:var(--bp-coral); }
+.bficha > summary svg{ width:16px; height:16px; fill:currentColor; flex:none; color:var(--bp-suave); transition:transform 200ms var(--bp-ease); }
+.bficha > summary:hover svg,.bficha[open] > summary svg{ color:var(--bp-coral); }
+.bficha[open] > summary svg{ transform:rotate(180deg); }
+.bficha__conteudo{ padding-bottom:14px; }
+.bficha__resumo{ font-size:13.5px; line-height:1.5; color:var(--bp-suave); }
+.bficha__item{ margin-top:12px; } .bficha__item h4{ font-size:13.5px; font-weight:600; letter-spacing:-.01em; }
+.bficha__item p{ margin-top:2px !important; font-size:13px; line-height:1.45; color:var(--bp-suave); }
+.bcard__cta{ display:inline-flex; align-items:center; justify-content:center; gap:8px; margin-top:auto; width:100%; height:50px; padding:0 16px; border-radius:999px; background:var(--bp-preto); color:#fff !important; font-size:13px; font-weight:600; letter-spacing:-.015em; white-space:nowrap; transition:background 150ms var(--bp-ease), transform 150ms var(--bp-ease); }
+.bcard__cta:hover{ background:var(--bp-coral); } .bcard__cta:active{ transform:scale(.99); } .bcard__cta svg{ width:15px; height:15px; fill:currentColor; flex:none; }
+@media (min-width:900px){
+  .bgrid--solo .bcard{ display:grid; grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr); align-items:stretch; }
+  .bgrid--solo .bcard__palco{ height:auto; min-height:360px; padding:32px; }
+  .bgrid--solo .bcard__badge{ left:20px; bottom:20px; }
+  .bgrid--solo .bcard__body{ padding:32px; justify-content:center; }
+  .bgrid--solo .bcard__nome{ font-size:24px; letter-spacing:-.025em; display:block; min-height:0; -webkit-line-clamp:none; overflow:visible; }
+  .bgrid--solo .bcard__kicker{ font-size:15px; display:block; min-height:0; -webkit-line-clamp:none; overflow:visible; }
+  .bgrid--solo .bcard__specs{ max-width:440px; padding:14px 18px; }
+  .bgrid--solo .bcard__cta{ width:auto; align-self:flex-start; margin-top:20px; padding:0 26px; font-size:14px; }
+}
+@media (prefers-reduced-motion:reduce){ .bcat-root *{ transition-duration:1ms !important; } .bcat__par,.bcat__par > i{ animation:none; } .bcat__par > i{ width:calc(var(--bcat-larg, 160px) * .36); } }
+</style>
+<div class="bcat-root">
+  <section class="bcat" id="lava-louca">
+    <div class="bcat__in">
+      <div class="bcat__head">
+        <div>
+          <h2 class="bcat__titulo">Lava louça</h2>
+          <div class="bcat__marca"><i class="bcat__par"><i></i><i></i><i></i><i></i><i></i><i></i></i></div>
+          <p class="bcat__linha">Lavagem industrial com ciclos de 60 segundos.</p>
+        </div>
+        <span class="bcat__contagem">1 modelo</span>
+      </div>
+      <div class="bgrid bgrid--solo">
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/09/lava-loucas-linha.webp" alt="Lava Louça Industrial Vuze" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge bcard__badge--destaque">Lançamento</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Lava Louça Industrial Vuze</h3>
+            <p class="bcard__kicker">Ciclos rápidos no ritmo do seu negócio</p>
+            <div class="bcard__specs"><div class="bspec"><span>Ciclo</span><strong>a partir de 60 s</strong></div><div class="bspec"><span>Capacidade</span><strong>até 50 cestos/h</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Garanta sua Lava Louça Industrial Vuze e aumente sua produtividade em apenas um clique.</p><div class="bficha__item"><h4>Alta produtividade</h4><p>Ciclos a partir de 60 segundos com até 50 cestos por hora.</p></div><div class="bficha__item"><h4>Maior economia</h4><p>Até 80% menos água se comparado à lavagem manual.</p></div><div class="bficha__item"><h4>Controle inteligente</h4><p>Dosadores automáticos com manutenção e limpeza simplificadas.</p></div><div class="bficha__item"><h4>Tecnologia de ponta</h4><p>Água em alta temperatura que derrete a gordura pesada e elimina 99% das bactérias.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Garantir minha Lava Louça <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bcat" id="maquina-de-suco">
+    <div class="bcat__in">
+      <div class="bcat__head">
+        <div>
+          <h2 class="bcat__titulo">Máquina de suco</h2>
+          <div class="bcat__marca"><i class="bcat__par"><i></i><i></i><i></i><i></i><i></i><i></i></i></div>
+          <p class="bcat__linha">Suco na hora, com aproveitamento máximo da fruta.</p>
+        </div>
+        <span class="bcat__contagem">1 modelo</span>
+      </div>
+      <div class="bgrid bgrid--solo">
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2025/05/MAQUINA-DE-SUCO-003-NOVA-scaled-1.webp" alt="Vuze Juice V01" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Corte vertical</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Vuze Juice V01</h3>
+            <p class="bcard__kicker">Máquina de suco com corte vertical</p>
+            <div class="bcard__specs"><div class="bspec"><span>Processamento</span><strong>até 12 frutas/min</strong></div><div class="bspec"><span>Rampa</span><strong>até 10 frutas</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">A Juice V01 trabalha sem parar, com o verdadeiro sabor da fruta — sem amargor e sem baixo aproveitamento.</p><div class="bficha__item"><h4>Capacidade de processamento</h4><p>Até 12 frutas por minuto.</p></div><div class="bficha__item"><h4>Sistema de separação</h4><p>Retenção de bagaços e sementes.</p></div><div class="bficha__item"><h4>Compatibilidade de frutas</h4><p>De 50 mm a 85 mm de diâmetro.</p></div><div class="bficha__item"><h4>Rampa de alimentação</h4><p>Capacidade para até 10 frutas.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Financiar minha Juice V01 <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bcat" id="maquina-de-gelo">
+    <div class="bcat__in">
+      <div class="bcat__head">
+        <div>
+          <h2 class="bcat__titulo">Máquina de gelo</h2>
+          <div class="bcat__marca"><i class="bcat__par"><i></i><i></i><i></i><i></i><i></i><i></i></i></div>
+          <p class="bcat__linha">Gelo próprio, sem depender de fornecedor externo.</p>
+        </div>
+        <span class="bcat__contagem">2 modelos</span>
+      </div>
+      <div class="bgrid bgrid--multi">
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/05/VUZE-MAQUINA-DE-GELO-ICE112-DIAGONAL-LIGADA-TAMPA-ABERTA.webp" alt="Máquina de Gelo Vuze Ice 112" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">120 kg/dia</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Máquina de Gelo Vuze Ice 112</h3>
+            <p class="bcard__kicker">Reservatório de 40 kg com filtro incluso</p>
+            <div class="bcard__specs"><div class="bspec"><span>Produção</span><strong>até 120 kg/dia</strong></div><div class="bspec"><span>Reservatório</span><strong>40 kg</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Eficiência profissional para revolucionar sua cozinha: gelo potável e filtrado em poucos minutos.</p><div class="bficha__item"><h4>Estabilidade térmica</h4><p>Reservatório de 40 kg com isolamento térmico e filtro de água incluso.</p></div><div class="bficha__item"><h4>Maior durabilidade</h4><p>Peças em aço inox para redução de corrosão e menor manutenção estrutural.</p></div><div class="bficha__item"><h4>Autonomia operacional</h4><p>Produção em escala de gelo potável e filtrado em poucos minutos.</p></div><div class="bficha__item"><h4>Ventilador de vórtice</h4><p>Circulação reversa cronometrada em velocidade alta, baixa e baixa intermitente.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Acelerar minha produção <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/05/VUZE-MAQUINA-DE-GELO-ICE150-FRENTE-LIGADA-FUNDO-TRANSPARENTE.webp" alt="Máquina de Gelo Vuze Ice 150" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">150 kg/dia</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Máquina de Gelo Vuze Ice 150</h3>
+            <p class="bcard__kicker">Reservatório de 95 kg e painel touch screen</p>
+            <div class="bcard__specs"><div class="bspec"><span>Produção</span><strong>até 150 kg/dia</strong></div><div class="bspec"><span>Reservatório</span><strong>95 kg</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Produção contínua para expandir seus lucros, com cubos padronizados de 22 mm a todo momento.</p><div class="bficha__item"><h4>Alto rendimento</h4><p>Reservatório com 95 kg de capacidade, produzindo até 150 kg de gelo por dia.</p></div><div class="bficha__item"><h4>Segurança alimentar</h4><p>Peças em aço inox, sensores de nível e isolamento térmico.</p></div><div class="bficha__item"><h4>Produção confiável</h4><p>Operação precisa com capacidade para sustentar momentos intensos.</p></div><div class="bficha__item"><h4>Monitoramento intuitivo</h4><p>Painel touch screen que facilita a manutenção e o acompanhamento de dados.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Expandir meu negócio <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bcat" id="fritadeira-eletrica">
+    <div class="bcat__in">
+      <div class="bcat__head">
+        <div>
+          <h2 class="bcat__titulo">Fritadeira elétrica</h2>
+          <div class="bcat__marca"><i class="bcat__par"><i></i><i></i><i></i><i></i><i></i><i></i></i></div>
+          <p class="bcat__linha">Fritura constante com o óleo sempre limpo.</p>
+        </div>
+        <span class="bcat__contagem">1 modelo</span>
+      </div>
+      <div class="bgrid bgrid--solo">
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/05/FRITADEIRA-ELETRICA-PROFISSIONAL-DUPLA-VUZE-CRISP-B2-DIAGONAL-FUNDO-TRANSPARENTE.webp" alt="Fritadeira Elétrica Dupla Vuze Crisp B2" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Cesto duplo</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Fritadeira Elétrica Dupla Vuze Crisp B2</h3>
+            <p class="bcard__kicker">Dois tanques independentes com filtragem</p>
+            <div class="bcard__specs"><div class="bspec"><span>Tanques</span><strong>2 x 14 L</strong></div><div class="bspec"><span>Filtragem</span><strong>integrada, 1 clique</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Cesto duplo e filtragem integrada para alimentos crocantes e secos, com mais produtividade a cada fritura.</p><div class="bficha__item"><h4>Filtragem integrada</h4><p>Limpe o óleo a um clique, sem tirar do equipamento.</p></div><div class="bficha__item"><h4>Fritura dupla</h4><p>Dois tanques de 14 L totalmente independentes.</p></div><div class="bficha__item"><h4>Zona fria</h4><p>Fundo do tanque mais frio para evitar que os farelos queimem o óleo.</p></div><div class="bficha__item"><h4>Controle inteligente</h4><p>Painel digital, 10 memórias programáveis e ciclo Melt.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Expandir minha cozinha <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bcat" id="seladora-a-vacuo">
+    <div class="bcat__in">
+      <div class="bcat__head">
+        <div>
+          <h2 class="bcat__titulo">Seladora à vácuo</h2>
+          <div class="bcat__marca"><i class="bcat__par"><i></i><i></i><i></i><i></i><i></i><i></i></i></div>
+          <p class="bcat__linha">Conservação a vácuo para sólidos, líquidos, pós e pastas.</p>
+        </div>
+        <span class="bcat__contagem">4 modelos</span>
+      </div>
+      <div class="bgrid bgrid--multi">
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2025/10/Vuze-40B-Persspectiva-e1759412758640.webp" alt="Seladora a Vácuo Vuze 40x40 Banc" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Bancada</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Seladora a Vácuo Vuze 40x40 Banc</h3>
+            <p class="bcard__kicker">Seladora de bancada 40 x 40</p>
+            <div class="bcard__specs"><div class="bspec"><span>Bomba</span><strong>20 m³/h</strong></div><div class="bspec"><span>Produtividade</span><strong>180 emb./h</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Sabor e textura impecáveis, conservados por muito mais tempo em uma seladora de bancada.</p><div class="bficha__item"><h4>Eficiência operacional</h4><p>Redução de perdas com bomba potente de 20 m³/h e ciclos de 15 s a 20 s.</p></div><div class="bficha__item"><h4>Menor tempo de preparo</h4><p>Selagem perfeita de sólidos, líquidos, pós e pastas com consistência.</p></div><div class="bficha__item"><h4>Ajustes práticos</h4><p>Painel digital com controle total de vácuo, selagem e resfriamento.</p></div><div class="bficha__item"><h4>Maior produtividade</h4><p>Até 3 ciclos por minuto e 180 embalagens seladas por hora.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Garantir minha seladora <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/05/VUZE-SELADORA-40V-DIAGONAL.webp" alt="Seladora a Vácuo Vuze 40x40 Vert" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Vertical</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Seladora a Vácuo Vuze 40x40 Vert</h3>
+            <p class="bcard__kicker">Arquitetura vertical para molhos e caldos</p>
+            <div class="bcard__specs"><div class="bspec"><span>Bomba</span><strong>20 m³/h</strong></div><div class="bspec"><span>Barra de selagem</span><strong>400 x 10 mm</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Conserve até 10x mais tempo o sabor e a textura, com máxima segurança para molhos e caldos.</p><div class="bficha__item"><h4>Eficiência operacional</h4><p>Bomba robusta de 20 m³/h com ciclos médios e rápidos de 15 s a 40 s.</p></div><div class="bficha__item"><h4>Arquitetura vertical</h4><p>Molhos, caldos e marinados com perfeição e sem danificar o motor.</p></div><div class="bficha__item"><h4>Ajustes práticos</h4><p>Painel com controle preciso de tempo e barra de selagem dupla de 400 x 10 mm.</p></div><div class="bficha__item"><h4>Mais rentabilidade</h4><p>Cook & chill equilibrando conservação, padronização e segurança em escala.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Garantir minha seladora <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2025/10/Seladora-Vacuo-Vuze-60B-frente.webp" alt="Seladora a Vácuo Vuze 60x60 Banc" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">60 x 60</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Seladora a Vácuo Vuze 60x60 Banc</h3>
+            <p class="bcard__kicker">Selagem simultânea em alta escala</p>
+            <div class="bcard__specs"><div class="bspec"><span>Bombas</span><strong>2 x 20 m³/h</strong></div><div class="bspec"><span>Ciclos</span><strong>até 60 por hora</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Mais sabor, textura e qualidade em alta escala, com selagem simultânea e 15 programas na memória.</p><div class="bficha__item"><h4>Alta produtividade</h4><p>Painel com ajuste de vácuo, gás, selagem e resfriamento.</p></div><div class="bficha__item"><h4>Tecnologia avançada</h4><p>Operação semiautomática com memória de 15 programas.</p></div><div class="bficha__item"><h4>Desempenho prático</h4><p>Potência de 1,8 kW, duas bombas de 20 m³/h e duas barras de 60 cm.</p></div><div class="bficha__item"><h4>Mais rentabilidade</h4><p>Processos 100% automatizados com até 60 ciclos por hora.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Garantir minha seladora <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2025/10/Seladora-Vacuo-Vuze-60Dupla-perspectiva.png" alt="Seladora a Vácuo Vuze 60x60 Dupla Câmara" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Dupla câmara</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Seladora a Vácuo Vuze 60x60 Dupla Câmara</h3>
+            <p class="bcard__kicker">Carregue de um lado enquanto o outro sela</p>
+            <div class="bcard__specs"><div class="bspec"><span>Câmaras</span><strong>2 independentes</strong></div><div class="bspec"><span>Operação</span><strong>100% automatizada</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Muito mais produtividade com dupla câmara e bomba industrial para alto volume.</p><div class="bficha__item"><h4>Alto desempenho</h4><p>Painel com controle digital de vácuo, gás, selagem e resfriamento.</p></div><div class="bficha__item"><h4>Produtividade contínua</h4><p>Dupla câmara: carregue de um lado enquanto o outro sela.</p></div><div class="bficha__item"><h4>Versatilidade</h4><p>Embala sólidos, líquidos, pós e pastas com consistência.</p></div><div class="bficha__item"><h4>Mais rentabilidade</h4><p>Bomba de vácuo industrial para manipulação e conservação em alto volume.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Garantir minha seladora <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bcat" id="ultracongelador">
+    <div class="bcat__in">
+      <div class="bcat__head">
+        <div>
+          <h2 class="bcat__titulo">Ultracongelador</h2>
+          <div class="bcat__marca"><i class="bcat__par"><i></i><i></i><i></i><i></i><i></i><i></i></i></div>
+          <p class="bcat__linha">Congelamento rápido, sem cristais de gelo.</p>
+        </div>
+        <span class="bcat__contagem">3 modelos</span>
+      </div>
+      <div class="bgrid bgrid--multi bgrid--3">
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/04/ULTRACONGELADOR-VUZE-FREEZE3-DIAGONAL.webp" alt="Ultracongelador Vuze Freeze3" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Compacto</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Ultracongelador Vuze Freeze3</h3>
+            <p class="bcard__kicker">Estrutura compacta com painel multifunção</p>
+            <div class="bcard__specs"><div class="bspec"><span>Temperatura</span><strong>até -40 °C</strong></div><div class="bspec"><span>Resfriamento</span><strong>90 °C → -18 °C</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Congelamento perfeito, zero cristais de gelo: preserve sabor, textura e qualidade dos alimentos.</p><div class="bficha__item"><h4>Compacta e eficiente</h4><p>Estrutura compacta e robusta com painel de controle digital multifunção.</p></div><div class="bficha__item"><h4>Alta produtividade</h4><p>Resfriamento rápido de alimentos quentes até +3 °C ou congelamento até -40 °C.</p></div><div class="bficha__item"><h4>Inteligência operacional</h4><p>Ciclos parametrizáveis (soft e hard) para tratamento térmico exclusivo.</p></div><div class="bficha__item"><h4>Maior performance</h4><p>Redução de 90 °C para -18 °C em 240 minutos.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Garantir o Freeze3 <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/04/ULTRACONGELADOR-VUZE-FREEZE5-FRENTE.webp" alt="Ultracongelador Vuze Freeze5" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">20 kg/ciclo</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Ultracongelador Vuze Freeze5</h3>
+            <p class="bcard__kicker">Equilíbrio entre capacidade e agilidade</p>
+            <div class="bcard__specs"><div class="bspec"><span>Capacidade</span><strong>20 kg/ciclo</strong></div><div class="bspec"><span>Temperatura</span><strong>até -40 °C</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">100% de retenção de sabor e textura, no equilíbrio ideal entre capacidade e agilidade.</p><div class="bficha__item"><h4>Produtividade eficiente</h4><p>Capacidade de congelamento de 20 kg por ciclo.</p></div><div class="bficha__item"><h4>Eficiência operacional</h4><p>Painel digital intuitivo, degelo automático e compressor autocontido.</p></div><div class="bficha__item"><h4>Tecnologia avançada</h4><p>Até -40 °C, alarme de temperatura e fechadura de segurança.</p></div><div class="bficha__item"><h4>Maior performance</h4><p>Redução de 75 °C para -18 °C em 240 minutos.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Conhecer o Freeze5 <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+        <article class="bcard">
+          <div class="bcard__palco">
+            <img src="https://food.blips.com.br/wp-content/uploads/2026/04/ULTRACONGELADOR-VUZE-FREEZE10-DIAGONAL.webp" alt="Ultracongelador Vuze Freeze10" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="bcard__badge">Escala industrial</span>
+          </div>
+          <div class="bcard__body">
+            <h3 class="bcard__nome">Ultracongelador Vuze Freeze10</h3>
+            <p class="bcard__kicker">10 bandejas e 4 programas pré-definidos</p>
+            <div class="bcard__specs"><div class="bspec"><span>Capacidade</span><strong>40 kg/ciclo</strong></div><div class="bspec"><span>Bandejas</span><strong>10</strong></div></div>
+            <details class="bficha">
+              <summary>Ficha completa <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+              <div class="bficha__conteudo"><p class="bficha__resumo">Produção contínua em escala industrial, com o alto padrão da gastronomia profissional.</p><div class="bficha__item"><h4>Agilidade e eficiência</h4><p>Ciclos automáticos de -40 °C com controle digital.</p></div><div class="bficha__item"><h4>Preservação de qualidade</h4><p>Painel digital intuitivo com 4 programas pré-definidos.</p></div><div class="bficha__item"><h4>Tecnologia avançada</h4><p>Degelo automático, alarme de temperatura e fechadura de segurança.</p></div><div class="bficha__item"><h4>Maior rentabilidade</h4><p>10 bandejas e capacidade de congelamento de até 40 kg por ciclo.</p></div></div>
+            </details>
+            <a class="bcard__cta" href="#formulario">Adquirir o Freeze10 <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  function medir(sec) {
+    var marca = sec.querySelector('.bcat__marca'), titulo = sec.querySelector('.bcat__titulo');
+    if (!marca || !titulo) return;
+    var faixa = document.createRange(); faixa.selectNodeContents(titulo);
+    var larguras = Array.prototype.map.call(faixa.getClientRects(), function (r) { return r.width; });
+    if (!larguras.length) return;
+    marca.style.setProperty('--bcat-larg', Math.round(Math.max.apply(null, larguras)) + 'px');
+  }
+  function medirTudo() { document.querySelectorAll('.bcat').forEach(medir); }
+  function boot() {
+    medirTudo();
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(medirTudo); }
+    var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(medirTudo, 150); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+</script>
+
+<!-- ===== DOBRA 04 — DIFERENCIAIS ===== -->
+<style>
+.bdif-root{ --bd-vermelho:#ea5037; --bd-amarelo:#fcba28; --bd-preto:#000000; --bd-branco:#ffffff; --bd-claro:rgba(255,255,255,.80); --bd-gutter:12px; --bd-raio:28px; --bd-max:1140px; --bd-ease:cubic-bezier(.25,1,.5,1); --bd-sans:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+@media (min-width:768px){ .bdif-root{ --bd-gutter:24px; --bd-raio:36px; } }
+.bdif-root,.bdif-root *,.bdif-root *::before,.bdif-root *::after{ box-sizing:border-box; }
+.bdif-root,.bdif-root *{ font-family:var(--bd-sans) !important; }
+.bdif-root{ line-height:1.5; -webkit-font-smoothing:antialiased; background:#fff; padding:0 var(--bd-gutter); }
+.bdif-root h2,.bdif-root h3{ margin:0; } .bdif-root p{ margin:0; }
+.bdif{ max-width:var(--bd-max); margin:0 auto; border-radius:var(--bd-raio); background:var(--bd-vermelho); color:var(--bd-branco); padding:40px 20px; }
+@media (min-width:900px){ .bdif{ padding:72px 56px; } }
+.bdif__marca{ width:40px; height:4px; border-radius:999px; background:var(--bd-amarelo); margin-bottom:14px; }
+.bdif__hat{ font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--bd-amarelo) !important; margin-bottom:10px !important; }
+.bdif__titulo{ font-size:clamp(28px,7vw,44px); font-weight:700; letter-spacing:-.03em; line-height:1.08; color:var(--bd-branco) !important; text-wrap:balance; max-width:18ch; }
+.bdif__sub{ margin-top:12px !important; font-size:15.5px; line-height:1.55; color:var(--bd-claro) !important; max-width:44ch; }
+@media (min-width:900px){ .bdif__sub{ font-size:17px; margin-top:0 !important; padding-bottom:6px; } .bdif__head{ display:flex; align-items:flex-end; justify-content:space-between; gap:48px; } .bdif__titulo{ max-width:14ch; } .bdif__sub{ max-width:34ch; } }
+.bdif__lista{ margin-top:28px; display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch; margin-inline:-20px; padding:0 20px 4px; scroll-padding-left:20px; scrollbar-width:none; }
+.bdif__lista::-webkit-scrollbar{ display:none; }
+.bdif__item{ flex:0 0 80%; scroll-snap-align:start; }
+@media (max-width:639px){ .bdif__item.is-ativo{ background:var(--bd-branco); border-color:var(--bd-branco); } .bdif__item.is-ativo h3{ color:#111111 !important; } .bdif__item.is-ativo p{ color:#5a5a5a !important; } }
+.bdif__dots{ display:flex; justify-content:center; align-items:center; gap:8px; margin-top:18px; }
+.bdif__dot{ width:8px; height:8px; padding:0; border:0; border-radius:999px; background:rgba(255,255,255,.42); cursor:pointer; transition:width 200ms var(--bd-ease), background 200ms var(--bd-ease); -webkit-appearance:none; appearance:none; }
+.bdif__dot.is-ativo{ width:22px; background:var(--bd-branco); }
+@media (min-width:640px){ .bdif__lista{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-inline:0; padding:0; overflow:visible; } .bdif__item{ flex:initial; } .bdif__dots{ display:none; } }
+@media (min-width:1024px){ .bdif__lista{ grid-template-columns:repeat(4,1fr); gap:16px; margin-top:48px; } }
+.bdif__item{ background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22); border-radius:18px; padding:20px; transition:background 200ms var(--bd-ease), border-color 200ms var(--bd-ease), color 200ms var(--bd-ease); }
+@media (hover:hover){ .bdif__item:hover{ background:var(--bd-branco); border-color:var(--bd-branco); } .bdif__item:hover h3{ color:#111111 !important; } .bdif__item:hover p{ color:#5a5a5a !important; } }
+.bdif__ic{ width:44px; height:44px; display:grid; place-items:center; border-radius:12px; background:var(--bd-amarelo); color:var(--bd-preto); margin-bottom:14px; }
+.bdif__ic svg{ width:22px; height:22px; fill:currentColor; }
+.bdif__item h3{ font-size:16px; font-weight:600; letter-spacing:-.015em; line-height:1.3; color:var(--bd-branco) !important; }
+.bdif__item p{ margin-top:6px !important; font-size:13.5px; line-height:1.5; color:var(--bd-claro) !important; }
+</style>
+<section class="bdif-root" id="diferenciais">
+  <div class="bdif">
+    <div class="bdif__head">
+      <div>
+        <div class="bdif__marca"></div>
+        <p class="bdif__hat">O que faz a diferença</p>
+        <h2 class="bdif__titulo">Lucre com produtividade e qualidade</h2>
+      </div>
+      <p class="bdif__sub">Conheça a tecnologia de alta performance dos produtos Vuze.</p>
+    </div>
+    <div class="bdif__lista">
+      <div class="bdif__item">
+        <span class="bdif__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M40,88H73a32,32,0,0,0,62,0h81a8,8,0,0,0,0-16H135a32,32,0,0,0-62,0H40a8,8,0,0,0,0,16Zm64-24A16,16,0,1,1,88,80,16,16,0,0,1,104,64ZM216,168H199a32,32,0,0,0-62,0H40a8,8,0,0,0,0,16h97a32,32,0,0,0,62,0h17a8,8,0,0,0,0-16Zm-48,24a16,16,0,1,1,16-16A16,16,0,0,1,168,192Z"/></svg></span>
+        <h3>Autonomia operacional</h3><p>Modos de operação, ajuste de parâmetros e acesso aos menus programados.</p>
+      </div>
+      <div class="bdif__item">
+        <span class="bdif__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"/></svg></span>
+        <h3>Sistema de segurança</h3><p>Prevenção contra contaminação com a higienização rápida e simplificada.</p>
+      </div>
+      <div class="bdif__item">
+        <span class="bdif__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"/></svg></span>
+        <h3>Zero tempo ocioso</h3><p>Trabalhe simultaneamente com ajustes práticos e controle total de produção.</p>
+      </div>
+      <div class="bdif__item">
+        <span class="bdif__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V156.69l50.34-50.35a8,8,0,0,1,11.32,0L128,132.69,180.69,80H160a8,8,0,0,1,0-16h40a8,8,0,0,1,8,8v40a8,8,0,0,1-16,0V91.31l-58.34,58.35a8,8,0,0,1-11.32,0L96,123.31l-56,56V200H224A8,8,0,0,1,232,208Z"/></svg></span>
+        <h3>Gestão de rendimento</h3><p>Processos automatizados para manter a qualidade e a operação simples.</p>
+      </div>
+    </div>
+    <div class="bdif__dots" data-bdif-dots aria-hidden="true"></div>
+  </div>
+</section>
+<script>
+(function () {
+  function init(raiz) {
+    if (raiz.dataset.bdifReady === '1') return; raiz.dataset.bdifReady = '1';
+    var lista = raiz.querySelector('.bdif__lista'), itens = Array.prototype.slice.call(raiz.querySelectorAll('.bdif__item')), caixa = raiz.querySelector('[data-bdif-dots]');
+    var mobile = window.matchMedia('(max-width: 639px)'), rodando = false;
+    var dots = itens.map(function (_, i) {
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'bdif__dot'; b.setAttribute('aria-label', 'Ver diferencial ' + (i + 1));
+      b.addEventListener('click', function () { lista.scrollTo({ left: itens[i].offsetLeft - lista.offsetLeft, behavior: 'smooth' }); });
+      caixa.appendChild(b); return b;
+    });
+    function marcar(i) { itens.forEach(function (el, n) { el.classList.toggle('is-ativo', n === i); }); dots.forEach(function (el, n) { el.classList.toggle('is-ativo', n === i); }); }
+    function atual() { var x = lista.scrollLeft, melhor = 0, menor = Infinity; itens.forEach(function (el, i) { var d = Math.abs((el.offsetLeft - lista.offsetLeft) - x); if (d < menor) { menor = d; melhor = i; } }); return melhor; }
+    function atualizar() { if (!mobile.matches) { itens.forEach(function (el) { el.classList.remove('is-ativo'); }); return; } marcar(atual()); }
+    lista.addEventListener('scroll', function () { if (rodando) return; rodando = true; window.requestAnimationFrame(function () { atualizar(); rodando = false; }); }, { passive: true });
+    mobile.addEventListener('change', atualizar); atualizar();
+  }
+  function boot() { document.querySelectorAll('.bdif-root').forEach(init); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+</script>
+
+<!-- ===== DOBRA 05 — FORMULÁRIO ===== -->
+<style>
+.bform-root{ --bfo-amarelo:#fcba28; --bfo-vermelho:#ea5037; --bfo-preto:#000000; --bfo-texto:#111111; --bfo-suave:#6b6b6b; --bfo-linha:#e0ddd6; --bfo-gutter:12px; --bfo-raio:28px; --bfo-max:1140px; --bfo-ease:cubic-bezier(.25,1,.5,1); --bfo-sans:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+@media (min-width:768px){ .bform-root{ --bfo-gutter:24px; --bfo-raio:36px; } }
+.bform-root,.bform-root *,.bform-root *::before,.bform-root *::after{ box-sizing:border-box; }
+.bform-root,.bform-root *{ font-family:var(--bfo-sans) !important; }
+.bform-root{ line-height:1.5; color:var(--bfo-texto); -webkit-font-smoothing:antialiased; background:#fff; padding:48px var(--bfo-gutter); }
+@media (min-width:900px){ .bform-root{ padding:80px var(--bfo-gutter); } }
+.bform-root h2,.bform-root h3{ margin:0; } .bform-root p{ margin:0; }
+.bform{ max-width:var(--bfo-max); margin:0 auto; border-radius:var(--bfo-raio); background:var(--bfo-amarelo); padding:32px 20px; }
+@media (min-width:900px){ .bform{ padding:56px 48px; display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px; align-items:center; } }
+.bform__marca{ display:flex; gap:5px; margin-bottom:16px; }
+.bform__marca::before,.bform__marca::after{ content:""; height:4px; border-radius:999px; }
+.bform__marca::before{ width:40px; background:var(--bfo-preto); } .bform__marca::after{ width:12px; background:var(--bfo-vermelho); }
+.bform__titulo{ font-size:clamp(25px,6vw,38px); font-weight:700; letter-spacing:-.03em; line-height:1.1; color:var(--bfo-preto) !important; text-wrap:balance; max-width:18ch; }
+.bform__linha{ margin-top:12px !important; font-size:15px; line-height:1.55; color:rgba(0,0,0,.72) !important; max-width:46ch; }
+@media (min-width:900px){ .bform__linha{ font-size:16.5px; } }
+.bform__lista{ list-style:none; margin:20px 0 0; padding:0; }
+.bform__lista li{ display:grid; grid-template-columns:20px 1fr; gap:10px; align-items:start; padding:7px 0; font-size:14px; line-height:1.45; color:rgba(0,0,0,.78); }
+.bform__lista svg{ width:20px; height:20px; fill:var(--bfo-preto); margin-top:1px; }
+.bform__painel{ margin-top:24px; background:#fff; border-radius:20px; padding:20px; box-shadow:0 8px 30px rgba(0,0,0,.10); }
+@media (min-width:900px){ .bform__painel{ margin-top:0; padding:28px; } }
+.bform-root .blips-form{ display:grid; gap:14px; }
+@media (min-width:900px){ .bform-root .blips-form{ grid-template-columns:1fr 1fr; gap:14px 16px; } .bform-root .blips-campo[data-campo="email"],.bform-root .blips-campo[data-campo="equipamento"],.bform-root .blips-campo[data-campo="consent"],.bform-root .blips-enviar,.bform-root .blips-msg{ grid-column:1 / -1; } }
+.bform-root .blips-campo{ display:grid; gap:7px; }
+.bform-root .blips-rotulo{ font-size:13px; font-weight:600; letter-spacing:-.01em; color:var(--bfo-texto); }
+.bform-root .blips-obrig{ color:var(--bfo-vermelho); margin-left:2px; }
+.bform-root .blips-controle{ width:100%; height:50px; padding:0 14px; border:1px solid var(--bfo-linha); border-radius:12px; background:#fff; color:var(--bfo-texto); font-size:16px; line-height:1.2; -webkit-appearance:none; appearance:none; transition:border-color 150ms var(--bfo-ease), box-shadow 150ms var(--bfo-ease); }
+.bform-root .blips-controle::placeholder{ color:#a5a29a; }
+.bform-root .blips-controle:hover{ border-color:#c9c5bb; }
+.bform-root .blips-controle:focus{ outline:none; border-color:var(--bfo-preto); box-shadow:0 0 0 3px rgba(252,186,40,.5); }
+.bform-root .blips-grupo{ border:1px solid var(--bfo-linha); border-radius:12px; padding:12px 14px 14px; margin:0; }
+.bform-root .blips-grupo > .blips-rotulo{ padding:0; margin-bottom:4px; float:none; }
+.bform-root .blips-opcao{ display:flex; align-items:center; gap:10px; min-height:42px; cursor:pointer; font-size:15px; }
+.bform-root .blips-opcao input{ width:19px; height:19px; flex:none; accent-color:var(--bfo-amarelo); cursor:pointer; }
+.bform-root .blips-consent{ display:grid; grid-template-columns:auto 1fr; align-items:start; gap:11px; padding:14px; border-radius:12px; background:#faf9f7; border:1px solid var(--bfo-linha); }
+.bform-root .blips-consent input{ width:19px; height:19px; flex:none; margin-top:2px; accent-color:var(--bfo-amarelo); cursor:pointer; }
+.bform-root .blips-consent label{ font-size:12.5px; font-weight:400; line-height:1.5; color:var(--bfo-suave); }
+.bform-root .blips-enviar{ width:100%; height:56px; margin-top:2px; border:0; border-radius:999px; background:var(--bfo-preto); color:#fff; font-size:15.5px; font-weight:600; letter-spacing:-.015em; cursor:pointer; -webkit-appearance:none; appearance:none; transition:background 150ms var(--bfo-ease), transform 150ms var(--bfo-ease); }
+.bform-root .blips-enviar:hover{ background:var(--bfo-vermelho); } .bform-root .blips-enviar:active{ transform:scale(.99); }
+.bform-root .blips-msg[data-blips-estado]{ padding:13px 15px; border-radius:12px; font-size:14px; line-height:1.5; }
+.bform-root .blips-msg[data-blips-estado="ok"]{ background:#e7f6ed; color:#0f7b3f; }
+</style>
+<section class="bform-root" id="formulario">
+  <div class="bform">
+    <div class="bform__texto">
+      <div class="bform__marca"></div>
+      <h2 class="bform__titulo">Preencha o formulário e receba uma oferta especial</h2>
+      <p class="bform__linha">Um especialista retorna com as condições para o seu equipamento e o seu segmento.</p>
+      <ul class="bform__lista">
+        <li><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span>Análise de crédito rápida e sem burocracia</span></li>
+        <li><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span>Instalação técnica sem custo adicional</span></li>
+        <li><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span>Suporte da rede Blips do começo ao fim</span></li>
+      </ul>
+    </div>
+    <div class="bform__painel">
+      <!-- no site publicado este formulário é gerado pelo script /f/<slug>.js; aqui é uma reprodução visual -->
+      <form class="blips-form" onsubmit="event.preventDefault();this.querySelector('.blips-msg').setAttribute('data-blips-estado','ok');this.querySelector('.blips-msg').textContent='Recebemos seus dados. Um especialista Blips entra em contato em breve.';">
+        <div class="blips-campo" data-campo="nome"><label class="blips-rotulo">Nome<span class="blips-obrig">*</span></label><input class="blips-controle" type="text" placeholder="Digite seu nome" required></div>
+        <div class="blips-campo" data-campo="telefone"><label class="blips-rotulo">Telefone WhatsApp<span class="blips-obrig">*</span></label><input class="blips-controle" type="tel" placeholder="(00) 00000-0000" required></div>
+        <div class="blips-campo" data-campo="email"><label class="blips-rotulo">E-mail<span class="blips-obrig">*</span></label><input class="blips-controle" type="email" placeholder="Digite seu e-mail" required></div>
+        <div class="blips-campo" data-campo="empresa"><label class="blips-rotulo">Nome da Empresa</label><input class="blips-controle" type="text" placeholder="Digite o nome da sua empresa"></div>
+        <div class="blips-campo" data-campo="cnpj"><label class="blips-rotulo">CNPJ<span class="blips-obrig">*</span></label><input class="blips-controle" type="text" placeholder="00.000.000/0000-00" required></div>
+        <fieldset class="blips-campo blips-grupo" data-campo="equipamento">
+          <span class="blips-rotulo">Equipamento<span class="blips-obrig">*</span></span>
+          <label class="blips-opcao"><input type="radio" name="eq" required> Máquina de suco</label>
+          <label class="blips-opcao"><input type="radio" name="eq"> Lava louça</label>
+          <label class="blips-opcao"><input type="radio" name="eq"> Máquina de gelo</label>
+          <label class="blips-opcao"><input type="radio" name="eq"> Fritadeira elétrica</label>
+          <label class="blips-opcao"><input type="radio" name="eq"> Seladora à vácuo</label>
+          <label class="blips-opcao"><input type="radio" name="eq"> Ultracongelador</label>
+        </fieldset>
+        <div class="blips-campo blips-consent" data-campo="consent">
+          <input type="checkbox" id="lgpd" required>
+          <label for="lgpd">Ao finalizar o cadastro autorizo a consulta de operações de crédito da minha empresa e em meu nome próprio (SCR/BACEN) e declaro ter lido a Política de Privacidade.</label>
+        </div>
+        <button class="blips-enviar" type="submit">Quero cadastrar</button>
+        <div class="blips-msg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOBRA 06 — 4 PASSOS ===== -->
+<style>
+.bpas-root{ --bs-amarelo:#fcba28; --bs-vermelho:#ea5037; --bs-preto:#000000; --bs-texto:#111111; --bs-suave:#6b6b6b; --bs-linha:#e6e6e6; --bs-fundo:#f4f3f1; --bs-gutter:16px; --bs-max:1140px; --bs-ease:cubic-bezier(.25,1,.5,1); --bs-sans:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+@media (min-width:768px){ .bpas-root{ --bs-gutter:24px; } }
+.bpas-root,.bpas-root *,.bpas-root *::before,.bpas-root *::after{ box-sizing:border-box; }
+.bpas-root,.bpas-root *{ font-family:var(--bs-sans) !important; }
+.bpas-root{ line-height:1.5; color:var(--bs-texto); -webkit-font-smoothing:antialiased; background:#fff; padding:48px var(--bs-gutter); }
+@media (min-width:900px){ .bpas-root{ padding:80px var(--bs-gutter); } }
+.bpas-root h2,.bpas-root h3{ margin:0; } .bpas-root p{ margin:0; } .bpas-root ol{ margin:0; padding:0; list-style:none; }
+.bpas{ max-width:var(--bs-max); margin:0 auto; }
+.bpas__marca{ display:flex; gap:5px; margin-bottom:14px; }
+.bpas__marca::before,.bpas__marca::after{ content:""; height:4px; border-radius:999px; }
+.bpas__marca::before{ width:40px; background:var(--bs-amarelo); } .bpas__marca::after{ width:12px; background:var(--bs-vermelho); }
+.bpas__titulo{ margin-bottom:4px !important; font-size:clamp(26px,6.4vw,40px); font-weight:700; letter-spacing:-.03em; line-height:1.1; color:var(--bs-texto) !important; text-wrap:balance; max-width:20ch; }
+.bpas-root .bpas__lista{ margin-top:40px; }
+@media (min-width:900px){ .bpas-root .bpas__lista{ margin-top:56px; display:grid; grid-template-columns:repeat(4,1fr); gap:20px; align-items:stretch; } }
+.bpas__item{ position:relative; display:grid; grid-template-columns:36px 1fr; gap:14px; }
+.bpas__item + .bpas__item{ margin-top:20px; }
+.bpas__item::before{ content:""; position:absolute; left:17px; top:44px; bottom:-20px; width:2px; background:var(--bs-linha); }
+.bpas__item:last-child::before{ display:none; }
+.bpas__num{ position:relative; z-index:1; width:36px; height:36px; display:grid; place-items:center; border-radius:999px; background:var(--bs-vermelho); color:#ffffff; font-size:14px; font-weight:600; }
+.bpas__card{ border-radius:18px; background:var(--bs-fundo); padding:20px; }
+.bpas__item--inicio .bpas__card{ background:var(--bs-amarelo); }
+.bpas__ic{ width:44px; height:44px; display:grid; place-items:center; border-radius:12px; background:var(--bs-amarelo); color:var(--bs-preto); margin-bottom:16px; }
+.bpas__item--inicio .bpas__ic{ background:#fff; } .bpas__ic svg{ width:22px; height:22px; fill:currentColor; }
+.bpas__hat{ font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--bs-suave) !important; }
+.bpas__item--inicio .bpas__hat{ color:rgba(0,0,0,.66) !important; }
+.bpas__card h3{ margin-top:6px !important; font-size:19px; font-weight:600; letter-spacing:-.02em; line-height:1.2; color:var(--bs-texto) !important; }
+.bpas__card p{ margin-top:8px !important; font-size:13.5px; line-height:1.5; color:var(--bs-suave) !important; }
+.bpas__item--inicio .bpas__card p{ color:rgba(0,0,0,.72) !important; }
+@media (min-width:900px){ .bpas__item{ grid-template-columns:1fr; grid-template-rows:auto 1fr; gap:0; } .bpas__item + .bpas__item{ margin-top:0; } .bpas__item::before{ left:46px; right:-20px; top:17px; width:auto; height:2px; bottom:auto; } .bpas__num{ margin-bottom:18px; } .bpas__card{ padding:24px; height:100%; } }
+</style>
+<section class="bpas-root" id="como-funciona">
+  <div class="bpas">
+    <div class="bpas__marca"></div>
+    <h2 class="bpas__titulo">4 passos simples para você modernizar seu negócio</h2>
+    <ol class="bpas__lista">
+      <li class="bpas__item bpas__item--inicio"><span class="bpas__num">1</span><div class="bpas__card">
+        <span class="bpas__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.93,47.93,0,0,1,2.75-16H56V216H200Z"/></svg></span>
+        <p class="bpas__hat">Primeiro passo</p><h3>Cadastro</h3><p>Preencha seus dados no formulário e comece sua jornada.</p></div></li>
+      <li class="bpas__item"><span class="bpas__num">2</span><div class="bpas__card">
+        <span class="bpas__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg></span>
+        <p class="bpas__hat">Segundo passo</p><h3>Análise</h3><p>Seu cadastro passa por uma análise de crédito rápida e sem burocracia.</p></div></li>
+      <li class="bpas__item"><span class="bpas__num">3</span><div class="bpas__card">
+        <span class="bpas__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+        <p class="bpas__hat">Terceiro passo</p><h3>Checklist</h3><p>Após a aprovação do crédito, enviamos um checklist técnico para a instalação correta.</p></div></li>
+      <li class="bpas__item"><span class="bpas__num">4</span><div class="bpas__card">
+        <span class="bpas__ic"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></svg></span>
+        <p class="bpas__hat">Quarto passo</p><h3>Instalação</h3><p>Gratuita e sem complicação, conduzida remotamente por um técnico especializado após o envio da máquina.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== DOBRA 07 — CONFIANÇA + FAQ ===== -->
+<style>
+.bfaq-root{ --bf-amarelo:#fcba28; --bf-vermelho:#ea5037; --bf-preto:#000000; --bf-texto:#111111; --bf-suave:#6b6b6b; --bf-linha:#e6e6e6; --bf-gutter:16px; --bf-raio:24px; --bf-max:1140px; --bf-ease:cubic-bezier(.25,1,.5,1); --bf-sans:"Poppins",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+@media (min-width:768px){ .bfaq-root{ --bf-gutter:24px; --bf-raio:28px; } }
+.bfaq-root,.bfaq-root *,.bfaq-root *::before,.bfaq-root *::after{ box-sizing:border-box; }
+.bfaq-root,.bfaq-root *{ font-family:var(--bf-sans) !important; }
+.bfaq-root{ line-height:1.5; color:var(--bf-texto); -webkit-font-smoothing:antialiased; background:#fff; padding:48px var(--bf-gutter); }
+@media (min-width:900px){ .bfaq-root{ padding:80px var(--bf-gutter); } }
+.bfaq-root h2,.bfaq-root h3{ margin:0; } .bfaq-root p{ margin:0; } .bfaq-root a{ text-decoration:none !important; }
+.bfaq{ max-width:var(--bf-max); margin:0 auto; }
+.bfaq__banner{ position:relative; overflow:hidden; border-radius:var(--bf-raio); background:var(--bf-amarelo); color:var(--bf-preto); padding:36px 24px; }
+@media (min-width:900px){ .bfaq__banner{ padding:64px 56px; } }
+.bfaq__marca{ width:44px; height:3px; border-radius:999px; background:var(--bf-vermelho); margin-bottom:20px; }
+@media (min-width:900px){ .bfaq__banner-topo{ display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px; align-items:end; } }
+.bfaq__banner h2{ font-size:clamp(26px,6.2vw,40px); font-weight:700; letter-spacing:-.035em; line-height:1.08; color:var(--bf-preto) !important; text-wrap:balance; max-width:14ch; }
+.bfaq__banner-texto{ margin-top:16px !important; font-size:15px; line-height:1.65; color:rgba(0,0,0,.76) !important; max-width:52ch; }
+@media (min-width:900px){ .bfaq__banner-texto{ margin-top:0 !important; font-size:16.5px; } }
+.bfaq__provas{ margin-top:32px; padding-top:28px; border-top:1px solid rgba(0,0,0,.18); display:grid; grid-template-columns:1fr 1fr; gap:24px 20px; }
+@media (min-width:900px){ .bfaq__provas{ margin-top:48px; padding-top:36px; grid-template-columns:repeat(4,1fr); gap:32px; } }
+.bfaq__prova strong{ display:block; font-size:clamp(24px,6vw,32px); font-weight:700; letter-spacing:-.03em; line-height:1; color:var(--bf-preto) !important; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.bfaq__prova span{ display:block; margin-top:6px; font-size:12.5px; line-height:1.4; color:rgba(0,0,0,.64) !important; }
+.bfaq__bloco{ margin-top:48px; }
+@media (min-width:900px){ .bfaq__bloco{ margin-top:72px; display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); grid-template-rows:auto 1fr; grid-template-areas:"cabeca lista" "acao lista"; column-gap:56px; align-items:start; } .bfaq__cabeca{ grid-area:cabeca; } .bfaq__lista{ grid-area:lista; } .bfaq__acao{ grid-area:acao; margin-top:24px; } }
+.bfaq__hat{ font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--bf-vermelho) !important; margin-bottom:10px !important; }
+.bfaq__titulo{ font-size:clamp(26px,6.4vw,38px); font-weight:700; letter-spacing:-.03em; line-height:1.1; color:var(--bf-texto) !important; }
+.bfaq__linha{ margin-top:10px !important; font-size:15px; color:var(--bf-suave) !important; max-width:36ch; }
+.bfaq__acao{ margin-top:28px; }
+.bfaq__cta{ display:inline-flex; align-items:center; justify-content:center; gap:8px; width:100%; max-width:360px; height:52px; padding:0 24px; border-radius:999px; background:var(--bf-preto); color:#fff !important; font-size:14.5px; font-weight:600; letter-spacing:-.015em; white-space:nowrap; transition:background 150ms var(--bf-ease), transform 150ms var(--bf-ease); }
+.bfaq__cta:hover{ background:var(--bf-vermelho); } .bfaq__cta:active{ transform:scale(.99); } .bfaq__cta svg{ width:16px; height:16px; fill:currentColor; flex:none; }
+@media (min-width:900px){ .bfaq__cta{ width:auto; } }
+.bfaq__lista{ margin-top:32px; border-top:1px solid var(--bf-linha); }
+@media (min-width:900px){ .bfaq__lista{ margin-top:0; } }
+.bfaq__item{ border-bottom:1px solid var(--bf-linha); }
+.bfaq__item > summary{ list-style:none; cursor:pointer; display:flex; align-items:flex-start; justify-content:space-between; gap:16px; padding:18px 0; font-size:15px; font-weight:600; letter-spacing:-.01em; line-height:1.4; color:var(--bf-texto) !important; transition:color 150ms var(--bf-ease); }
+.bfaq__item > summary::-webkit-details-marker{ display:none; }
+.bfaq__item > summary:hover,.bfaq__item[open] > summary{ color:var(--bf-vermelho) !important; }
+.bfaq__item > summary svg{ width:18px; height:18px; fill:currentColor; flex:none; margin-top:2px; color:var(--bf-suave); transition:transform 200ms var(--bf-ease), color 150ms var(--bf-ease); }
+.bfaq__item > summary:hover svg,.bfaq__item[open] > summary svg{ color:var(--bf-vermelho); }
+.bfaq__item[open] > summary svg{ transform:rotate(180deg); }
+.bfaq__resposta{ padding:0 0 20px; font-size:14px; line-height:1.6; color:var(--bf-suave) !important; max-width:62ch; }
+</style>
+<section class="bfaq-root" id="faq">
+  <div class="bfaq">
+    <div class="bfaq__banner">
+      <div class="bfaq__marca"></div>
+      <div class="bfaq__banner-topo">
+        <h2>Por que confiar na Blips</h2>
+        <p class="bfaq__banner-texto">A Casa do Empreendedor brasileiro chegou para simplificar sua vida e facilitar seu acesso a equipamentos. Temos planos flexíveis e acessíveis para que você ofereça o melhor, amplie seu portfólio de serviços e aumente seus lucros.</p>
+      </div>
+      <div class="bfaq__provas">
+        <div class="bfaq__prova"><strong data-conta="10000">+10.000</strong><span>equipamentos instalados</span></div>
+        <div class="bfaq__prova"><strong data-conta="1000">+1.000</strong><span>cidades atendidas</span></div>
+        <div class="bfaq__prova"><strong data-conta="100">+100</strong><span>técnicos parceiros</span></div>
+        <div class="bfaq__prova"><strong data-conta="600">+600</strong><span>Blipeiros em todo o Brasil</span></div>
+      </div>
+    </div>
+    <div class="bfaq__bloco">
+      <div class="bfaq__cabeca">
+        <p class="bfaq__hat">Suporte Blips</p>
+        <h3 class="bfaq__titulo">Ainda com dúvidas?</h3>
+        <p class="bfaq__linha">Consulte as perguntas mais comuns.</p>
+      </div>
+      <div class="bfaq__lista">
+        <details class="bfaq__item" name="faq-blips"><summary>Como funciona o financiamento pelo CNPJ? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">Nossa parceira Finza realiza uma análise de crédito focada no potencial do seu negócio. Após a aprovação e o pagamento da entrada, o equipamento é faturado e enviado para você pela Blips. Ao final das parcelas, o maquinário é 100% da sua empresa.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>Posso parcelar em quantas vezes? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">Isso é tratado diretamente com nossos especialistas, pois a quantidade de parcelas varia de acordo com a sua análise de crédito, com o equipamento, o valor de entrada e o segmento.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>Qual a vantagem de financiar em vez de comprar à vista? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">O financiamento através da Finza permite que você mantenha seu capital de giro para compra de insumos e marketing, enquanto a própria economia gerada pela máquina — energia e desperdício zero — ajuda a pagar as parcelas no modelo de negócio Blips.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>Quais documentos são necessários? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">Para o início da análise, precisamos apenas do número do seu CNPJ e dos dados básicos dos sócios da empresa.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>A máquina tem garantia? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">Sim. Como você está adquirindo um bem próprio, conta com a garantia total de fábrica contra defeitos de fabricação, além de todo o suporte da rede Blips. Opere com 100% de eficiência desde o primeiro dia.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>Preciso pagar pela instalação? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">A instalação técnica não possui custos adicionais. Enviamos um técnico parceiro especializado até o seu local para configurar o equipamento com segurança.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>O frete é grátis? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">Não. O valor do frete é de responsabilidade do comprador, calculado com base na distância da nossa sede em Uberlândia/MG.</p></details>
+        <details class="bfaq__item" name="faq-blips"><summary>É difícil de operar ou limpar? <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary><p class="bfaq__resposta">Pelo contrário. O painel é intuitivo e a estrutura é em aço inox, o que facilita a higienização total e atende a todas as normas sanitárias de forma simples.</p></details>
+      </div>
+      <div class="bfaq__acao"><a class="bfaq__cta" href="#formulario">Garantir oferta especial <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></div>
+    </div>
+  </div>
+</section>
+<script>
+(function () {
+  function init(raiz) {
+    if (raiz.dataset.bfaqReady === '1') return; raiz.dataset.bfaqReady = '1';
+    var alvos = raiz.querySelectorAll('[data-conta]'); if (!alvos.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+    function formatar(n) { return '+' + n.toLocaleString('pt-BR'); }
+    function animar(el) {
+      var fim = parseInt(el.getAttribute('data-conta'), 10); if (!fim) return;
+      el.style.minWidth = el.getBoundingClientRect().width + 'px'; el.style.display = 'inline-block';
+      var dur = 1400, ini = null; el.textContent = formatar(0);
+      function passo(t) { if (ini === null) ini = t; var p = Math.min((t - ini) / dur, 1); var e = 1 - Math.pow(1 - p, 3); el.textContent = formatar(Math.round(fim * e)); if (p < 1) requestAnimationFrame(passo); else el.textContent = formatar(fim); }
+      requestAnimationFrame(passo);
+    }
+    var obs = new IntersectionObserver(function (entradas) { entradas.forEach(function (e) { if (!e.isIntersecting) return; obs.unobserve(e.target); animar(e.target); }); }, { threshold: 0.6 });
+    Array.prototype.forEach.call(alvos, function (el) { obs.observe(el); });
+  }
+  function boot() { document.querySelectorAll('.bfaq-root').forEach(init); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+</script>
+<footer class="bfoot">
+  <div class="bfoot__in">
+    <p>© 2026 Blips. Todos os direitos reservados.</p>
+    <img src="https://food.blips.com.br/wp-content/uploads/2026/03/logotipo-blips-sorvete-1.webp" alt="Blips" referrerpolicy="no-referrer">
+  </div>
+</footer>
+</body>
+</html>
