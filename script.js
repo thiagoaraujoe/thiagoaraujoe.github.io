@@ -4,7 +4,7 @@
 const I18N = {
   en: {
     "cases.before":"Before","cases.after":"After","cases.compare":"Compare","cases.desktop":"Desktop","cases.mobile":"Mobile",
-    "cases.improvements":"What changed in the redesign","cases.client":"Blips","cases.open":"Open the page in a new tab",
+    "cases.new":"New project","cases.improvements":"The project","cases.process":"How it was made","cases.results":"Results","cases.client":"Blips","cases.open":"Open the page in a new tab",
     "nav.work":"Work","nav.about":"About","nav.contact":"Contact","nav.status":"Available for freelance",
     "hero.title":"Design that solves real problems.",
     "hero.text":"Interfaces, landing pages, brands and paid-media creatives. Digital experiences that are simple, functional and visually engaging.",
@@ -26,7 +26,7 @@ const I18N = {
   },
   pt: {
     "cases.before":"Antes","cases.after":"Depois","cases.compare":"Comparar","cases.desktop":"Desktop","cases.mobile":"Mobile",
-    "cases.improvements":"O que mudou no redesign","cases.client":"Blips","cases.open":"Abrir a página em nova aba",
+    "cases.new":"Novo projeto","cases.improvements":"O projeto","cases.process":"Como foi feito","cases.results":"Resultados","cases.client":"Blips","cases.open":"Abrir a página em nova aba",
     "nav.work":"Trabalhos","nav.about":"Sobre","nav.contact":"Contato","nav.status":"Disponível para freelance",
     "hero.title":"Design que resolve problemas de verdade.",
     "hero.text":"Interfaces, landing pages, marcas e criativos para mídia paga. Experiências digitais simples, funcionais e visualmente envolventes.",
@@ -58,94 +58,94 @@ const PROJECTS = [
   {slug:"redlinemd-redesign", key:"redline", type:"web", year:"2026", views:6405,
    behance:"https://www.behance.net/gallery/255634425/Redesign-project-Webpage-UX",
    en:{title:"RedlineMD — Mobile redesign", client:"RedlineMD", tags:["UX","Mobile first","Redesign","Figma"],
-       desc:["Redesign of the RedlineMD page, a service that reviews and renegotiates medical employment contracts. The main goal was to increase conversions from Google Ads traffic and create a more polished experience, especially on mobile.",
-             "Key changes: a cleaner header with the logo and menu repositioned, the primary CTA moved into the hero so it's easier to reach, carousel dots to cut vertical scrolling, feature cards redesigned with brand colors and better icon contrast, an image in the CTA card and a stats section that makes the numbers feel more convincing.",
-             "Done in Figma within a one-hour timeframe, prioritizing the changes with the biggest impact on usability and conversion."]},
+       desc:["This is the redesign of the RedlineMD page. RedlineMD is a service that reviews and renegotiates employment contracts for doctors. The main goal was to turn more visitors from Google Ads into customers and to make the page feel more polished, especially on phones.",
+             "These were the main changes. The top of the page is cleaner, with the logo and the menu in new positions. The main button moved to the start of the page, so it is easier to reach. Dots below the carousel reduce how much the visitor has to scroll. The feature cards now use the brand colors and icons with better contrast. The card with the final button has an image, and the numbers section is more convincing.",
+             "The work was done in Figma within one hour. Because of that, the priority was the changes that make the page easier to use and get more visitors to take action."]},
    pt:{title:"RedlineMD — Redesign mobile", client:"RedlineMD", tags:["UX","Mobile first","Redesign","Figma"],
-       desc:["Redesign da página da RedlineMD, serviço que analisa e renegocia contratos de trabalho de médicos. O objetivo principal era aumentar a conversão do tráfego de Google Ads e criar uma experiência mais bem acabada, principalmente no mobile.",
-             "Principais mudanças: header mais limpo com logo e menu reposicionados, CTA principal levado para o topo para ficar mais fácil de alcançar, carrossel com indicadores para reduzir a rolagem, cards redesenhados com as cores da marca e ícones com mais contraste, imagem no card de CTA e uma seção de números mais convincente.",
-             "Feito no Figma em uma janela de uma hora, priorizando as mudanças com maior impacto em usabilidade e conversão."]}},
+       desc:["Este é o redesign da página da RedlineMD, um serviço que analisa e renegocia contratos de trabalho de médicos. O objetivo principal era transformar mais visitantes vindos do Google Ads em clientes e deixar a página mais bem acabada, principalmente no celular.",
+             "Estas foram as principais mudanças. O topo da página ficou mais limpo, com o logo e o menu em novas posições. O botão principal subiu para o início da página e ficou mais fácil de alcançar. Os pontinhos abaixo do carrossel reduzem a rolagem. Os cartões de vantagens ganharam as cores da marca e ícones com mais contraste. O cartão do botão final ganhou uma imagem, e a seção de números ficou mais convincente.",
+             "O trabalho foi feito no Figma em uma hora. Por isso, a prioridade foi para as mudanças que deixam a página mais fácil de usar e levam mais visitantes a agir."]}},
 
   {slug:"avance-global-private-jet", key:"jet", type:"web", year:"2026", views:3571,
    behance:"https://www.behance.net/gallery/254543405/Web-Page-Design-Private-Jet",
    en:{title:"Avance Global — Private jet booking", client:"Avance Global", tags:["Web design","UI","Luxury","Desktop & mobile"],
-       desc:["Website for a private aviation company that wanted to elevate its digital presence and attract high-end clients. In this market, first impressions are everything: the site had to communicate exclusivity, confidence and premium service from the very first screen.",
-             "The design uses cinematic imagery, oversized typography and a dark palette, balanced with clean layouts and plenty of breathing room. The work covers the home page, aircraft catalog and destinations, in desktop and mobile versions, guiding users naturally toward the quote request."]},
+       desc:["This is the website of a private aviation company. The company wanted to strengthen its digital presence and attract high-end clients. In this market, the first impression is everything. So the site had to show exclusivity, confidence and premium service from the very first screen.",
+             "The design uses cinematic photos, very large lettering and a dark color palette. Clean layouts and plenty of empty space keep everything balanced. The work covers the home page, the aircraft catalog and the destinations, in desktop and mobile versions. Together, they lead the visitor naturally to the quote request."]},
    pt:{title:"Avance Global — Reserva de jatos particulares", client:"Avance Global", tags:["Web design","UI","Luxo","Desktop e mobile"],
-       desc:["Site para uma empresa de aviação executiva que queria elevar sua presença digital e atrair clientes de alto padrão. Nesse mercado a primeira impressão é tudo: o site precisava transmitir exclusividade, confiança e serviço premium já na primeira tela.",
-             "O design usa imagens cinematográficas, tipografia em grande escala e paleta escura, equilibradas com layouts limpos e bastante respiro. O trabalho inclui home, catálogo de aeronaves e destinos, em versões desktop e mobile, levando o usuário de forma natural até o pedido de cotação."]}},
+       desc:["Este é o site de uma empresa de aviação executiva. A empresa queria fortalecer sua presença digital e atrair clientes de alto padrão. Nesse mercado, a primeira impressão é tudo. Por isso, o site precisava mostrar exclusividade, confiança e serviço premium já na primeira tela.",
+             "O design usa fotos de estilo cinematográfico, letras bem grandes e uma paleta escura. Layouts limpos e bastante espaço em branco equilibram o conjunto. O trabalho inclui a página inicial, o catálogo de aeronaves e os destinos, em versões para computador e celular. Juntas, elas levam o visitante de forma natural até o pedido de cotação."]}},
 
   {slug:"pto-exchange", key:"pto", type:"web", year:"2025", views:7568,
    behance:"https://www.behance.net/gallery/239940969/Webpage-UI-Design",
    en:{title:"PTO Exchange — Web page UI/UX", client:"PTO Exchange", tags:["UI","UX","B2B","Desktop & mobile"],
-       desc:["Web page for PTO Exchange, a benefits platform that lets employees convert unused vacation time into retirement savings, student loan payments, travel and more.",
-             "The objective was a page that is simple to navigate and speaks directly to HR professionals. The solution is a clean, intuitive layout focused on HR needs, highlighting pricing, benefits and FAQs so visitors quickly understand the value. Process: briefing, persona research and benchmarking, user flow, responsive UI design and testing with users."]},
+       desc:["This is the web page of PTO Exchange, a benefits platform. It lets employees turn unused vacation days into retirement savings, student loan payments, travel and more.",
+             "The goal was a page that is simple to navigate and speaks directly to people who work in HR. The result is a clean and intuitive layout built around what HR teams need. It highlights prices, benefits and frequently asked questions, so visitors quickly understand the value. The process followed these steps: briefing, research on the target audience and on similar products, mapping the visitor's path through the page, a design that adapts to any screen size, and tests with users."]},
    pt:{title:"PTO Exchange — Web page UI/UX", client:"PTO Exchange", tags:["UI","UX","B2B","Desktop e mobile"],
-       desc:["Página web da PTO Exchange, plataforma de benefícios que permite ao funcionário converter férias não usadas em previdência, pagamento de empréstimo estudantil, viagens e mais.",
-             "O objetivo era uma página simples de navegar e alinhada ao público de RH. A solução é um layout limpo e intuitivo focado nas necessidades desse público, destacando preços, benefícios e dúvidas frequentes para que o visitante entenda o valor rapidamente. Processo: briefing, pesquisa de persona e benchmarking, fluxo de usuário, UI responsiva e teste com usuários."]}},
+       desc:["Esta é a página web da PTO Exchange, uma plataforma de benefícios. Ela permite que o funcionário transforme férias não usadas em previdência, pagamento de empréstimo estudantil, viagens e mais.",
+             "O objetivo era uma página simples de navegar e feita para quem trabalha em RH. O resultado é um layout limpo e intuitivo, pensado nas necessidades desse público. Ele destaca preços, benefícios e dúvidas frequentes, para que o visitante entenda o valor rapidamente. O processo seguiu estas etapas: briefing, pesquisa sobre o público e sobre produtos parecidos, mapa do caminho do visitante pela página, design que se adapta a qualquer tela e testes com usuários."]}},
 
   {slug:"healify-packaging", key:"healify", type:"brand", year:"2026", views:1891,
    behance:"https://www.behance.net/gallery/252479475/Packaging-System-for-Medical-Cannabis",
    en:{title:"Healify — Medical cannabis packaging", client:"Healify", tags:["Packaging","Visual identity","Color system"],
-       desc:["Packaging system for a line of medical cannabis products for the Brazilian market. The challenge was to balance a highly regulated category with a modern, trustworthy identity that makes patients feel comfortable and confident.",
-             "Research into pharmaceutical packaging and premium wellness brands led to a minimalist system with strong information hierarchy and color coding to tell the variations apart: Boost + Recovery, Slim, Sleep and Focus, across drops, gummies and capsules. The result combines regulatory clarity with a contemporary visual language."]},
+       desc:["This is a packaging system for a line of medical cannabis products in the Brazilian market. The challenge was to balance a heavily regulated category with a modern identity that people can trust, so patients feel comfortable and safe with the product.",
+             "Research on pharmaceutical packaging and premium wellness brands led to a minimal system. It organizes the information clearly and uses a color code to tell the versions apart: Boost + Recovery, Slim, Sleep and Focus, in drops, gummies and capsules. The result combines the information required by regulation with a modern visual language."]},
    pt:{title:"Healify — Embalagens de cannabis medicinal", client:"Healify", tags:["Embalagem","Identidade visual","Sistema de cores"],
-       desc:["Sistema de embalagens para uma linha de cannabis medicinal voltada ao mercado brasileiro. O desafio era equilibrar uma categoria altamente regulada com uma identidade moderna e confiável, que deixasse o paciente confortável e seguro com o produto.",
-             "A pesquisa em embalagens farmacêuticas e marcas premium de bem-estar levou a um sistema minimalista, com hierarquia de informação forte e código de cores para diferenciar as variações: Boost + Recovery, Slim, Sleep e Focus, em gotas, gomas e cápsulas. O resultado une clareza regulatória e linguagem visual contemporânea."]}},
+       desc:["Este é um sistema de embalagens para uma linha de produtos de cannabis medicinal no mercado brasileiro. O desafio era equilibrar uma categoria muito regulada com uma identidade moderna e confiável, para que o paciente se sinta à vontade e seguro com o produto.",
+             "A pesquisa sobre embalagens de farmácia e marcas premium de bem-estar levou a um sistema minimalista. Ele organiza as informações com clareza e usa um código de cores para diferenciar as versões: Boost + Recovery, Slim, Sleep e Focus, em gotas, gomas e cápsulas. O resultado une as informações exigidas pela regulação com uma linguagem visual moderna."]}},
 
   {slug:"oticas-carol", key:"oticas", type:"ads", year:"2022", views:2286,
    behance:"https://www.behance.net/gallery/156804477/Oticas-Carol-Criativos-Facebook-ADS",
    en:{title:"Óticas Carol — Lead generation ads", client:"Óticas Carol", tags:["Meta Ads","Creatives","Retail","Feed & stories"],
-       desc:["Creatives developed for a qualified lead acquisition campaign for Óticas Carol in Ponta Porã: free eye exams, store-wide discounts, the store's 3rd anniversary, Father's Day and contact lens offers.",
-             "Feed and stories formats built on the brand's blue and yellow, with the offer as the hero of each piece and a clear call to book or visit the store."]},
+       desc:["These are the ads created for a campaign to attract interested potential customers to the Óticas Carol store in Ponta Porã. The offers were free eye exams, store-wide discounts, the store's third anniversary, Father's Day and contact lens deals.",
+             "The ads come in feed and stories formats and use the brand's blue and yellow. In each one, the offer is the main highlight, and a clear message invites people to book an appointment or visit the store."]},
    pt:{title:"Óticas Carol — Criativos para geração de leads", client:"Óticas Carol", tags:["Meta Ads","Criativos","Varejo","Feed e stories"],
-       desc:["Criativos desenvolvidos para a campanha de aquisição de leads qualificados da Óticas Carol em Ponta Porã: exame de vista grátis, descontos em toda a loja, aniversário de 3 anos, Dia dos Pais e ofertas de lentes de contato.",
-             "Formatos de feed e stories sobre o azul e amarelo da marca, com a oferta como protagonista de cada peça e uma chamada clara para agendar ou ir à loja."]}},
+       desc:["Estes são os anúncios criados para uma campanha que buscava atrair clientes realmente interessados para a loja Óticas Carol de Ponta Porã. As ofertas eram exame de vista grátis, descontos em toda a loja, aniversário de 3 anos, Dia dos Pais e lentes de contato.",
+             "Os anúncios têm formatos de feed e de stories e usam o azul e o amarelo da marca. Em cada peça, a oferta é o destaque principal, e uma mensagem clara convida a pessoa a agendar um horário ou ir até a loja."]}},
 
   {slug:"adaptive-erp-landing", key:"erp", type:"web", year:"2023", views:9879,
    behance:"https://www.behance.net/gallery/185614153/Landing-Page-Software-ERP",
    en:{title:"Adaptive — ERP landing page", client:"Adaptive", tags:["Landing page","UI","B2B","Clarity research"],
-       desc:["Short sales page for Adaptive, an ERP for gas stations, wholesalers and supermarkets. The goal was a functional landing page that increases conversions and lead generation.",
-             "Heatmaps from Microsoft Clarity showed users spent about 30 seconds on the page and left before reaching the form, and that the free demo CTAs got the most interaction. The solution was to cut the content to the essentials and bring the demo request forward."]},
+       desc:["This is a short sales page for Adaptive, a management system (ERP) for gas stations, wholesalers and supermarkets. The goal was a page that works well and leads more visitors to ask for contact.",
+             "Heatmaps from Microsoft Clarity, a tool that shows where visitors click, revealed two things. Visitors stayed about 30 seconds on the page and left before reaching the form. And the buttons for the free demo got the most clicks. To fix this, the content was cut down to the essentials, and the demo request was moved closer to the top of the page."]},
    pt:{title:"Adaptive — Landing page de ERP", client:"Adaptive", tags:["Landing page","UI","B2B","Pesquisa com Clarity"],
-       desc:["Página de vendas curta para a Adaptive, ERP para postos de combustível, atacadistas e supermercados. O objetivo era uma landing page funcional que aumentasse as conversões e a geração de leads.",
-             "Os mapas de calor do Clarity mostraram que o usuário ficava cerca de 30 segundos na página e saía antes do formulário, e que os CTAs de demonstração grátis eram os mais clicados. A solução foi reduzir ao máximo a quantidade de informação e antecipar o pedido de demonstração."]}},
+       desc:["Esta é uma página de vendas curta para a Adaptive, um sistema de gestão (ERP) para postos de combustível, atacadistas e supermercados. O objetivo era uma página que funcionasse bem e levasse mais visitantes a pedir contato.",
+             "Os mapas de calor do Microsoft Clarity, ferramenta que mostra onde os visitantes clicam, revelaram duas coisas. Os visitantes ficavam cerca de 30 segundos na página e saíam antes de chegar ao formulário. E os botões da demonstração grátis eram os mais clicados. Para resolver isso, o conteúdo foi reduzido ao essencial e o pedido de demonstração foi levado para mais perto do topo da página."]}},
 
   {slug:"digitalbot-chatbot-landing", key:"chatbot", type:"web", year:"2023", views:2642,
    behance:"https://www.behance.net/gallery/185131407/Landing-Page-Chatbot",
    en:{title:"DigitalBot — B2B chatbot landing page", client:"DigitalBot", tags:["Landing page","UX","Persona","Wireframe"],
-       desc:["Landing page for DigitalBot, a chatbot service for companies across industries and a Take Blip partner. The objective was a minimalist, functional page that attracts qualified leads.",
-             "Based on benchmarking and customer data, a persona summarized the main problems to solve: no team to handle every lead and sales lost to slow replies. From there came the wireframes and a UI with multiple CTAs following the buyer's journey, in desktop and mobile versions."]},
+       desc:["This is the landing page of DigitalBot, a chatbot service for companies in many industries and a partner of Take Blip. The goal was a simple, functional page that attracts interested potential customers.",
+             "The work started with benchmarking, which means comparing similar pages, and with customer data. From them, a persona, which is a profile of the ideal customer, summed up the main problems to solve: no team to answer every contact, and sales lost because replies are slow. Then came the wireframes, which are simple sketches of the page, and the final design. The page has several action buttons that follow the buyer's journey, in desktop and mobile versions."]},
    pt:{title:"DigitalBot — Landing page de chatbot B2B", client:"DigitalBot", tags:["Landing page","UX","Persona","Wireframe"],
-       desc:["Landing page da DigitalBot, serviço de chatbot para empresas de vários segmentos e parceira da Take Blip. O objetivo era uma página minimalista e funcional que atraísse leads qualificados.",
-             "A partir de benchmarking e dados de clientes, uma persona resumiu os principais problemas a resolver: falta de equipe para atender todos os leads e vendas perdidas pela demora na resposta. Daí vieram os wireframes e uma UI com vários CTAs acompanhando a jornada do comprador, em desktop e mobile."]}},
+       desc:["Esta é a landing page da DigitalBot, um serviço de chatbot para empresas de vários segmentos e parceira da Take Blip. O objetivo era uma página simples e funcional, que atraísse clientes em potencial realmente interessados.",
+             "O trabalho começou com benchmarking, que é a comparação com páginas parecidas, e com dados de clientes. Com isso, foi criada uma persona, que é o perfil do cliente ideal, resumindo os principais problemas a resolver: falta de equipe para atender todos os contatos e vendas perdidas pela demora nas respostas. Depois vieram os wireframes, que são esboços simples da página, e o design final. A página tem vários botões de ação que acompanham a jornada do comprador, em versões para computador e celular."]}},
 
   {slug:"batmaid-ads", key:"batmaid", type:"ads", year:"2023", views:7091,
    behance:"https://www.behance.net/gallery/173013607/ADS-Batmaid-Suica-Criativos-para-Meta",
    en:{title:"Batmaid (Switzerland) — Meta Ads", client:"Batmaid", tags:["Meta Ads","Creatives","International"],
-       desc:["Creatives for a Batmaid campaign in Switzerland, an app for booking home cleaning services.",
-             "The set combines price-led pieces (39 CHF per hour, no hidden fees), customer testimonials and app-focused messages, all built on the brand's blue and a clean layout that reads fast in the feed."]},
+       desc:["These are the ads of a Batmaid campaign in Switzerland. Batmaid is an app for booking home cleaning services.",
+             "The set mixes three kinds of ads: pieces focused on price (39 CHF per hour, with no hidden fees), customer testimonials and messages about the app. All of them use the brand's blue and a clean layout that is quick to read in the feed."]},
    pt:{title:"Batmaid (Suíça) — Meta Ads", client:"Batmaid", tags:["Meta Ads","Criativos","Internacional"],
-       desc:["Criativos para a campanha da Batmaid na Suíça, aplicativo para contratar serviços de limpeza residencial.",
-             "O conjunto mistura peças de preço (39 CHF por hora, sem taxas escondidas), depoimentos de clientes e mensagens focadas no app, todas sobre o azul da marca e um layout limpo que se lê rápido no feed."]}},
+       desc:["Estes são os anúncios de uma campanha da Batmaid na Suíça. A Batmaid é um aplicativo para contratar serviços de limpeza residencial.",
+             "O conjunto mistura três tipos de anúncio: peças focadas no preço (39 CHF por hora, sem taxas escondidas), depoimentos de clientes e mensagens sobre o aplicativo. Todos usam o azul da marca e um layout limpo, que se lê rápido no feed."]}},
 
   {slug:"algar-telecom-ads", key:"algar", type:"ads", year:"2023", views:2050,
    behance:"https://www.behance.net/gallery/173013387/ADS-Algar-Telecom-Criativos-para-Meta",
    en:{title:"Algar Telecom — Meta Ads", client:"Algar Telecom", tags:["Meta Ads","Creatives","Telecom","Stories"],
-       desc:["Ads developed for Algar Telecom on the Meta platform, promoting broadband and combo plans (300 Mb and 600 Mb fiber, mobile and landline).",
-             "Speed and price are the heroes of each piece, with a vibrant green gradient and the brand's play symbol framing the people, across feed and stories formats."]},
+       desc:["These are the ads created for Algar Telecom on the Meta platform, which includes Facebook and Instagram. They promote internet and combo plans: fiber of 300 Mb and 600 Mb, mobile phone and landline.",
+             "In every ad, speed and price are the main message. The brand's vibrant green gradient and the play symbol frame the people. The ads come in feed and stories formats."]},
    pt:{title:"Algar Telecom — Meta Ads", client:"Algar Telecom", tags:["Meta Ads","Criativos","Telecom","Stories"],
-       desc:["Anúncios desenvolvidos para a Algar Telecom na plataforma Meta, divulgando planos de banda larga e combos (fibra de 300 Mb e 600 Mb, celular e telefone fixo).",
-             "Velocidade e preço são os protagonistas de cada peça, com o degradê verde da marca e o símbolo de play emoldurando as pessoas, nos formatos de feed e stories."]}},
+       desc:["Estes são os anúncios criados para a Algar Telecom na plataforma Meta, que inclui o Facebook e o Instagram. Eles divulgam planos de internet e combos: fibra de 300 Mb e 600 Mb, celular e telefone fixo.",
+             "Em todos os anúncios, velocidade e preço são a mensagem principal. O degradê verde vibrante da marca e o símbolo de play emolduram as pessoas. Os anúncios têm formatos de feed e de stories."]}},
 
   {slug:"natura-ads", key:"natura", type:"ads", year:"2023", views:9413,
    behance:"https://www.behance.net/gallery/173010743/Criativos-Natura-Meta-ADS-Produtos-de-Beleza",
    en:{title:"Natura — Store traffic campaign", client:"Natura", tags:["Meta Ads","Creatives","Beauty","Retail"],
-       desc:["Creatives from the rollout of a campaign during the traffic project for Natura's physical stores.",
-             "Three moments in one system: the Tododia summer line, gift sets with prices for special dates, and Natura Friday with up to 50% off, keeping the brand's warmth while making every offer easy to read."]},
+       desc:["These are the ads from one stage of a campaign that aimed to bring more customers to Natura's physical stores.",
+             "Three moments share one visual system: the Tododia summer line, gift sets with prices for special dates, and Natura Friday with up to 50% off. The ads keep the warm feeling of the brand and make every offer easy to read."]},
    pt:{title:"Natura — Campanha para lojas físicas", client:"Natura", tags:["Meta Ads","Criativos","Beleza","Varejo"],
-       desc:["Criativos do desdobramento da campanha durante o projeto de tráfego para as lojas físicas da Natura.",
-             "Três momentos em um só sistema: a linha Tododia de verão, kits de presente com preço para datas especiais e a Natura Friday com até 50% de desconto, mantendo o calor da marca e deixando cada oferta fácil de ler."]}}
+       desc:["Estes são os anúncios de uma etapa de campanha que buscava levar mais clientes às lojas físicas da Natura.",
+             "Três momentos compartilham um mesmo sistema visual: a linha Tododia de verão, kits de presente com preço para datas especiais e a Natura Friday, com até 50% de desconto. Os anúncios mantêm o calor da marca e deixam cada oferta fácil de ler."]}}
 ];
 
 
@@ -156,19 +156,55 @@ const PROJECTS = [
 const CASES = [
   {id:"food", pending:false, views:10800, before:null, after:"blips/food.html", cover:"food", seg:["Alimentar","Landing page"],
    en:{title:"Blips Food — Equipment landing page",
-       notes:[["Floating menu that adapts to the background","A glass pill that turns yellow over white sections and white over colored ones, hiding on scroll-down on mobile and opening a category panel with icons."],
-              ["Hero card with the offer up front","Yellow card with the product line, headline, and a price box that aligns the entry amount and the installment count on the same baseline."],
-              ["One section per category","Six categories, each with a live underline animation, a model count and cards with two key specs, a collapsible full spec sheet and a CTA."],
-              ["Cards that never break the grid","Fixed-height product stage, two-line clamps on titles and 'solo' categories rendered as a wide horizontal card on desktop."],
-              ["Mobile-first differentials","On phones the red block becomes a snap carousel with dots; the active card turns white for contrast."],
-              ["Form, 4 steps and FAQ","Lead form with LGPD consent, a timeline that goes horizontal on desktop, trust numbers that count up on scroll and an accordion FAQ."]]},
+       notes:[["A menu that adapts to the background","The floating menu changes color to match what is behind it: yellow over white sections and white over colored ones. On phones, it hides while you scroll down. It also opens a panel with the categories and their icons."],
+              ["The offer on the first screen","The first screen shows a yellow card with the product line, the main headline and a price box. The price box places the entry amount and the number of installments side by side."],
+              ["One section per category","Each of the six equipment categories has its own section, which shows how many models it has. Each model has a card with two key specs, a full spec sheet that opens and closes, and a button to ask for a quote."],
+              ["Cards that always stay aligned","Every product image area has the same height, and titles never go past two lines. A category with only one model appears as a wide horizontal card on desktop."],
+              ["Advantages designed for phones","On phones, the red block with the company's advantages becomes a carousel that stops on each card, with dots below. The card in view turns white to stand out."],
+              ["A form, four steps and an FAQ","The page ends with a request form that asks for consent under the LGPD, Brazil's data protection law. It also has a four-step timeline, numbers that count up as they appear on screen, and an FAQ where each answer opens on click."]]},
    pt:{title:"Blips Food — Landing page de equipamentos",
-       notes:[["Menu flutuante que se adapta ao fundo","Pill de vidro que fica amarela sobre seções brancas e branca sobre as coloridas, some ao rolar para baixo no celular e abre um painel de categorias com ícones."],
-              ["Hero com a oferta na frente","Cartão amarelo com a linha de produtos, o headline e uma caixa de preço que alinha valor de entrada e número de parcelas na mesma linha de base."],
-              ["Uma seção por categoria","Seis categorias, cada uma com underline animado, contagem de modelos e cards com duas specs principais, ficha completa recolhível e CTA."],
-              ["Cards que nunca quebram a grade","Palco de produto com altura fixa, títulos limitados a duas linhas e categorias com um só modelo em card horizontal no desktop."],
-              ["Diferenciais mobile first","No celular o bloco vermelho vira um carrossel com encaixe e indicadores; o card ativo fica branco para dar contraste."],
-              ["Formulário, 4 passos e FAQ","Formulário de lead com aceite LGPD, linha do tempo que fica horizontal no desktop, números que contam ao entrar na tela e FAQ em sanfona."]]}},
+       notes:[["Um menu que se adapta ao fundo","O menu flutuante muda de cor para combinar com o que está atrás dele: amarelo sobre as seções brancas e branco sobre as coloridas. No celular, ele se esconde quando você rola a página para baixo. Ele também abre um painel com as categorias e seus ícones."],
+              ["A oferta na primeira tela","A primeira tela mostra um cartão amarelo com a linha de produtos, o título principal e uma caixa de preço. A caixa de preço coloca o valor de entrada e o número de parcelas lado a lado."],
+              ["Uma seção para cada categoria","Cada uma das seis categorias de equipamentos tem a sua própria seção, que mostra quantos modelos ela tem. Cada modelo tem um cartão com duas especificações principais, uma ficha completa que abre e fecha e um botão para pedir orçamento."],
+              ["Cartões sempre alinhados","A área da imagem de cada produto tem a mesma altura, e os títulos nunca passam de duas linhas. Uma categoria com um só modelo aparece como um cartão largo na horizontal no computador."],
+              ["Vantagens pensadas para o celular","No celular, o bloco vermelho com as vantagens da empresa vira um carrossel que para em cada cartão, com pontinhos abaixo. O cartão que está na tela fica branco para se destacar."],
+              ["Um formulário, quatro passos e um FAQ","A página termina com um formulário de pedido que pede o consentimento exigido pela LGPD, a lei brasileira de proteção de dados. Ela também tem uma linha do tempo com quatro passos, números que contam quando aparecem na tela e um FAQ em que cada resposta abre com um clique."]]}},
+
+  {id:"vuze-5050", pending:false, isNew:true, views:101, before:null, after:"blips/vuze-5050/index.html", cover:"vuze5050", seg:["Comunicação visual","Landing page"],
+   en:{title:"Vuze 5050 3D printer — Sales landing page",
+       process:[["Starting from the standard Blips page structure","The page follows the structure Blips uses for its equipment pages. It opens with the offer, then shows the product and the proof from other customers, then the form. It ends by answering the last doubts in the FAQ."],
+                ["A menu that helps people find things","The floating menu from the Blips Food page was brought to this page. It reads the color behind it and changes its own color, so it stays easy to read."],
+                ["Respect for the visual identity","Colors, fonts, buttons and spacing follow the Blips brand. This way, the page looks like part of the same family as the other Blips pages."],
+                ["Designed for the phone first","Each section was checked at phone size before being adapted to larger screens."],
+                ["One button style for the whole page","The whole page uses a single button style. This way, visitors always recognize what they can click."],
+                ["Gentle movement","The animations are soft and short. They turn off by themselves for people who prefer less motion on their devices."]],
+       notes:[["A menu with a map of the page","A floating menu opens a panel that lists all nine sections. Each one has an icon and a short description. The section you are viewing is highlighted."],
+              ["A bar that stays on the phone screen","On phones, a bar stays at the bottom with the 18x offer and the quote button. This way, visitors can ask for a quote at any moment. The buttons inside each section are hidden on phones, to avoid repeating the same action."],
+              ["One section per screen on phones","Scrolling stops at the start of each section. Long sections were split into separate screens, so each screen shows only one idea."],
+              ["The spec sheet in a single section","The technical details live in one section. It has an image with the dimensions, two highlights and lists that open one at a time."],
+              ["An earnings simulator","The expected revenue comes first. Below it, the costs (material and installment) are listed on the right. The amount left for the customer appears on a yellow strip."],
+              ["Carousels that are easy to use","Benefits and WhatsApp conversations slide sideways, with dots below. They never scroll up or down by accident."]],
+       results:[["The offer is visible right away","The first screen shows 18 interest-free installments next to the cash price."],
+                ["A light page","With all its images, the page weighs about 0.5 MB, not counting the customer video. The video only loads when the visitor presses play."],
+                ["A form ready to be measured","Each request sent through the form fires a 'lead sent' event that Google Tag Manager can read. This way, the team can count how many contacts arrive."],
+                ["A page prepared for search engines","The page has a title, a description, and product and FAQ data written in the format that Google reads."]]},
+   pt:{title:"Impressora 3D Vuze 5050 — Landing page de venda",
+       process:[["Ponto de partida: a estrutura padrão das páginas Blips","A página segue a estrutura que a Blips usa nas páginas de equipamentos. Ela começa com a oferta, depois mostra o produto e a prova de outros clientes, e então o formulário. No fim, responde as últimas dúvidas no FAQ."],
+                ["Um menu que ajuda a achar as coisas","O menu flutuante da página Blips Food foi trazido para esta página. Ele lê a cor que está atrás dele e muda a própria cor, para continuar fácil de ler."],
+                ["Respeito à identidade visual","Cores, fontes, botões e espaçamentos seguem a marca Blips. Assim, a página parece fazer parte da mesma família das outras páginas da Blips."],
+                ["Pensada primeiro para o celular","Cada seção foi conferida no tamanho de tela do celular antes de ser adaptada para telas maiores."],
+                ["Um só estilo de botão na página inteira","A página inteira usa um único estilo de botão. Assim, o visitante sempre reconhece o que pode clicar."],
+                ["Movimentos suaves","As animações são leves e curtas. Elas se desligam sozinhas para quem prefere menos movimento no aparelho."]],
+       notes:[["Um menu com o mapa da página","Um menu flutuante abre um painel que lista as nove seções. Cada uma tem um ícone e uma descrição curta. A seção que você está vendo fica destacada."],
+              ["Uma barra que fica na tela do celular","No celular, uma barra fica na parte de baixo com a oferta em 18x e o botão de orçamento. Assim, o visitante pode pedir um orçamento a qualquer momento. Os botões dentro de cada seção ficam escondidos no celular, para não repetir a mesma ação."],
+              ["Uma seção por tela no celular","A rolagem para no começo de cada seção. As seções longas foram divididas em telas separadas, para que cada tela mostre uma ideia só."],
+              ["A ficha técnica em uma única seção","Os detalhes técnicos ficam em uma só seção. Ela tem uma imagem com as dimensões, dois destaques e listas que abrem uma de cada vez."],
+              ["Um simulador de ganho","O faturamento esperado vem primeiro. Abaixo dele, os custos (material e parcela) aparecem em uma lista à direita. O valor que sobra para o cliente aparece em uma faixa amarela."],
+              ["Carrosséis fáceis de usar","Os benefícios e as conversas de WhatsApp deslizam para o lado, com pontinhos abaixo. Eles nunca rolam para cima ou para baixo sem querer."]],
+       results:[["A oferta aparece logo de cara","A primeira tela mostra 18 parcelas sem juros ao lado do preço à vista."],
+                ["Uma página leve","Com todas as imagens, a página pesa cerca de 0,5 MB, sem contar o vídeo de clientes. O vídeo só carrega quando o visitante aperta o play."],
+                ["Um formulário pronto para ser medido","Cada pedido enviado pelo formulário dispara um evento de 'lead enviado' que o Google Tag Manager consegue ler. Assim, o time pode contar quantos contatos chegam."],
+                ["Uma página preparada para os buscadores","A página tem título, descrição e dados do produto e do FAQ escritos no formato que o Google lê."]]}},
 
   {id:"sorvete", pending:true, before:"blips/sorvete-antes.html", after:"blips/sorvete-depois.html", seg:["Sorvete"],
    en:{title:"Ice cream segment — landing page", notes:[["Add the notes here","One improvement per line."]]},
@@ -211,7 +247,7 @@ function bindCmp(root){
 }
 /* casos Blips viram itens da lista de projetos, sempre primeiro */
 CASES.filter(c=>!c.pending).reverse().forEach(c=>PROJECTS.unshift({
-  slug:'blips-'+c.id, type:'blips', year:'2026', views:c.views, blips:c, key:c.cover||null, behance:null, gallery:[],
+  slug:'blips-'+c.id, type:'blips', year:'2026', views:c.views, isNew:!!c.isNew, blips:c, key:c.cover||null, behance:null, gallery:[],
   en:{title:c.en.title, client:'Blips', tags:c.seg, desc:[]},
   pt:{title:c.pt.title, client:'Blips', tags:c.seg, desc:[]}
 }));
@@ -222,7 +258,7 @@ let lang = 'en';
 try { lang = localStorage.getItem('lang') === 'pt' ? 'pt' : 'en'; } catch(e){}
 const T = k => I18N[lang][k];
 const typeLabel = t => T('type.' + t);
-const fmtViews = n => (n/1000).toFixed(1).replace('.0','').replace('.', lang==='pt' ? ',' : '.') + 'k';
+const fmtViews = n => n < 1000 ? String(n) : (n/1000).toFixed(1).replace('.0','').replace('.', lang==='pt' ? ',' : '.') + 'k';
 
 function applyLang(){
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
@@ -259,7 +295,7 @@ const grid = document.getElementById('grid');
 function renderGrid(){
   grid.innerHTML = PROJECTS.map((p,i)=>`
     <button type="button" class="card" data-type="${p.type}" data-index="${i}" aria-label="${T('p.open')}: ${p[lang].title}">
-      <div class="thumb ${p.type}">${p.blips && !p.key
+      <div class="thumb ${p.blips && !p.key ? 'blips' : 'cover'}">${p.isNew ? `<span class="tag-new"><i aria-hidden="true"></i>${T('cases.new')}</span>` : ''}${p.blips && !p.key
         ? `<div class="mini"><iframe src="${p.blips.after}" title="" tabindex="-1" loading="lazy"></iframe></div>`
         : `<img src="images/covers/${p.key}-800.webp" srcset="images/covers/${p.key}-800.webp 800w, images/covers/${p.key}.webp 1280w" sizes="(max-width:720px) 92vw, (max-width:1240px) 46vw, 400px" width="1600" height="1200" alt="" loading="${i<3?'eager':'lazy'}" decoding="async">`}
       </div>
@@ -291,6 +327,8 @@ function render(i){
   current = i;
   $('p-chip').className = 'chip ' + p.type;
   $('p-chip').textContent = typeLabel(p.type);
+  $('p-new').hidden = !p.isNew;
+  $('p-new').textContent = p.isNew ? T('cases.new') : '';
   $('p-title').textContent = d.title;
   $('p-cat').textContent = typeLabel(p.type);
   $('p-client').textContent = d.client || T('confidential');
@@ -300,8 +338,13 @@ function render(i){
     $('p-cover').className = 'p-cover blips';
     $('p-cover').innerHTML = cmpHTML(p.blips);
     bindCmp($('p-cover'));
-    $('p-desc').innerHTML = `<h3 style="font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:-.02em;margin-bottom:8px">${T('cases.improvements')}</h3>
-      <ol class="p-notes">${p.blips[lang].notes.map(n=>`<li><b>${n[0]}</b><span>${n[1]}</span></li>`).join('')}</ol>`;
+    const bl = p.blips[lang];
+    const listHTML = (title, items, first) => `<h3 style="font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:-.02em;margin:${first ? '0' : '32px'} 0 8px">${title}</h3>
+      <ol class="p-notes">${items.map(n=>`<li><b>${n[0]}</b><span>${n[1]}</span></li>`).join('')}</ol>`;
+    $('p-desc').innerHTML =
+      (bl.process ? listHTML(T('cases.process'), bl.process, true) : '') +
+      listHTML(T('cases.improvements'), bl.notes, !bl.process) +
+      (bl.results ? listHTML(T('cases.results'), bl.results, false) : '');
     $('p-behance').href = p.blips.after;
     $('p-behance').querySelector('span').textContent = T('cases.open');
   } else {

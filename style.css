@@ -293,6 +293,13 @@ html[data-lang="pt"] .menu-panel .lang span[data-on="pt"]{opacity:1;background:r
 .chip.web{background:var(--sky)}
 .chip.brand{background:var(--violet)}
 .chip.ads{background:var(--coral)}
+.chip.new{background:var(--ink);color:var(--sun);margin-left:6px}
+.chip.new[hidden]{display:none}
+.card .thumb{position:relative}
+.tag-new{position:absolute;z-index:2;top:12px;left:12px;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 11px 0 9px;border-radius:999px;background:var(--ink);color:var(--sun);font-size:12px;font-weight:700;letter-spacing:.01em;box-shadow:0 4px 14px rgba(0,0,0,.25);pointer-events:none}
+.tag-new i{width:7px;height:7px;border-radius:50%;background:var(--sun);animation:tagpulse 1.8s ease-in-out infinite}
+@keyframes tagpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.7)}}
+@media (prefers-reduced-motion:reduce){.tag-new i{animation:none}}
 
 /* ---------- sobre ---------- */
 .about{content-visibility:auto;contain-intrinsic-size:auto 900px}
