@@ -1,0 +1,281 @@
+/* ============================================================================
+   FORMULARIO BLIPS — estilo da Home Vuze (pizza)
+
+   Segue o sistema da marca: amarelo #FCBA28 como UNICO acento (5-10% dos
+   pixels, so acao/selecao/foco), neutros de croma zero, escala de raio de
+   10px, grade de 4px, profundidade por BORDA antes de sombra, movimento
+   calmo (150-250ms, sem mola).
+
+   A fonte NAO e a do design system (Inter): a pagina inteira usa Poppins e
+   trocar so o formulario criaria um corpo estranho no meio das secoes. O
+   sistema manda em forma, cor e estado; a pagina manda na tipografia.
+
+   Prefixado com .vz-form para vencer o CSS base da secao 08 por
+   especificidade, sem !important e sem depender de ordem de carregamento.
+   Nao toca em name, data-blips nem na estrutura do HTML.
+   ============================================================================ */
+
+.vz-form{
+  --f-ink:#111111;            /* texto forte            */
+  --f-ink-2:#5A5A5A;          /* texto de apoio         */
+  --f-linha:#E3E3E3;          /* borda neutra           */
+  --f-linha-forte:#C9C9C9;    /* borda em hover         */
+  --f-campo:#FFFFFF;
+  --f-acento:#FCBA28;
+  --f-acento-ink:#000000;
+  --f-acento-fraco:#FEF6E4;   /* fundo da opcao marcada */
+  --f-erro:#D84B3C;
+
+  --f-r:10px;                 /* raio base do sistema   */
+  --f-r-card:14px;
+}
+
+/* ─── Grade ──────────────────────────────────────────────────────────────── */
+.vz-form .blips-form{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:20px 20px;
+  align-items:start;
+}
+
+/* Ordem das linhas:
+     nome    | telefone
+     e-mail  (linha inteira)
+     empresa | cnpj
+   O e-mail e o campo mais longo dos cinco, entao ganha a linha toda; empresa
+   e cnpj descem e fecham o par. */
+.vz-form .blips-campo[data-campo="email"]{ grid-column:1 / -1; }
+.vz-form .blips-grupo,
+.vz-form .blips-consent,
+.vz-form .blips-enviar,
+.vz-form .blips-msg{ grid-column:1 / -1; }
+
+/* ─── Campo e rotulo ─────────────────────────────────────────────────────── */
+.vz-form .blips-campo{ display:grid; gap:8px; min-width:0; }
+
+.vz-form .blips-rotulo{
+  font-size:14px;
+  font-weight:600;
+  line-height:1.3;
+  color:var(--f-ink);
+  letter-spacing:-.005em;
+}
+
+/* Obrigatorio: marca discreta. O asterisco nao e decoracao, e informacao. */
+.vz-form .blips-obrig{ color:var(--f-erro); font-weight:600; margin-left:2px; }
+
+/* ─── Controles ──────────────────────────────────────────────────────────── */
+.vz-form .blips-controle{
+  width:100%;
+  height:52px;
+  padding:0 16px;
+  font:inherit;
+  font-size:16px;              /* 16px evita zoom automatico no iOS */
+  color:var(--f-ink);
+  background:var(--f-campo);
+  border:1px solid var(--f-linha);
+  border-radius:var(--f-r);
+  outline:none;
+  transition:border-color 180ms ease-out, box-shadow 180ms ease-out;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.vz-form .blips-controle::placeholder{ color:#A5A5A5; }
+.vz-form .blips-controle:hover{ border-color:var(--f-linha-forte); }
+
+/* Foco: halo translucido de 3px + borda no acento, como o sistema define */
+.vz-form .blips-controle:focus{
+  border-color:var(--f-acento);
+  box-shadow:0 0 0 3px rgba(252,186,40,.45);
+}
+
+/* Erro nativo so depois que a pessoa mexeu — nao acusa campo intocado */
+.vz-form .blips-controle:user-invalid{
+  border-color:var(--f-erro);
+  box-shadow:0 0 0 3px rgba(216,75,60,.18);
+}
+
+/* ─── Escolha de equipamento: cada opcao vira um cartao selecionavel ─────── */
+.vz-form .blips-grupo{
+  border:0;
+  margin:4px 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.vz-form .blips-grupo > .blips-rotulo{ margin-bottom:4px; padding:0; }
+
+.vz-form .blips-grupo{ --cols:3; }
+.vz-form .blips-grupo .blips-opcao{ min-width:0; }
+
+/* container das opcoes: o markup nao tem wrapper, entao a propria fieldset
+   vira a grade e o legend ocupa a linha inteira */
+.vz-form .blips-grupo{
+  grid-template-columns:repeat(var(--cols), minmax(0, 1fr));
+}
+.vz-form .blips-grupo > legend{ grid-column:1 / -1; float:none; }
+
+.vz-form .blips-opcao{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 16px;
+  font-size:15px;
+  line-height:1.3;
+  color:var(--f-ink);
+  background:var(--f-campo);
+  border:1px solid var(--f-linha);
+  border-radius:var(--f-r-card);
+  cursor:pointer;
+  transition:border-color 180ms ease-out, background-color 180ms ease-out;
+}
+.vz-form .blips-opcao:hover{ border-color:var(--f-linha-forte); }
+
+/* radio custom, para o estado marcado ser visivel de longe */
+.vz-form .blips-opcao input[type="radio"]{
+  appearance:none;
+  -webkit-appearance:none;
+  flex:0 0 auto;
+  width:20px; height:20px;
+  margin:0;
+  border:1px solid var(--f-linha-forte);
+  border-radius:50%;
+  background:#fff;
+  display:grid;
+  place-content:center;
+  transition:border-color 180ms ease-out, border-width 180ms ease-out;
+}
+.vz-form .blips-opcao input[type="radio"]::after{
+  content:"";
+  width:10px; height:10px;
+  border-radius:50%;
+  background:var(--f-acento);
+  transform:scale(0);
+  transition:transform 180ms ease-out;
+}
+.vz-form .blips-opcao input[type="radio"]:checked{ border-color:var(--f-acento); }
+.vz-form .blips-opcao input[type="radio"]:checked::after{ transform:scale(1); }
+.vz-form .blips-opcao input[type="radio"]:focus-visible{
+  box-shadow:0 0 0 3px rgba(252,186,40,.45);
+}
+
+/* o cartao inteiro reage a selecao */
+.vz-form .blips-opcao:has(input:checked){
+  border-color:var(--f-acento);
+  background:var(--f-acento-fraco);
+}
+
+/* ─── Aceite LGPD ────────────────────────────────────────────────────────── */
+.vz-form .blips-consent{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:12px;
+  align-items:start;
+  padding:16px;
+  border:1px solid var(--f-linha);
+  border-radius:var(--f-r-card);
+  background:#FAFAFA;
+}
+.vz-form .blips-consent input[type="checkbox"]{
+  appearance:none;
+  -webkit-appearance:none;
+  width:20px; height:20px;
+  margin:2px 0 0;
+  border:1px solid var(--f-linha-forte);
+  border-radius:6px;
+  background:#fff;
+  display:grid;
+  place-content:center;
+  cursor:pointer;
+  transition:border-color 180ms ease-out, background-color 180ms ease-out;
+}
+.vz-form .blips-consent input[type="checkbox"]::after{
+  content:"";
+  width:11px; height:7px;
+  border-left:2px solid var(--f-acento-ink);
+  border-bottom:2px solid var(--f-acento-ink);
+  transform:rotate(-45deg) scale(0);
+  transition:transform 180ms ease-out;
+  margin-top:-2px;
+}
+.vz-form .blips-consent input[type="checkbox"]:checked{
+  background:var(--f-acento);
+  border-color:var(--f-acento);
+}
+.vz-form .blips-consent input[type="checkbox"]:checked::after{ transform:rotate(-45deg) scale(1); }
+.vz-form .blips-consent input[type="checkbox"]:focus-visible{
+  box-shadow:0 0 0 3px rgba(252,186,40,.45);
+}
+.vz-form .blips-consent label{
+  font-size:13px;
+  line-height:1.5;
+  color:var(--f-ink-2);
+  cursor:pointer;
+}
+
+/* ─── Botao ──────────────────────────────────────────────────────────────── */
+.vz-form .blips-enviar{
+  justify-self:center;
+  min-width:260px;
+  height:56px;
+  margin-top:4px;
+  padding:0 40px;
+  font:inherit;
+  font-size:16px;
+  font-weight:600;
+  color:var(--f-acento-ink);
+  background:var(--f-acento);
+  border:1px solid var(--f-acento);
+  border-radius:999px;
+  cursor:pointer;
+  transition:background-color 180ms ease-out, box-shadow 180ms ease-out;
+}
+.vz-form .blips-enviar:hover{ background:#F0AE18; border-color:#F0AE18; }
+.vz-form .blips-enviar:focus-visible{ box-shadow:0 0 0 3px rgba(252,186,40,.5); }
+.vz-form .blips-enviar:disabled{ opacity:.55; cursor:progress; }
+
+/* ─── Mensagem de retorno ────────────────────────────────────────────────── */
+.vz-form .blips-msg{
+  margin:0;
+  min-height:0;
+  text-align:center;
+  font-size:14px;
+  line-height:1.5;
+}
+.vz-form .blips-msg:not(:empty){
+  padding:12px 16px;
+  border-radius:var(--f-r);
+  border:1px solid var(--f-linha);
+}
+.vz-form .blips-msg[data-blips-estado="erro"]{
+  color:#8A2E22;
+  background:#FDF1EF;
+  border-color:#F3C9C2;
+}
+.vz-form .blips-msg[data-blips-estado="ok"]{
+  color:#1F5B37;
+  background:#EFF7F1;
+  border-color:#C6E2CF;
+}
+.vz-form .blips-msg[data-blips-estado="enviando"]{ color:var(--f-ink-2); }
+
+/* ─── Responsivo ─────────────────────────────────────────────────────────── */
+@media (max-width:860px){
+  .vz-form .blips-grupo{ --cols:2; }
+}
+@media (max-width:640px){
+  .vz-form .blips-form{ grid-template-columns:1fr; gap:18px; }
+  .vz-form .blips-grupo{ --cols:1; }
+  .vz-form .blips-enviar{ width:100%; min-width:0; justify-self:stretch; }
+}
+
+/* Movimento calmo: quem pediu menos movimento, recebe menos movimento. */
+@media (prefers-reduced-motion:reduce){
+  .vz-form .blips-controle,
+  .vz-form .blips-opcao,
+  .vz-form .blips-opcao input[type="radio"],
+  .vz-form .blips-opcao input[type="radio"]::after,
+  .vz-form .blips-consent input[type="checkbox"],
+  .vz-form .blips-consent input[type="checkbox"]::after,
+  .vz-form .blips-enviar{ transition:none; }
+}
