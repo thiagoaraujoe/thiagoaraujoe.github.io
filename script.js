@@ -4,7 +4,7 @@
 const I18N = {
   en: {
     "cases.before":"Before","cases.after":"After","cases.compare":"Compare","cases.desktop":"Desktop","cases.mobile":"Mobile",
-    "cases.new":"New project","cases.improvements":"The project","cases.process":"How it was made","cases.results":"Results","cases.rollout":"Data-driven rollouts to other machines","cases.page":"Page","cases.client":"Blips","cases.open":"Open the page in a new tab",
+    "cases.new":"New project","cases.improvements":"The project","cases.process":"How it was made","cases.results":"Results","cases.client":"Blips","cases.open":"Open the page in a new tab",
     "nav.work":"Work","nav.about":"About","nav.contact":"Contact","nav.status":"Available for freelance",
     "hero.title":"Design that solves real problems.",
     "hero.text":"Interfaces, landing pages, brands and paid-media creatives. Digital experiences that are simple, functional and visually engaging.",
@@ -20,13 +20,13 @@ const I18N = {
     "contact.title":"Have a project in mind? Let's talk.","contact.email":"Send an email","contact.emailLabel":"Email",
     "foot.rights":"© 2026 thiago. all rights reserved.","foot.where":"brazil — working remotely",
     "p.back":"Back to work","p.type":"Type","p.client":"Client","p.year":"Year","p.about":"About the project",
-    "p.behance":"View on Behance","likes":"Likes","like.ask":"Did you like this project?","like.btn":"Like","like.done":"Liked","p.backhome":"Back","about.kicker":"About","contact.kicker":"Contact","contact.lead":"Pick the channel you prefer. I usually reply within a business day.","p.prev":"Previous","p.next":"Next","p.open":"Open project",
+    "p.behance":"View on Behance","views":"Views","p.backhome":"Back","about.kicker":"About","contact.kicker":"Contact","contact.lead":"Pick the channel you prefer. I usually reply within a business day.","p.prev":"Previous","p.next":"Next","p.open":"Open project",
     "confidential":"Confidential","title":"Thiago Lemos — Interface, brand and campaign designer",
     "lang.switch":"Mudar para português"
   },
   pt: {
     "cases.before":"Antes","cases.after":"Depois","cases.compare":"Comparar","cases.desktop":"Desktop","cases.mobile":"Mobile",
-    "cases.new":"Novo projeto","cases.improvements":"O projeto","cases.process":"Como foi feito","cases.results":"Resultados","cases.rollout":"Desdobramentos baseados em dados para outros equipamentos","cases.page":"Página","cases.client":"Blips","cases.open":"Abrir a página em nova aba",
+    "cases.new":"Novo projeto","cases.improvements":"O projeto","cases.process":"Como foi feito","cases.results":"Resultados","cases.client":"Blips","cases.open":"Abrir a página em nova aba",
     "nav.work":"Trabalhos","nav.about":"Sobre","nav.contact":"Contato","nav.status":"Disponível para freelance",
     "hero.title":"Design que resolve problemas de verdade.",
     "hero.text":"Interfaces, landing pages, marcas e criativos para mídia paga. Experiências digitais simples, funcionais e visualmente envolventes.",
@@ -42,7 +42,7 @@ const I18N = {
     "contact.title":"Tem um projeto em mente? Vamos conversar.","contact.email":"Enviar e-mail","contact.emailLabel":"E-mail",
     "foot.rights":"© 2026 thiago. todos os direitos reservados.","foot.where":"brasil — atendimento remoto",
     "p.back":"Voltar aos trabalhos","p.type":"Tipo","p.client":"Cliente","p.year":"Ano","p.about":"Sobre o projeto",
-    "p.behance":"Ver no Behance","likes":"Curtidas","like.ask":"Curtiu este projeto?","like.btn":"Curtir","like.done":"Curtido","p.backhome":"Voltar","about.kicker":"Sobre","contact.kicker":"Contato","contact.lead":"Escolha o canal que preferir. Costumo responder em até um dia útil.","p.prev":"Anterior","p.next":"Próximo","p.open":"Abrir projeto",
+    "p.behance":"Ver no Behance","views":"Visualizações","p.backhome":"Voltar","about.kicker":"Sobre","contact.kicker":"Contato","contact.lead":"Escolha o canal que preferir. Costumo responder em até um dia útil.","p.prev":"Anterior","p.next":"Próximo","p.open":"Abrir projeto",
     "confidential":"Confidencial","title":"Thiago Lemos — Designer de interfaces, marcas e campanhas",
     "lang.switch":"Switch to English"
   }
@@ -55,7 +55,7 @@ const I18N = {
    - título, cliente, tags e descrição têm versão en e pt
    ========================================================= */
 const PROJECTS = [
-  {slug:"redlinemd-redesign", key:"redline", type:"web", year:"2026", likes:829,
+  {slug:"redlinemd-redesign", key:"redline", type:"web", year:"2026", views:6405,
    behance:"https://www.behance.net/gallery/255634425/Redesign-project-Webpage-UX",
    en:{title:"RedlineMD — Mobile redesign", client:"RedlineMD", tags:["UX","Mobile first","Redesign","Figma"],
        desc:["This is the redesign of the RedlineMD page. RedlineMD is a service that reviews and renegotiates employment contracts for doctors. The main goal was to turn more visitors from Google Ads into customers and to make the page feel more polished, especially on phones.",
@@ -66,7 +66,7 @@ const PROJECTS = [
              "Estas foram as principais mudanças. O topo da página ficou mais limpo, com o logo e o menu em novas posições. O botão principal subiu para o início da página e ficou mais fácil de alcançar. Os pontinhos abaixo do carrossel reduzem a rolagem. Os cartões de vantagens ganharam as cores da marca e ícones com mais contraste. O cartão do botão final ganhou uma imagem, e a seção de números ficou mais convincente.",
              "O trabalho foi feito no Figma em uma hora. Por isso, a prioridade foi para as mudanças que deixam a página mais fácil de usar e levam mais visitantes a agir."]}},
 
-  {slug:"avance-global-private-jet", key:"jet", type:"web", year:"2026", likes:1887,
+  {slug:"avance-global-private-jet", key:"jet", type:"web", year:"2026", views:3571,
    behance:"https://www.behance.net/gallery/254543405/Web-Page-Design-Private-Jet",
    en:{title:"Avance Global — Private jet booking", client:"Avance Global", tags:["Web design","UI","Luxury","Desktop & mobile"],
        desc:["This is the website of a private aviation company. The company wanted to strengthen its digital presence and attract high-end clients. In this market, the first impression is everything. So the site had to show exclusivity, confidence and premium service from the very first screen.",
@@ -75,7 +75,7 @@ const PROJECTS = [
        desc:["Este é o site de uma empresa de aviação executiva. A empresa queria fortalecer sua presença digital e atrair clientes de alto padrão. Nesse mercado, a primeira impressão é tudo. Por isso, o site precisava mostrar exclusividade, confiança e serviço premium já na primeira tela.",
              "O design usa fotos de estilo cinematográfico, letras bem grandes e uma paleta escura. Layouts limpos e bastante espaço em branco equilibram o conjunto. O trabalho inclui a página inicial, o catálogo de aeronaves e os destinos, em versões para computador e celular. Juntas, elas levam o visitante de forma natural até o pedido de cotação."]}},
 
-  {slug:"pto-exchange", key:"pto", type:"web", year:"2025", likes:789,
+  {slug:"pto-exchange", key:"pto", type:"web", year:"2025", views:7568,
    behance:"https://www.behance.net/gallery/239940969/Webpage-UI-Design",
    en:{title:"PTO Exchange — Web page UI/UX", client:"PTO Exchange", tags:["UI","UX","B2B","Desktop & mobile"],
        desc:["This is the web page of PTO Exchange, a benefits platform. It lets employees turn unused vacation days into retirement savings, student loan payments, travel and more.",
@@ -84,7 +84,7 @@ const PROJECTS = [
        desc:["Esta é a página web da PTO Exchange, uma plataforma de benefícios. Ela permite que o funcionário transforme férias não usadas em previdência, pagamento de empréstimo estudantil, viagens e mais.",
              "O objetivo era uma página simples de navegar e feita para quem trabalha em RH. O resultado é um layout limpo e intuitivo, pensado nas necessidades desse público. Ele destaca preços, benefícios e dúvidas frequentes, para que o visitante entenda o valor rapidamente. O processo seguiu estas etapas: briefing, pesquisa sobre o público e sobre produtos parecidos, mapa do caminho do visitante pela página, design que se adapta a qualquer tela e testes com usuários."]}},
 
-  {slug:"healify-packaging", key:"healify", type:"brand", year:"2026", likes:1608,
+  {slug:"healify-packaging", key:"healify", type:"brand", year:"2026", views:1891,
    behance:"https://www.behance.net/gallery/252479475/Packaging-System-for-Medical-Cannabis",
    en:{title:"Healify — Medical cannabis packaging", client:"Healify", tags:["Packaging","Visual identity","Color system"],
        desc:["This is a packaging system for a line of medical cannabis products in the Brazilian market. The challenge was to balance a heavily regulated category with a modern identity that people can trust, so patients feel comfortable and safe with the product.",
@@ -93,7 +93,7 @@ const PROJECTS = [
        desc:["Este é um sistema de embalagens para uma linha de produtos de cannabis medicinal no mercado brasileiro. O desafio era equilibrar uma categoria muito regulada com uma identidade moderna e confiável, para que o paciente se sinta à vontade e seguro com o produto.",
              "A pesquisa sobre embalagens de farmácia e marcas premium de bem-estar levou a um sistema minimalista. Ele organiza as informações com clareza e usa um código de cores para diferenciar as versões: Boost + Recovery, Slim, Sleep e Focus, em gotas, gomas e cápsulas. O resultado une as informações exigidas pela regulação com uma linguagem visual moderna."]}},
 
-  {slug:"oticas-carol", key:"oticas", type:"ads", year:"2022", likes:1258,
+  {slug:"oticas-carol", key:"oticas", type:"ads", year:"2022", views:2286,
    behance:"https://www.behance.net/gallery/156804477/Oticas-Carol-Criativos-Facebook-ADS",
    en:{title:"Óticas Carol — Lead generation ads", client:"Óticas Carol", tags:["Meta Ads","Creatives","Retail","Feed & stories"],
        desc:["These are the ads created for a campaign to attract interested potential customers to the Óticas Carol store in Ponta Porã. The offers were free eye exams, store-wide discounts, the store's third anniversary, Father's Day and contact lens deals.",
@@ -102,7 +102,7 @@ const PROJECTS = [
        desc:["Estes são os anúncios criados para uma campanha que buscava atrair clientes realmente interessados para a loja Óticas Carol de Ponta Porã. As ofertas eram exame de vista grátis, descontos em toda a loja, aniversário de 3 anos, Dia dos Pais e lentes de contato.",
              "Os anúncios têm formatos de feed e de stories e usam o azul e o amarelo da marca. Em cada peça, a oferta é o destaque principal, e uma mensagem clara convida a pessoa a agendar um horário ou ir até a loja."]}},
 
-  {slug:"adaptive-erp-landing", key:"erp", type:"web", year:"2023", likes:1331,
+  {slug:"adaptive-erp-landing", key:"erp", type:"web", year:"2023", views:9879,
    behance:"https://www.behance.net/gallery/185614153/Landing-Page-Software-ERP",
    en:{title:"Adaptive — ERP landing page", client:"Adaptive", tags:["Landing page","UI","B2B","Clarity research"],
        desc:["This is a short sales page for Adaptive, a management system (ERP) for gas stations, wholesalers and supermarkets. The goal was a page that works well and leads more visitors to ask for contact.",
@@ -111,7 +111,7 @@ const PROJECTS = [
        desc:["Esta é uma página de vendas curta para a Adaptive, um sistema de gestão (ERP) para postos de combustível, atacadistas e supermercados. O objetivo era uma página que funcionasse bem e levasse mais visitantes a pedir contato.",
              "Os mapas de calor do Microsoft Clarity, ferramenta que mostra onde os visitantes clicam, revelaram duas coisas. Os visitantes ficavam cerca de 30 segundos na página e saíam antes de chegar ao formulário. E os botões da demonstração grátis eram os mais clicados. Para resolver isso, o conteúdo foi reduzido ao essencial e o pedido de demonstração foi levado para mais perto do topo da página."]}},
 
-  {slug:"digitalbot-chatbot-landing", key:"chatbot", type:"web", year:"2023", likes:1934,
+  {slug:"digitalbot-chatbot-landing", key:"chatbot", type:"web", year:"2023", views:2642,
    behance:"https://www.behance.net/gallery/185131407/Landing-Page-Chatbot",
    en:{title:"DigitalBot — B2B chatbot landing page", client:"DigitalBot", tags:["Landing page","UX","Persona","Wireframe"],
        desc:["This is the landing page of DigitalBot, a chatbot service for companies in many industries and a partner of Take Blip. The goal was a simple, functional page that attracts interested potential customers.",
@@ -120,7 +120,7 @@ const PROJECTS = [
        desc:["Esta é a landing page da DigitalBot, um serviço de chatbot para empresas de vários segmentos e parceira da Take Blip. O objetivo era uma página simples e funcional, que atraísse clientes em potencial realmente interessados.",
              "O trabalho começou com benchmarking, que é a comparação com páginas parecidas, e com dados de clientes. Com isso, foi criada uma persona, que é o perfil do cliente ideal, resumindo os principais problemas a resolver: falta de equipe para atender todos os contatos e vendas perdidas pela demora nas respostas. Depois vieram os wireframes, que são esboços simples da página, e o design final. A página tem vários botões de ação que acompanham a jornada do comprador, em versões para computador e celular."]}},
 
-  {slug:"batmaid-ads", key:"batmaid", type:"ads", year:"2023", likes:1223,
+  {slug:"batmaid-ads", key:"batmaid", type:"ads", year:"2023", views:7091,
    behance:"https://www.behance.net/gallery/173013607/ADS-Batmaid-Suica-Criativos-para-Meta",
    en:{title:"Batmaid (Switzerland) — Meta Ads", client:"Batmaid", tags:["Meta Ads","Creatives","International"],
        desc:["These are the ads of a Batmaid campaign in Switzerland. Batmaid is an app for booking home cleaning services.",
@@ -129,7 +129,7 @@ const PROJECTS = [
        desc:["Estes são os anúncios de uma campanha da Batmaid na Suíça. A Batmaid é um aplicativo para contratar serviços de limpeza residencial.",
              "O conjunto mistura três tipos de anúncio: peças focadas no preço (39 CHF por hora, sem taxas escondidas), depoimentos de clientes e mensagens sobre o aplicativo. Todos usam o azul da marca e um layout limpo, que se lê rápido no feed."]}},
 
-  {slug:"algar-telecom-ads", key:"algar", type:"ads", year:"2023", likes:691,
+  {slug:"algar-telecom-ads", key:"algar", type:"ads", year:"2023", views:2050,
    behance:"https://www.behance.net/gallery/173013387/ADS-Algar-Telecom-Criativos-para-Meta",
    en:{title:"Algar Telecom — Meta Ads", client:"Algar Telecom", tags:["Meta Ads","Creatives","Telecom","Stories"],
        desc:["These are the ads created for Algar Telecom on the Meta platform, which includes Facebook and Instagram. They promote internet and combo plans: fiber of 300 Mb and 600 Mb, mobile phone and landline.",
@@ -138,7 +138,7 @@ const PROJECTS = [
        desc:["Estes são os anúncios criados para a Algar Telecom na plataforma Meta, que inclui o Facebook e o Instagram. Eles divulgam planos de internet e combos: fibra de 300 Mb e 600 Mb, celular e telefone fixo.",
              "Em todos os anúncios, velocidade e preço são a mensagem principal. O degradê verde vibrante da marca e o símbolo de play emolduram as pessoas. Os anúncios têm formatos de feed e de stories."]}},
 
-  {slug:"natura-ads", key:"natura", type:"ads", year:"2023", likes:1832,
+  {slug:"natura-ads", key:"natura", type:"ads", year:"2023", views:9413,
    behance:"https://www.behance.net/gallery/173010743/Criativos-Natura-Meta-ADS-Produtos-de-Beleza",
    en:{title:"Natura — Store traffic campaign", client:"Natura", tags:["Meta Ads","Creatives","Beauty","Retail"],
        desc:["These are the ads from one stage of a campaign that aimed to bring more customers to Natura's physical stores.",
@@ -154,7 +154,7 @@ const PROJECTS = [
    Para ativar um caso, coloque os dois arquivos na pasta e deixe pending:false
    ========================================================= */
 const CASES = [
-  {id:"food", pending:false, likes:1148, before:null, after:"blips/food.html", cover:"food", seg:["Alimentar","Landing page"],
+  {id:"food", pending:false, views:10800, before:null, after:"blips/food.html", cover:"food", seg:["Alimentar","Landing page"],
    en:{title:"Blips Food — Equipment landing page",
        notes:[["A menu that adapts to the background","The floating menu changes color to match what is behind it: yellow over white sections and white over colored ones. On phones, it hides while you scroll down. It also opens a panel with the categories and their icons."],
               ["The offer on the first screen","The first screen shows a yellow card with the product line, the main headline and a price box. The price box places the entry amount and the number of installments side by side."],
@@ -170,65 +170,119 @@ const CASES = [
               ["Vantagens pensadas para o celular","No celular, o bloco vermelho com as vantagens da empresa vira um carrossel que para em cada cartão, com pontinhos abaixo. O cartão que está na tela fica branco para se destacar."],
               ["Um formulário, quatro passos e um FAQ","A página termina com um formulário de pedido que pede o consentimento exigido pela LGPD, a lei brasileira de proteção de dados. Ela também tem uma linha do tempo com quatro passos, números que contam quando aparecem na tela e um FAQ em que cada resposta abre com um clique."]]}},
 
-  {id:"lps-equipamentos", pending:false, isNew:true, likes:1989, before:null, cover:"lpsequip", seg:["Comunicação visual","Artesanato e brindes","Landing pages"],
-   pages:[{name:"Vuze 5050", src:"blips/vuze-5050/index.html"},
-          {name:"Fiber 50W", src:"blips/fiber-desktop-50w/index.html"},
-          {name:"Flatbed 9060", src:"blips/flatbed-uv-9060/index.html"}],
-   en:{title:"Equipment landing pages — Blips standard",
-       process:[["One standard for every machine","The three pages follow the same Blips page structure. Each one starts with the offer, then shows the product, proof from other customers and the form. It ends by answering the last doubts in the FAQ."],
-                ["One page per machine","Each page talks about a single machine. The old fiber laser page listed six models. The new one focuses on just one, so visitors don't have to compare and choose."],
-                ["Respect for the visual identity","Colors, fonts, buttons and spacing follow the Blips brand. This way, the three pages look like one family."],
-                ["Designed for the phone first","Each section was built at phone size first and then adapted to larger screens."],
-                ["Videos adjusted for each page","The original sound was removed, and each video got its own original soundtrack, free of copyright issues. Parts that showed a different machine were cut."],
+  {id:"vuze-5050", pending:false, isNew:true, views:101, before:null, after:"blips/vuze-5050/index.html", cover:"vuze5050", seg:["Comunicação visual","Landing page"],
+   en:{title:"Vuze 5050 3D printer — Sales landing page",
+       process:[["Starting from the standard Blips page structure","The page follows the structure Blips uses for its equipment pages. It opens with the offer, then shows the product and the proof from other customers, then the form. It ends by answering the last doubts in the FAQ."],
+                ["A menu that helps people find things","The floating menu from the Blips Food page was brought to this page. It reads the color behind it and changes its own color, so it stays easy to read."],
+                ["Respect for the visual identity","Colors, fonts, buttons and spacing follow the Blips brand. This way, the page looks like part of the same family as the other Blips pages."],
+                ["Designed for the phone first","Each section was checked at phone size before being adapted to larger screens."],
+                ["One button style for the whole page","The whole page uses a single button style. This way, visitors always recognize what they can click."],
                 ["Gentle movement","The animations are soft and short. They turn off by themselves for people who prefer less motion on their devices."]],
-       notes:[["Three offers, one layout","Each page opens with its own offer. The Vuze 5050 shows 18 interest-free installments. The Fiber 50W shows a down payment plus up to 36 monthly bank slips. The Flatbed 9060 shows a monthly rental plan."],
-              ["A menu that helps without getting in the way","The menu floats at the top of the page. On the Vuze 5050, it opens a map of all nine sections. On the newer pages, it shows only the logo and hides while you scroll down."],
-              ["An earnings simulator","Visitors enter how many pieces they make, the price and the cost. The page then shows the monthly revenue, the costs, the installment or the rent, and what is left over."],
-              ["A spec sheet that stays short","The technical details are grouped into lists that open one at a time. This keeps the section short, even for machines with many specs."],
-              ["A bar that stays on the phone screen","On phones, a bar stays at the bottom with the offer and the main button. This way, visitors can ask for a quote at any moment."],
-              ["Carousels and videos that behave","Benefits and customer messages slide sideways, with dots below. On the Fiber and Flatbed pages, the videos play without sound when they appear and pause when they leave the screen."]],
-       rollout:[["The same base for sale, financing and rental","The standard started as a sale page and was then adapted for financing and for rental. The structure stays the same. What changes is the machine's content and the offer block."],
-                ["Prices taken from the marketing price sheet","On the Fiber and Flatbed pages, the prices come from the marketing team's price sheet. The notes of each page record the tab and the row that were used, so anyone can check them later."],
-                ["Specs taken from the product's own material","The technical details come from the product's material, such as its spec sheet or the Ideal Distribuidora page. When two sources disagree, the difference goes to a review list instead of being guessed."],
-                ["A simulator driven by the offer data","The simulator reads the offer values from a settings block at the top of the code. On the financing page, it uses the installment for 12, 24 or 36 months. On the rental page, it subtracts the monthly plan."],
-                ["A form set up for each machine","The newer pages use the same Blips form. A small settings block tells it the page, the type of interest (finance or rent), the segment and the machine name."],
-                ["Ready for the next machines","The same standard is also used on other Blips pages, such as the Vuze i1600 printer and the Vuze Cut 120S cutter. To create a new page, the team swaps the machine's data and keeps everything else."]],
-       results:[["Three pages, one family","Sale, financing and rental now share the same structure. Visitors find the same things in the same places on every page."],
-                ["Light pages","Without the videos, each page weighs about 0.3 to 0.5 MB. The videos only load when they are needed."],
-                ["Ready for search engines and sharing","Each page has a title, a description and a preview for social networks and messaging apps. The pages also include data written in the format that Google reads."],
-                ["New pages start from a tested base","New machines start from a page that already works, not from a blank file. The Flatbed 9060 page, for example, was built from the Vuze Cut 120S rental page."]]},
-   pt:{title:"Landing pages de equipamentos — Padrão Blips",
-       process:[["Um padrão para todas as máquinas","As três páginas seguem a mesma estrutura de página da Blips. Cada uma começa com a oferta, depois mostra o produto, a prova de outros clientes e o formulário. No fim, responde as últimas dúvidas no FAQ."],
-                ["Uma página por máquina","Cada página fala de uma única máquina. A página antiga de laser fiber listava seis modelos. A nova foca em um só, para que o visitante não precise comparar e escolher."],
-                ["Respeito à identidade visual","Cores, fontes, botões e espaçamentos seguem a marca Blips. Assim, as três páginas parecem da mesma família."],
-                ["Pensada primeiro para o celular","Cada seção foi montada primeiro no tamanho de tela do celular e depois adaptada para telas maiores."],
-                ["Vídeos ajustados para cada página","O som original foi retirado, e cada vídeo ganhou uma trilha original própria, sem problema de direitos autorais. Os trechos que mostravam outra máquina foram cortados."],
+       notes:[["A menu with a map of the page","A floating menu opens a panel that lists all nine sections. Each one has an icon and a short description. The section you are viewing is highlighted."],
+              ["A bar that stays on the phone screen","On phones, a bar stays at the bottom with the 18x offer and the quote button. This way, visitors can ask for a quote at any moment. The buttons inside each section are hidden on phones, to avoid repeating the same action."],
+              ["One section per screen on phones","Scrolling stops at the start of each section. Long sections were split into separate screens, so each screen shows only one idea."],
+              ["The spec sheet in a single section","The technical details live in one section. It has an image with the dimensions, two highlights and lists that open one at a time."],
+              ["An earnings simulator","The expected revenue comes first. Below it, the costs (material and installment) are listed on the right. The amount left for the customer appears on a yellow strip."],
+              ["Carousels that are easy to use","Benefits and WhatsApp conversations slide sideways, with dots below. They never scroll up or down by accident."]],
+       results:[["The offer is visible right away","The first screen shows 18 interest-free installments next to the cash price."],
+                ["A light page","With all its images, the page weighs about 0.5 MB, not counting the customer video. The video only loads when the visitor presses play."],
+                ["A form ready to be measured","Each request sent through the form fires a 'lead sent' event that Google Tag Manager can read. This way, the team can count how many contacts arrive."],
+                ["A page prepared for search engines","The page has a title, a description, and product and FAQ data written in the format that Google reads."]]},
+   pt:{title:"Impressora 3D Vuze 5050 — Landing page de venda",
+       process:[["Ponto de partida: a estrutura padrão das páginas Blips","A página segue a estrutura que a Blips usa nas páginas de equipamentos. Ela começa com a oferta, depois mostra o produto e a prova de outros clientes, e então o formulário. No fim, responde as últimas dúvidas no FAQ."],
+                ["Um menu que ajuda a achar as coisas","O menu flutuante da página Blips Food foi trazido para esta página. Ele lê a cor que está atrás dele e muda a própria cor, para continuar fácil de ler."],
+                ["Respeito à identidade visual","Cores, fontes, botões e espaçamentos seguem a marca Blips. Assim, a página parece fazer parte da mesma família das outras páginas da Blips."],
+                ["Pensada primeiro para o celular","Cada seção foi conferida no tamanho de tela do celular antes de ser adaptada para telas maiores."],
+                ["Um só estilo de botão na página inteira","A página inteira usa um único estilo de botão. Assim, o visitante sempre reconhece o que pode clicar."],
                 ["Movimentos suaves","As animações são leves e curtas. Elas se desligam sozinhas para quem prefere menos movimento no aparelho."]],
-       notes:[["Três ofertas, um só layout","Cada página abre com a sua própria oferta. A Vuze 5050 mostra 18 parcelas sem juros. A Fiber 50W mostra uma entrada e o restante em até 36 vezes no boleto. A Flatbed 9060 mostra um plano mensal de aluguel."],
-              ["Um menu que ajuda sem atrapalhar","O menu flutua no topo da página. Na Vuze 5050, ele abre um mapa com as nove seções. Nas páginas mais novas, ele mostra só o logo e se esconde quando você rola a página para baixo."],
-              ["Um simulador de ganho","O visitante informa quantas peças produz, o preço e o custo. A página mostra então o faturamento do mês, os custos, a parcela ou o aluguel e o que sobra."],
-              ["Uma ficha técnica que continua curta","Os detalhes técnicos ficam em listas que abrem uma de cada vez. Assim, a seção continua curta, mesmo em máquinas com muitas especificações."],
-              ["Uma barra que fica na tela do celular","No celular, uma barra fica na parte de baixo com a oferta e o botão principal. Assim, o visitante pode pedir um orçamento a qualquer momento."],
-              ["Carrosséis e vídeos que se comportam","Os benefícios e as mensagens de clientes deslizam para o lado, com pontinhos abaixo. Nas páginas da Fiber e da Flatbed, os vídeos tocam sem som quando aparecem na tela e pausam quando saem dela."]],
-       rollout:[["A mesma base para venda, financiamento e aluguel","O padrão nasceu como uma página de venda e depois foi adaptado para financiamento e para aluguel. A estrutura continua a mesma. O que muda é o conteúdo da máquina e o bloco da oferta."],
-                ["Preços tirados da planilha de marketing","Nas páginas da Fiber e da Flatbed, os preços vêm da planilha de preços do time de marketing. As notas de cada página registram a aba e a linha usadas, para que qualquer pessoa possa conferir depois."],
-                ["Especificações tiradas do material do produto","Os detalhes técnicos vêm do material do produto, como a ficha técnica ou a página da Ideal Distribuidora. Quando duas fontes não batem, a diferença vai para uma lista de revisão em vez de ser adivinhada."],
-                ["Um simulador movido pelos dados da oferta","O simulador lê os valores da oferta em um bloco de configuração no topo do código. Na página de financiamento, ele usa a parcela de 12, 24 ou 36 meses. Na página de aluguel, ele desconta o plano mensal."],
-                ["Um formulário configurado para cada máquina","As páginas mais novas usam o mesmo formulário da Blips. Um pequeno bloco de configuração informa a página, o tipo de interesse (financiar ou alugar), o segmento e o nome da máquina."],
-                ["Pronto para as próximas máquinas","O mesmo padrão também é usado em outras páginas da Blips, como a da impressora Vuze i1600 e a da plotter de recorte Vuze Cut 120S. Para criar uma página nova, o time troca os dados da máquina e mantém todo o resto."]],
-       results:[["Três páginas, uma família","Venda, financiamento e aluguel agora têm a mesma estrutura. O visitante encontra as mesmas coisas nos mesmos lugares em todas as páginas."],
-                ["Páginas leves","Sem os vídeos, cada página pesa entre 0,3 e 0,5 MB. Os vídeos só carregam quando são necessários."],
-                ["Prontas para buscadores e para compartilhar","Cada página tem título, descrição e uma prévia para redes sociais e aplicativos de mensagem. As páginas também trazem dados no formato que o Google lê."],
-                ["Páginas novas partem de uma base testada","Máquinas novas começam de uma página que já funciona, e não de um arquivo em branco. A página da Flatbed 9060, por exemplo, foi feita a partir da página de aluguel da Vuze Cut 120S."]]}},
+       notes:[["Um menu com o mapa da página","Um menu flutuante abre um painel que lista as nove seções. Cada uma tem um ícone e uma descrição curta. A seção que você está vendo fica destacada."],
+              ["Uma barra que fica na tela do celular","No celular, uma barra fica na parte de baixo com a oferta em 18x e o botão de orçamento. Assim, o visitante pode pedir um orçamento a qualquer momento. Os botões dentro de cada seção ficam escondidos no celular, para não repetir a mesma ação."],
+              ["Uma seção por tela no celular","A rolagem para no começo de cada seção. As seções longas foram divididas em telas separadas, para que cada tela mostre uma ideia só."],
+              ["A ficha técnica em uma única seção","Os detalhes técnicos ficam em uma só seção. Ela tem uma imagem com as dimensões, dois destaques e listas que abrem uma de cada vez."],
+              ["Um simulador de ganho","O faturamento esperado vem primeiro. Abaixo dele, os custos (material e parcela) aparecem em uma lista à direita. O valor que sobra para o cliente aparece em uma faixa amarela."],
+              ["Carrosséis fáceis de usar","Os benefícios e as conversas de WhatsApp deslizam para o lado, com pontinhos abaixo. Eles nunca rolam para cima ou para baixo sem querer."]],
+       results:[["A oferta aparece logo de cara","A primeira tela mostra 18 parcelas sem juros ao lado do preço à vista."],
+                ["Uma página leve","Com todas as imagens, a página pesa cerca de 0,5 MB, sem contar o vídeo de clientes. O vídeo só carrega quando o visitante aperta o play."],
+                ["Um formulário pronto para ser medido","Cada pedido enviado pelo formulário dispara um evento de 'lead enviado' que o Google Tag Manager consegue ler. Assim, o time pode contar quantos contatos chegam."],
+                ["Uma página preparada para os buscadores","A página tem título, descrição e dados do produto e do FAQ escritos no formato que o Google lê."]]}},
+
+  {id:"fiber-desktop-50w", pending:false, views:1046, before:null, after:"blips/fiber-desktop-50w/index.html", cover:"fiber50w", seg:["Artesanato e brindes","Landing page"],
+   en:{title:"Fiber Desktop 50W laser — Financing landing page",
+       process:[["One page for one machine","The old page listed six fiber laser machines. The new page focuses on a single model, the Fiber Desktop 50W, so visitors don't have to compare and choose."],
+                ["Starting from the newest Blips page standard","The page follows the latest Blips standard: yellow sections, a menu with only the logo and the Blips form."],
+                ["An offer built around financing","Instead of 18 installments on a credit card, the offer is a down payment plus the rest in up to 36 monthly bank slips. The amounts were checked against the marketing team's price sheet."],
+                ["Videos adjusted for the page","The original sound was removed, and each video got its own original soundtrack, free of copyright issues. The first 11 seconds of one video were cut because they showed a different machine."],
+                ["Respect for the visual identity","Colors, fonts, buttons and spacing follow the Blips brand. This way, the page looks like part of the same family as the other Blips pages."],
+                ["Designed for the phone first","Each section was built at phone size first and then adapted to larger screens."]],
+       notes:[["A menu that gets out of the way","The floating menu shows only the Blips logo. On phones, it hides when you scroll down and comes back when you scroll up."],
+              ["The offer on the first screen","The first screen shows the down payment and the rest in up to 36 installments. A short note explains that the offer depends on a credit check."],
+              ["Two videos side by side","Two vertical videos show the machine engraving a knife blade and texts in many sizes. They play without sound when they appear and pause when they leave the screen. Only one video can play with sound at a time."],
+              ["A simulator with the payment term","Visitors enter how many pieces they engrave per week, the average price and the cost of each piece. They also choose 12, 24 or 36 installments. The page then shows the monthly revenue, the costs, the installment and what is left over."],
+              ["A spec sheet in five groups","The technical details are split into five groups. Only one group opens at a time, and on phones all of them start closed."],
+              ["Help always within reach on phones","On phones, a bar stays at the bottom of the screen with the offer and the quote button. The benefits and the customer messages slide sideways, with dots below."]],
+       results:[["The offer is clear right away","The first screen shows the down payment and the 36-installment plan, with the credit check note next to them."],
+                ["A light page","Without the videos, the page files add up to about 0.3 MB. The videos only start loading when they appear on the screen."],
+                ["Ready for search engines and sharing","The page has a title, a description and a preview for social networks and messaging apps. It also has the company data written in the format that Google reads."],
+                ["Comfortable for more people","The animations turn off for people who prefer less motion on their devices. The videos have descriptions that screen readers can announce."]]},
+   pt:{title:"Laser Fiber Desktop 50W — Landing page de financiamento",
+       process:[["Uma página para uma máquina só","A página antiga listava seis máquinas a laser fiber. A nova página foca em um único modelo, a Fiber Desktop 50W, para que o visitante não precise comparar e escolher."],
+                ["Ponto de partida: o padrão mais novo das páginas Blips","A página segue o padrão mais recente da Blips: seções amarelas, um menu só com o logo e o formulário da Blips."],
+                ["Uma oferta pensada para o financiamento","No lugar das 18 parcelas no cartão, a oferta é uma entrada e o restante em até 36 vezes no boleto. Os valores foram conferidos na planilha de preços do time de marketing."],
+                ["Vídeos ajustados para a página","O som original foi retirado, e cada vídeo ganhou uma trilha original própria, sem problema de direitos autorais. Os 11 primeiros segundos de um dos vídeos foram cortados porque mostravam outra máquina."],
+                ["Respeito à identidade visual","Cores, fontes, botões e espaçamentos seguem a marca Blips. Assim, a página parece fazer parte da mesma família das outras páginas da Blips."],
+                ["Pensada primeiro para o celular","Cada seção foi montada primeiro no tamanho de tela do celular e depois adaptada para telas maiores."]],
+       notes:[["Um menu que sai da frente","O menu flutuante mostra só o logo da Blips. No celular, ele se esconde quando você rola a página para baixo e volta quando você rola para cima."],
+              ["A oferta na primeira tela","A primeira tela mostra o valor da entrada e o restante em até 36 vezes. Uma nota curta avisa que a oferta depende de análise de crédito."],
+              ["Dois vídeos lado a lado","Dois vídeos verticais mostram a máquina gravando a lâmina de uma faca e textos de vários tamanhos. Eles tocam sem som quando aparecem na tela e pausam quando saem dela. Só um vídeo toca com som de cada vez."],
+              ["Um simulador com o prazo do boleto","O visitante informa quantas peças grava por semana, o preço médio e o custo de cada peça. Ele também escolhe 12, 24 ou 36 vezes. A página mostra então o faturamento do mês, os custos, a parcela e o que sobra."],
+              ["Uma ficha técnica em cinco grupos","Os detalhes técnicos foram divididos em cinco grupos. Só um grupo abre de cada vez, e no celular todos começam fechados."],
+              ["Ajuda sempre à mão no celular","No celular, uma barra fica na parte de baixo da tela com a oferta e o botão de orçamento. Os benefícios e as mensagens de clientes deslizam para o lado, com pontinhos abaixo."]],
+       results:[["A oferta fica clara logo de cara","A primeira tela mostra a entrada e o plano em 36 vezes, com o aviso da análise de crédito ao lado."],
+                ["Uma página leve","Sem os vídeos, os arquivos da página somam cerca de 0,3 MB. Os vídeos só começam a carregar quando aparecem na tela."],
+                ["Pronta para buscadores e para compartilhar","A página tem título, descrição e uma prévia para redes sociais e aplicativos de mensagem. Ela também traz os dados da empresa no formato que o Google lê."],
+                ["Confortável para mais pessoas","As animações se desligam para quem prefere menos movimento no aparelho. Os vídeos têm descrições que os leitores de tela conseguem anunciar."]]}},
+
+  {id:"flatbed-uv-9060", pending:false, views:2038, before:null, after:"blips/flatbed-uv-9060/index.html", cover:"flatbed9060", seg:["Comunicação visual","Landing page"],
+   en:{title:"Flatbed UV 9060 printer — Rental landing page",
+       process:[["Starting from a Blips rental page","The page uses the Blips rental page of the Vuze Cut 120S cutting plotter as its model. The printer details came from the Ideal Distribuidora page for the same machine."],
+                ["The lowest plan as the main price","The price on the first screen is the lowest monthly rental plan, taken from the marketing team's price sheet. The simulator uses this same amount."],
+                ["Small fixes to the model","The footer no longer links to the main Blips website. The 'How it works' section lost its white box, its titles were aligned and its timeline became black. The product photos are shown whole, without cropping."],
+                ["A video with its own soundtrack","The short video of the printer at work got an original soundtrack, free of copyright issues."],
+                ["Respect for the visual identity","The page uses the Blips logo, the Blips yellow, yellow sections and a black numbers section, like the other Blips rental pages."],
+                ["Designed for the phone first","Each section was built at phone size first and then adapted to larger screens."]],
+       notes:[["A menu that gets out of the way","The floating menu shows only the Blips logo. On phones, it hides when you scroll down and comes back when you scroll up."],
+              ["The monthly plan on the first screen","The first screen shows plans starting at R$ 4,429.67 per month, without tying up the company's cash. Below the price, three short notes mention free installation, technical assistance and specialized support."],
+              ["A video that plays at the right time","The video plays without sound when it appears and pauses when it leaves the screen. Visitors can turn the sound on if they want."],
+              ["A simulator that compares with the rent","Visitors enter how many pieces they sell per week, the average price and the cost of ink and material. The page then shows the monthly revenue, the costs, the rent and what is left over."],
+              ["A spec sheet in four groups","The technical details are split into four groups, and one of them explains the rental service. Only one group opens at a time, and on phones all of them start closed."],
+              ["Photos next to the form","Next to the form, the printer photos change by themselves, with dots below. On phones, a bar stays at the bottom of the screen with the monthly price and the rent button."]],
+       results:[["The price is clear right away","The first screen shows the starting monthly price, with the credit check note right below it."],
+                ["A light page","Without the video, the page files add up to about 0.4 MB. The video only starts loading when it appears on the screen."],
+                ["Ready for search engines and sharing","The page has a title, a description and a preview for social networks and messaging apps. It also has the company data written in the format that Google reads."],
+                ["Comfortable for more people","The animations turn off for people who prefer less motion on their devices. The video has a description that screen readers can announce."]]},
+   pt:{title:"Impressora Flatbed UV 9060 — Landing page de aluguel",
+       process:[["Ponto de partida: uma página de aluguel da Blips","A página usa como modelo a página de aluguel da Blips da plotter de recorte Vuze Cut 120S. As informações da impressora vieram da página da Ideal Distribuidora para a mesma máquina."],
+                ["O menor plano como preço principal","O preço da primeira tela é o menor plano mensal de aluguel, tirado da planilha de preços do time de marketing. O simulador usa esse mesmo valor."],
+                ["Pequenos ajustes no modelo","O rodapé não leva mais para o site principal da Blips. A seção 'Como funciona' perdeu a caixa branca, ganhou títulos alinhados e uma linha do tempo preta. As fotos do produto aparecem inteiras, sem corte."],
+                ["Um vídeo com trilha própria","O vídeo curto da impressora trabalhando ganhou uma trilha original, sem problema de direitos autorais."],
+                ["Respeito à identidade visual","A página usa o logo e o amarelo da Blips, seções amarelas e uma seção de números em preto, como as outras páginas de aluguel da Blips."],
+                ["Pensada primeiro para o celular","Cada seção foi montada primeiro no tamanho de tela do celular e depois adaptada para telas maiores."]],
+       notes:[["Um menu que sai da frente","O menu flutuante mostra só o logo da Blips. No celular, ele se esconde quando você rola a página para baixo e volta quando você rola para cima."],
+              ["O plano mensal na primeira tela","A primeira tela mostra planos a partir de R$ 4.429,67 por mês, sem imobilizar o caixa da empresa. Abaixo do preço, três notas curtas falam de instalação gratuita, assistência técnica e suporte especializado."],
+              ["Um vídeo que toca na hora certa","O vídeo toca sem som quando aparece na tela e pausa quando sai dela. O visitante pode ligar o som se quiser."],
+              ["Um simulador que compara com o aluguel","O visitante informa quantas peças vende por semana, o preço médio e o custo de tinta e material. A página mostra então o faturamento do mês, os custos, o aluguel e o que sobra."],
+              ["Uma ficha técnica em quatro grupos","Os detalhes técnicos foram divididos em quatro grupos, e um deles explica o serviço de aluguel. Só um grupo abre de cada vez, e no celular todos começam fechados."],
+              ["Fotos ao lado do formulário","Ao lado do formulário, as fotos da impressora trocam sozinhas, com pontinhos abaixo. No celular, uma barra fica na parte de baixo da tela com o preço mensal e o botão para alugar."]],
+       results:[["O preço fica claro logo de cara","A primeira tela mostra o preço mensal inicial, com o aviso da análise de crédito logo abaixo."],
+                ["Uma página leve","Sem o vídeo, os arquivos da página somam cerca de 0,4 MB. O vídeo só começa a carregar quando aparece na tela."],
+                ["Pronta para buscadores e para compartilhar","A página tem título, descrição e uma prévia para redes sociais e aplicativos de mensagem. Ela também traz os dados da empresa no formato que o Google lê."],
+                ["Confortável para mais pessoas","As animações se desligam para quem prefere menos movimento no aparelho. O vídeo tem uma descrição que os leitores de tela conseguem anunciar."]]}},
 
   {id:"sorvete", pending:true, before:"blips/sorvete-antes.html", after:"blips/sorvete-depois.html", seg:["Sorvete"],
    en:{title:"Ice cream segment — landing page", notes:[["Add the notes here","One improvement per line."]]},
    pt:{title:"Segmento sorvete — landing page", notes:[["Adicione as notas aqui","Uma melhoria por linha."]]}}
 ];
 
-/* casos com várias páginas (pages): qual página está aberta no visualizador */
-let casePage = 0;
-const caseSrc = c => c.pages ? c.pages[Math.min(casePage, c.pages.length-1)].src : c.after;
 function cmpHTML(c){
   const single = !c.before;
   return `
@@ -238,9 +292,6 @@ function cmpHTML(c){
         <button type="button" data-v="compare" aria-pressed="true">${T('cases.compare')}</button>
         <button type="button" data-v="after" aria-pressed="false">${T('cases.after')}</button>
       </div>`}
-      ${c.pages ? `<div class="seg-ctl" data-ctl="page" role="group" aria-label="${T('cases.page')}">
-        ${c.pages.map((pg,k)=>`<button type="button" data-v="${k}" aria-pressed="${k===casePage}">${pg.name}</button>`).join('')}
-      </div>` : ''}
       <div class="seg-ctl" data-ctl="device">
         <button type="button" data-v="desktop" aria-pressed="true">${T('cases.desktop')}</button>
         <button type="button" data-v="mobile" aria-pressed="false">${T('cases.mobile')}</button>
@@ -248,7 +299,7 @@ function cmpHTML(c){
     </div>
     <div class="cmp" data-mode="${single ? 'after' : 'compare'}">
       ${single ? '' : `<iframe class="before" src="${c.before}" title="${T('cases.before')}"></iframe>`}
-      <iframe class="after" src="${caseSrc(c)}" title="${c.pages ? c.pages[casePage].name : T('cases.after')}"></iframe>
+      <iframe class="after" src="${c.after}" title="${T('cases.after')}"></iframe>
       <span class="tag l">${T('cases.before')}</span><span class="tag r">${T('cases.after')}</span>
       <div class="handle" aria-hidden="true"></div>
       <input type="range" min="0" max="100" value="50" aria-label="${T('cases.compare')}">
@@ -263,17 +314,12 @@ function bindCmp(root){
     const b = e.target.closest('button'); if(!b) return;
     ctl.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed', x===b?'true':'false'));
     if(ctl.dataset.ctl==='mode') cmp.dataset.mode = b.dataset.v;
-    else if(ctl.dataset.ctl==='page'){
-      const c = PROJECTS[current].blips; casePage = +b.dataset.v;
-      const f = cmp.querySelector('iframe.after'); f.src = caseSrc(c); f.title = c.pages[casePage].name;
-      $('p-behance').href = caseSrc(c);
-    }
     else cmp.classList.toggle('mobile', b.dataset.v==='mobile');
   }));
 }
 /* casos Blips viram itens da lista de projetos, sempre primeiro */
 CASES.filter(c=>!c.pending).reverse().forEach(c=>PROJECTS.unshift({
-  slug:'blips-'+c.id, type:'blips', year:'2026', likes:c.likes, isNew:!!c.isNew, blips:c, key:c.cover||null, behance:null, gallery:[],
+  slug:'blips-'+c.id, type:'blips', year:'2026', views:c.views, isNew:!!c.isNew, blips:c, key:c.cover||null, behance:null, gallery:[],
   en:{title:c.en.title, client:'Blips', tags:c.seg, desc:[]},
   pt:{title:c.pt.title, client:'Blips', tags:c.seg, desc:[]}
 }));
@@ -284,17 +330,11 @@ let lang = 'en';
 try { lang = localStorage.getItem('lang') === 'pt' ? 'pt' : 'en'; } catch(e){}
 const T = k => I18N[lang][k];
 const typeLabel = t => T('type.' + t);
-/* curtidas: número fixo de cada projeto + 1 se este visitante curtiu (fica salvo só no navegador dele) */
-const fmtNum = n => n.toLocaleString(lang==='pt' ? 'pt-BR' : 'en-US');
-const HEART = '<svg class="heart" viewBox="0 0 256 256" aria-hidden="true"><path class="h-o" fill="currentColor" d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62Zm-50 174.8C109.74 204.16 32 155.69 32 102a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8Z"/><path class="h-f" fill="currentColor" d="M240 102c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 228.66 16 172 16 102a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 48.88 157.35 40 178 40a62.07 62.07 0 0 1 62 62Z"/></svg>';
-let liked = new Set();
-try { liked = new Set(JSON.parse(localStorage.getItem('liked') || '[]')); } catch(e){}
-const isLiked = p => liked.has(p.slug);
-const likeCount = p => (p.likes || 0) + (isLiked(p) ? 1 : 0);
-function toggleLike(p){
-  isLiked(p) ? liked.delete(p.slug) : liked.add(p.slug);
-  try { localStorage.setItem('liked', JSON.stringify([...liked])); } catch(e){}
-}
+/* views: sempre número cheio, arredondado para baixo, com "+" (ex.: 10800 → +10k, 101 → +100) */
+const fmtViews = n => n >= 1000 ? '+' + Math.floor(n/1000) + 'k'
+  : n >= 100 ? '+' + Math.floor(n/100)*100
+  : n >= 10 ? '+' + Math.floor(n/10)*10
+  : String(n);
 
 function applyLang(){
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
@@ -335,7 +375,7 @@ function renderGrid(){
         ? `<div class="mini"><iframe src="${p.blips.after}" title="" tabindex="-1" loading="lazy"></iframe></div>`
         : `<img src="images/covers/${p.key}-800.webp" srcset="images/covers/${p.key}-800.webp 800w, images/covers/${p.key}.webp 1280w" sizes="(max-width:720px) 92vw, (max-width:1240px) 46vw, 400px" width="1600" height="1200" alt="" loading="${i<3?'eager':'lazy'}" decoding="async">`}
       </div>
-      <div class="cap"><h3>${p[lang].title}</h3><div class="meta"><span class="likes${isLiked(p) ? ' on' : ''}" title="${T('likes')}">${HEART}<span class="n">${fmtNum(likeCount(p))}</span></span><span class="chip ${p.type}">${typeLabel(p.type)}</span></div></div>
+      <div class="cap"><h3>${p[lang].title}</h3><div class="meta"><span class="views" title="${T('views')}"><svg viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M247.31 124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57 61.26 162.88 48 128 48S61.43 61.26 36.34 86.35C17.51 105.18 9 124 8.69 124.76a8 8 0 0 0 0 6.5c.35.79 8.82 19.57 27.65 38.4C61.43 194.74 93.12 208 128 208s66.57-13.26 91.66-38.34c18.83-18.83 27.3-37.61 27.65-38.4a8 8 0 0 0 0-6.5ZM128 192c-30.78 0-57.67-11.19-79.93-33.25A133.47 133.47 0 0 1 25 128a133.33 133.33 0 0 1 23.07-30.75C70.33 75.19 97.22 64 128 64s57.67 11.19 79.93 33.25A133.46 133.46 0 0 1 231.05 128c-7.21 13.46-38.62 64-103.05 64Zm0-112a48 48 0 1 0 48 48 48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32 32 32 0 0 1-32 32Z"/></svg>${fmtViews(p.views||0)}</span><span class="chip ${p.type}">${typeLabel(p.type)}</span></div></div>
     </button>`).join('');
   grid.querySelectorAll('.mini').forEach(m=>{ const ro=new ResizeObserver(()=>m.style.setProperty('--s', m.clientWidth/1440)); ro.observe(m); });
   document.querySelectorAll('.filters button').forEach(b=>{ const f=b.dataset.filter; b.querySelector('small').textContent = f==='all'?PROJECTS.length:PROJECTS.filter(p=>p.type===f).length; });
@@ -380,9 +420,8 @@ function render(i){
     $('p-desc').innerHTML =
       (bl.process ? listHTML(T('cases.process'), bl.process, true) : '') +
       listHTML(T('cases.improvements'), bl.notes, !bl.process) +
-      (bl.rollout ? listHTML(T('cases.rollout'), bl.rollout, false) : '') +
       (bl.results ? listHTML(T('cases.results'), bl.results, false) : '');
-    $('p-behance').href = caseSrc(p.blips);
+    $('p-behance').href = p.blips.after;
     $('p-behance').querySelector('span').textContent = T('cases.open');
   } else {
     $('p-cover').className = 'p-cover plain';
@@ -397,29 +436,10 @@ function render(i){
   const next = PROJECTS[(i+1)%PROJECTS.length];
   $('p-prev').querySelector('strong').textContent = prev[lang].title;
   $('p-next').querySelector('strong').textContent = next[lang].title;
-  renderLike(p);
   document.title = d.title + ' — Thiago Lemos';
 }
 
-/* botão de curtir no fim de cada projeto */
-function renderLike(p){
-  const b = $('p-like'), on = isLiked(p);
-  b.classList.toggle('on', on);
-  b.setAttribute('aria-pressed', on);
-  b.querySelector('.like-label').textContent = on ? T('like.done') : T('like.btn');
-  b.querySelector('.like-n').textContent = fmtNum(likeCount(p));
-}
-$('p-like').addEventListener('click', ()=>{
-  const p = PROJECTS[current]; if(!p) return;
-  toggleLike(p);
-  renderLike(p);
-  const b = $('p-like'); b.classList.remove('pop'); void b.offsetWidth; if(isLiked(p)) b.classList.add('pop');
-  const tag = grid.querySelector(`.card[data-index="${current}"] .likes`);
-  if(tag){ tag.classList.toggle('on', isLiked(p)); tag.querySelector('.n').textContent = fmtNum(likeCount(p)); }
-});
-
-function openProject(i, push=true, page=0){
-  if(i !== current || page) casePage = page;
+function openProject(i, push=true){
   render(i);
   view.scrollTop = 0;
   view.classList.add('open');
@@ -598,12 +618,6 @@ document.querySelectorAll('.hero .actions, .contact .links').forEach(initHighlig
 function fromHash(){
   const m = location.hash.match(/^#projeto\/([\w-]+)$/);
   if(m){
-    /* links antigos dos três casos que viraram um só abrem a página certa dentro dele */
-    const OLD = {'blips-vuze-5050':0, 'blips-fiber-desktop-50w':1, 'blips-flatbed-uv-9060':2};
-    if(m[1] in OLD){
-      const j = PROJECTS.findIndex(p=>p.slug==='blips-lps-equipamentos');
-      if(j>-1){ history.replaceState({project:PROJECTS[j].slug}, '', '#projeto/' + PROJECTS[j].slug); openProject(j,false,OLD[m[1]]); return; }
-    }
     const i = PROJECTS.findIndex(p=>p.slug===m[1]);
     if(i>-1){ openProject(i,false); return; }
   }
