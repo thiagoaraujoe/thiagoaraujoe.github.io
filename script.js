@@ -62,94 +62,138 @@ const PROJECTS = [
   {slug:"redlinemd-redesign", key:"redline", type:"web", year:"2026", likes:829,
    behance:"https://www.behance.net/gallery/255634425/Redesign-project-Webpage-UX",
    en:{title:"RedlineMD — Mobile redesign", client:"RedlineMD", tags:["UX","Mobile first","Redesign","Figma"],
-       desc:["This is the redesign of the RedlineMD page. RedlineMD is a service that reviews and renegotiates employment contracts for doctors. The main goal was to turn more visitors from Google Ads into customers and to make the page feel more polished, especially on phones.",
-             "These were the main changes. The top of the page is cleaner, with the logo and the menu in new positions. The main button moved to the start of the page, so it is easier to reach. Dots below the carousel reduce how much the visitor has to scroll. The feature cards now use the brand colors and icons with better contrast. The card with the final button has an image, and the numbers section is more convincing.",
-             "The work was done in Figma within one hour. Because of that, the priority was the changes that make the page easier to use and get more visitors to take action."]},
+       process:[["One hour in Figma","The redesign was done in Figma within one hour. Because of that, the priority went to the changes that make the page easier to use and lead more visitors to act."]],
+       notes:[["What RedlineMD does","RedlineMD reviews and renegotiates employment contracts for doctors. The page needed to turn more visitors from Google Ads into customers and feel more polished on phones."],
+              ["A cleaner top of the page","The logo and the menu moved to new positions. The main button went up to the start of the page, where it is easier to reach."],
+              ["Less scrolling","Dots below the carousel reduce how much the visitor has to scroll. The feature cards use the brand colors and icons with better contrast."],
+              ["A stronger ending","The card with the final button has an image, and the numbers section is more convincing."]]},
    pt:{title:"RedlineMD — Redesign mobile", client:"RedlineMD", tags:["UX","Mobile first","Redesign","Figma"],
-       desc:["Este é o redesign da página da RedlineMD, um serviço que analisa e renegocia contratos de trabalho de médicos. O objetivo principal era transformar mais visitantes vindos do Google Ads em clientes e deixar a página mais bem acabada, principalmente no celular.",
-             "Estas foram as principais mudanças. O topo da página ficou mais limpo, com o logo e o menu em novas posições. O botão principal subiu para o início da página e ficou mais fácil de alcançar. Os pontinhos abaixo do carrossel reduzem a rolagem. Os cartões de vantagens ganharam as cores da marca e ícones com mais contraste. O cartão do botão final ganhou uma imagem, e a seção de números ficou mais convincente.",
-             "O trabalho foi feito no Figma em uma hora. Por isso, a prioridade foi para as mudanças que deixam a página mais fácil de usar e levam mais visitantes a agir."]}},
+       process:[["Uma hora no Figma","O redesign foi feito no Figma em uma hora. Por isso, a prioridade foi para as mudanças que deixam a página mais fácil de usar e levam mais visitantes a agir."]],
+       notes:[["O que a RedlineMD faz","A RedlineMD analisa e renegocia contratos de trabalho de médicos. A página precisava transformar mais visitantes vindos do Google Ads em clientes e ficar mais bem acabada no celular."],
+              ["Um topo mais limpo","O logo e o menu mudaram de lugar. O botão principal subiu para o início da página, onde é mais fácil de alcançar."],
+              ["Menos rolagem","Os pontinhos abaixo do carrossel reduzem o quanto o visitante precisa rolar. Os cartões de vantagens usam as cores da marca e ícones com mais contraste."],
+              ["Um final mais forte","O cartão do botão final ganhou uma imagem, e a seção de números ficou mais convincente."]]}},
 
   {slug:"avance-global-private-jet", key:"jet", type:"web", year:"2026", likes:1887,
    behance:"https://www.behance.net/gallery/254543405/Web-Page-Design-Private-Jet",
    en:{title:"Avance Global — Private jet booking", client:"Avance Global", tags:["Web design","UI","Luxury","Desktop & mobile"],
-       desc:["This is the website of a private aviation company. The company wanted to strengthen its digital presence and attract high-end clients. In this market, the first impression is everything. So the site had to show exclusivity, confidence and premium service from the very first screen.",
-             "The design uses cinematic photos, very large lettering and a dark color palette. Clean layouts and plenty of empty space keep everything balanced. The work covers the home page, the aircraft catalog and the destinations, in desktop and mobile versions. Together, they lead the visitor naturally to the quote request."]},
+       notes:[["A private aviation company","Avance Global wanted to strengthen its digital presence and attract high-end clients. In this market, the first impression is everything."],
+              ["Exclusivity from the first screen","Cinematic photos, very large lettering and a dark palette show confidence and premium service right away."],
+              ["Room to breathe","Clean layouts and plenty of empty space keep everything balanced."],
+              ["Three pages, two screen sizes","The work covers the home page, the aircraft catalog and the destinations, in desktop and mobile versions. Together, they lead the visitor naturally to the quote request."]]},
    pt:{title:"Avance Global — Reserva de jatos particulares", client:"Avance Global", tags:["Web design","UI","Luxo","Desktop e mobile"],
-       desc:["Este é o site de uma empresa de aviação executiva. A empresa queria fortalecer sua presença digital e atrair clientes de alto padrão. Nesse mercado, a primeira impressão é tudo. Por isso, o site precisava mostrar exclusividade, confiança e serviço premium já na primeira tela.",
-             "O design usa fotos de estilo cinematográfico, letras bem grandes e uma paleta escura. Layouts limpos e bastante espaço em branco equilibram o conjunto. O trabalho inclui a página inicial, o catálogo de aeronaves e os destinos, em versões para computador e celular. Juntas, elas levam o visitante de forma natural até o pedido de cotação."]}},
+       notes:[["Uma empresa de aviação executiva","A Avance Global queria fortalecer a presença digital e atrair clientes de alto padrão. Nesse mercado, a primeira impressão é tudo."],
+              ["Exclusividade desde a primeira tela","Fotos de estilo cinematográfico, letras bem grandes e uma paleta escura mostram confiança e serviço premium logo de cara."],
+              ["Espaço para respirar","Layouts limpos e bastante espaço em branco equilibram o conjunto."],
+              ["Três páginas, dois tamanhos de tela","O trabalho inclui a página inicial, o catálogo de aeronaves e os destinos, em versões para computador e celular. Juntas, elas levam o visitante de forma natural até o pedido de cotação."]]}},
 
   {slug:"pto-exchange", key:"pto", type:"web", year:"2025", likes:789,
    behance:"https://www.behance.net/gallery/239940969/Webpage-UI-Design",
    en:{title:"PTO Exchange — Web page UI/UX", client:"PTO Exchange", tags:["UI","UX","B2B","Desktop & mobile"],
-       desc:["This is the web page of PTO Exchange, a benefits platform. It lets employees turn unused vacation days into retirement savings, student loan payments, travel and more.",
-             "The goal was a page that is simple to navigate and speaks directly to people who work in HR. The result is a clean and intuitive layout built around what HR teams need. It highlights prices, benefits and frequently asked questions, so visitors quickly understand the value. The process followed these steps: briefing, research on the target audience and on similar products, mapping the visitor's path through the page, a design that adapts to any screen size, and tests with users."]},
+       process:[["Briefing and research","The work started with a briefing, then research on the target audience and on similar products."],
+              ["The visitor's path","The path a visitor takes through the page was mapped before the design."],
+              ["Design and tests","The design adapts to any screen size and was tested with users."]],
+       notes:[["What PTO Exchange does","It is a benefits platform that lets employees turn unused vacation days into retirement savings, student loan payments, travel and more."],
+              ["Made for people in HR","The page is simple to navigate and speaks directly to HR teams. It is built around what they need."],
+              ["Value that is quick to see","Prices, benefits and frequently asked questions are highlighted, so visitors understand the value fast."]]},
    pt:{title:"PTO Exchange — Web page UI/UX", client:"PTO Exchange", tags:["UI","UX","B2B","Desktop e mobile"],
-       desc:["Esta é a página web da PTO Exchange, uma plataforma de benefícios. Ela permite que o funcionário transforme férias não usadas em previdência, pagamento de empréstimo estudantil, viagens e mais.",
-             "O objetivo era uma página simples de navegar e feita para quem trabalha em RH. O resultado é um layout limpo e intuitivo, pensado nas necessidades desse público. Ele destaca preços, benefícios e dúvidas frequentes, para que o visitante entenda o valor rapidamente. O processo seguiu estas etapas: briefing, pesquisa sobre o público e sobre produtos parecidos, mapa do caminho do visitante pela página, design que se adapta a qualquer tela e testes com usuários."]}},
+       process:[["Briefing e pesquisa","O trabalho começou com um briefing e, depois, com pesquisa sobre o público e sobre produtos parecidos."],
+              ["O caminho do visitante","O caminho que o visitante faz pela página foi mapeado antes do design."],
+              ["Design e testes","O design se adapta a qualquer tamanho de tela e foi testado com usuários."]],
+       notes:[["O que a PTO Exchange faz","É uma plataforma de benefícios que permite ao funcionário transformar férias não usadas em previdência, pagamento de empréstimo estudantil, viagens e mais."],
+              ["Feita para quem trabalha em RH","A página é simples de navegar e fala direto com os times de RH. Ela foi pensada nas necessidades desse público."],
+              ["Valor fácil de enxergar","Preços, benefícios e dúvidas frequentes ficam em destaque, para que o visitante entenda o valor rapidamente."]]}},
 
   {slug:"healify-packaging", key:"healify", type:"brand", year:"2026", likes:1608,
    behance:"https://www.behance.net/gallery/252479475/Packaging-System-for-Medical-Cannabis",
    en:{title:"Healify — Medical cannabis packaging", client:"Healify", tags:["Packaging","Visual identity","Color system"],
-       desc:["This is a packaging system for a line of medical cannabis products in the Brazilian market. The challenge was to balance a heavily regulated category with a modern identity that people can trust, so patients feel comfortable and safe with the product.",
-             "Research on pharmaceutical packaging and premium wellness brands led to a minimal system. It organizes the information clearly and uses a color code to tell the versions apart: Boost + Recovery, Slim, Sleep and Focus, in drops, gummies and capsules. The result combines the information required by regulation with a modern visual language."]},
+       process:[["Research first","The system came from research on pharmaceutical packaging and premium wellness brands."]],
+       notes:[["Medical cannabis in Brazil","A packaging system for a line of medical cannabis products in the Brazilian market, a heavily regulated category."],
+              ["Trust and comfort","The challenge was to balance regulation with a modern identity people can trust, so patients feel comfortable and safe with the product."],
+              ["A color code for each version","A minimal system organizes the information clearly and uses colors to tell the versions apart: Boost + Recovery, Slim, Sleep and Focus, in drops, gummies and capsules."],
+              ["Regulation meets modern design","The result combines the information required by regulation with a modern visual language."]]},
    pt:{title:"Healify — Embalagens de cannabis medicinal", client:"Healify", tags:["Embalagem","Identidade visual","Sistema de cores"],
-       desc:["Este é um sistema de embalagens para uma linha de produtos de cannabis medicinal no mercado brasileiro. O desafio era equilibrar uma categoria muito regulada com uma identidade moderna e confiável, para que o paciente se sinta à vontade e seguro com o produto.",
-             "A pesquisa sobre embalagens de farmácia e marcas premium de bem-estar levou a um sistema minimalista. Ele organiza as informações com clareza e usa um código de cores para diferenciar as versões: Boost + Recovery, Slim, Sleep e Focus, em gotas, gomas e cápsulas. O resultado une as informações exigidas pela regulação com uma linguagem visual moderna."]}},
+       process:[["Pesquisa primeiro","O sistema nasceu de uma pesquisa sobre embalagens de farmácia e marcas premium de bem-estar."]],
+       notes:[["Cannabis medicinal no Brasil","Um sistema de embalagens para uma linha de produtos de cannabis medicinal no mercado brasileiro, uma categoria muito regulada."],
+              ["Confiança e conforto","O desafio era equilibrar a regulação com uma identidade moderna e confiável, para que o paciente se sinta à vontade e seguro com o produto."],
+              ["Um código de cores para cada versão","Um sistema minimalista organiza as informações com clareza e usa cores para diferenciar as versões: Boost + Recovery, Slim, Sleep e Focus, em gotas, gomas e cápsulas."],
+              ["Regulação com design moderno","O resultado une as informações exigidas pela regulação com uma linguagem visual moderna."]]}},
 
   {slug:"oticas-carol", key:"oticas", type:"ads", year:"2022", likes:1258,
    behance:"https://www.behance.net/gallery/156804477/Oticas-Carol-Criativos-Facebook-ADS",
    en:{title:"Óticas Carol — Lead generation ads", client:"Óticas Carol", tags:["Meta Ads","Creatives","Retail","Feed & stories"],
-       desc:["These are the ads created for a campaign to attract interested potential customers to the Óticas Carol store in Ponta Porã. The offers were free eye exams, store-wide discounts, the store's third anniversary, Father's Day and contact lens deals.",
-             "The ads come in feed and stories formats and use the brand's blue and yellow. In each one, the offer is the main highlight, and a clear message invites people to book an appointment or visit the store."]},
+       notes:[["A store in Ponta Porã","Ads for a campaign to attract interested potential customers to the Óticas Carol store in Ponta Porã."],
+              ["Five offers","Free eye exams, store-wide discounts, the store's third anniversary, Father's Day and contact lens deals."],
+              ["Feed and stories","The ads come in both formats and use the brand's blue and yellow."],
+              ["The offer first","In each piece, the offer is the main highlight, and a clear message invites people to book an appointment or visit the store."]]},
    pt:{title:"Óticas Carol — Criativos para geração de leads", client:"Óticas Carol", tags:["Meta Ads","Criativos","Varejo","Feed e stories"],
-       desc:["Estes são os anúncios criados para uma campanha que buscava atrair clientes realmente interessados para a loja Óticas Carol de Ponta Porã. As ofertas eram exame de vista grátis, descontos em toda a loja, aniversário de 3 anos, Dia dos Pais e lentes de contato.",
-             "Os anúncios têm formatos de feed e de stories e usam o azul e o amarelo da marca. Em cada peça, a oferta é o destaque principal, e uma mensagem clara convida a pessoa a agendar um horário ou ir até a loja."]}},
+       notes:[["Uma loja em Ponta Porã","Anúncios de uma campanha para atrair clientes realmente interessados para a loja Óticas Carol de Ponta Porã."],
+              ["Cinco ofertas","Exame de vista grátis, descontos em toda a loja, aniversário de 3 anos da loja, Dia dos Pais e lentes de contato."],
+              ["Feed e stories","Os anúncios têm os dois formatos e usam o azul e o amarelo da marca."],
+              ["A oferta em primeiro lugar","Em cada peça, a oferta é o destaque principal, e uma mensagem clara convida a pessoa a agendar um horário ou ir até a loja."]]}},
 
   {slug:"adaptive-erp-landing", key:"erp", type:"web", year:"2023", likes:1331,
    behance:"https://www.behance.net/gallery/185614153/Landing-Page-Software-ERP",
    en:{title:"Adaptive — ERP landing page", client:"Adaptive", tags:["Landing page","UI","B2B","Clarity research"],
-       desc:["This is a short sales page for Adaptive, a management system (ERP) for gas stations, wholesalers and supermarkets. The goal was a page that works well and leads more visitors to ask for contact.",
-             "Heatmaps from Microsoft Clarity, a tool that shows where visitors click, revealed two things. Visitors stayed about 30 seconds on the page and left before reaching the form. And the buttons for the free demo got the most clicks. To fix this, the content was cut down to the essentials, and the demo request was moved closer to the top of the page."]},
+       process:[["Heatmaps from Microsoft Clarity","Clarity is a tool that shows where visitors click. The heatmaps revealed that visitors stayed about 30 seconds and left before reaching the form, and that the free demo buttons got the most clicks."]],
+       notes:[["An ERP for gas stations and retail","A short sales page for Adaptive, a management system for gas stations, wholesalers and supermarkets. The goal was a page that leads more visitors to ask for contact."],
+              ["Only the essentials","The content was cut down to what matters, so the page is faster to read."],
+              ["The demo closer to the top","The request for a free demo moved up the page, where visitors see it before leaving."]]},
    pt:{title:"Adaptive — Landing page de ERP", client:"Adaptive", tags:["Landing page","UI","B2B","Pesquisa com Clarity"],
-       desc:["Esta é uma página de vendas curta para a Adaptive, um sistema de gestão (ERP) para postos de combustível, atacadistas e supermercados. O objetivo era uma página que funcionasse bem e levasse mais visitantes a pedir contato.",
-             "Os mapas de calor do Microsoft Clarity, ferramenta que mostra onde os visitantes clicam, revelaram duas coisas. Os visitantes ficavam cerca de 30 segundos na página e saíam antes de chegar ao formulário. E os botões da demonstração grátis eram os mais clicados. Para resolver isso, o conteúdo foi reduzido ao essencial e o pedido de demonstração foi levado para mais perto do topo da página."]}},
+       process:[["Mapas de calor do Microsoft Clarity","O Clarity é uma ferramenta que mostra onde os visitantes clicam. Os mapas de calor revelaram que os visitantes ficavam cerca de 30 segundos e saíam antes de chegar ao formulário, e que os botões da demonstração grátis eram os mais clicados."]],
+       notes:[["Um ERP para postos e varejo","Uma página de vendas curta para a Adaptive, um sistema de gestão para postos de combustível, atacadistas e supermercados. O objetivo era uma página que levasse mais visitantes a pedir contato."],
+              ["Só o essencial","O conteúdo foi reduzido ao que importa, para a página ser mais rápida de ler."],
+              ["A demonstração mais perto do topo","O pedido de demonstração grátis subiu na página, para o visitante ver antes de sair."]]}},
 
   {slug:"digitalbot-chatbot-landing", key:"chatbot", type:"web", year:"2023", likes:1934,
    behance:"https://www.behance.net/gallery/185131407/Landing-Page-Chatbot",
    en:{title:"DigitalBot — B2B chatbot landing page", client:"DigitalBot", tags:["Landing page","UX","Persona","Wireframe"],
-       desc:["This is the landing page of DigitalBot, a chatbot service for companies in many industries and a partner of Take Blip. The goal was a simple, functional page that attracts interested potential customers.",
-             "The work started with benchmarking, which means comparing similar pages, and with customer data. From them, a persona, which is a profile of the ideal customer, summed up the main problems to solve: no team to answer every contact, and sales lost because replies are slow. Then came the wireframes, which are simple sketches of the page, and the final design. The page has several action buttons that follow the buyer's journey, in desktop and mobile versions."]},
+       process:[["Benchmarking and customer data","The work started by comparing similar pages and looking at customer data."],
+              ["A persona","A profile of the ideal customer summed up the main problems to solve."],
+              ["Wireframes, then design","Simple sketches of the page came first, then the final design."]],
+       notes:[["A chatbot for companies","DigitalBot offers chatbots for companies in many industries and is a partner of Take Blip. The page needed to be simple and attract interested potential customers."],
+              ["Two problems to solve","No team to answer every contact, and sales lost because replies are slow."],
+              ["Buttons that follow the journey","The page has several action buttons that follow the buyer's journey, in desktop and mobile versions."]]},
    pt:{title:"DigitalBot — Landing page de chatbot B2B", client:"DigitalBot", tags:["Landing page","UX","Persona","Wireframe"],
-       desc:["Esta é a landing page da DigitalBot, um serviço de chatbot para empresas de vários segmentos e parceira da Take Blip. O objetivo era uma página simples e funcional, que atraísse clientes em potencial realmente interessados.",
-             "O trabalho começou com benchmarking, que é a comparação com páginas parecidas, e com dados de clientes. Com isso, foi criada uma persona, que é o perfil do cliente ideal, resumindo os principais problemas a resolver: falta de equipe para atender todos os contatos e vendas perdidas pela demora nas respostas. Depois vieram os wireframes, que são esboços simples da página, e o design final. A página tem vários botões de ação que acompanham a jornada do comprador, em versões para computador e celular."]}},
+       process:[["Benchmarking e dados de clientes","O trabalho começou com a comparação de páginas parecidas e com dados de clientes."],
+              ["Uma persona","Um perfil do cliente ideal resumiu os principais problemas a resolver."],
+              ["Wireframes e depois o design","Primeiro vieram os esboços simples da página, depois o design final."]],
+       notes:[["Um chatbot para empresas","A DigitalBot oferece chatbots para empresas de vários segmentos e é parceira da Take Blip. A página precisava ser simples e atrair clientes em potencial realmente interessados."],
+              ["Dois problemas para resolver","Falta de equipe para atender todos os contatos e vendas perdidas pela demora nas respostas."],
+              ["Botões que acompanham a jornada","A página tem vários botões de ação que acompanham a jornada do comprador, em versões para computador e celular."]]}},
 
   {slug:"batmaid-ads", key:"batmaid", type:"ads", year:"2023", likes:1223,
    behance:"https://www.behance.net/gallery/173013607/ADS-Batmaid-Suica-Criativos-para-Meta",
    en:{title:"Batmaid (Switzerland) — Meta Ads", client:"Batmaid", tags:["Meta Ads","Creatives","International"],
-       desc:["These are the ads of a Batmaid campaign in Switzerland. Batmaid is an app for booking home cleaning services.",
-             "The set mixes three kinds of ads: pieces focused on price (39 CHF per hour, with no hidden fees), customer testimonials and messages about the app. All of them use the brand's blue and a clean layout that is quick to read in the feed."]},
+       notes:[["Home cleaning in Switzerland","Batmaid is an app for booking home cleaning services. These ads ran in Switzerland."],
+              ["Three kinds of ads","Pieces focused on price (39 CHF per hour, with no hidden fees), customer testimonials and messages about the app."],
+              ["Quick to read in the feed","All of them use the brand's blue and a clean layout."]]},
    pt:{title:"Batmaid (Suíça) — Meta Ads", client:"Batmaid", tags:["Meta Ads","Criativos","Internacional"],
-       desc:["Estes são os anúncios de uma campanha da Batmaid na Suíça. A Batmaid é um aplicativo para contratar serviços de limpeza residencial.",
-             "O conjunto mistura três tipos de anúncio: peças focadas no preço (39 CHF por hora, sem taxas escondidas), depoimentos de clientes e mensagens sobre o aplicativo. Todos usam o azul da marca e um layout limpo, que se lê rápido no feed."]}},
+       notes:[["Limpeza residencial na Suíça","A Batmaid é um aplicativo para contratar serviços de limpeza residencial. Estes anúncios rodaram na Suíça."],
+              ["Três tipos de anúncio","Peças focadas no preço (39 CHF por hora, sem taxas escondidas), depoimentos de clientes e mensagens sobre o aplicativo."],
+              ["Rápido de ler no feed","Todos usam o azul da marca e um layout limpo."]]}},
 
   {slug:"algar-telecom-ads", key:"algar", type:"ads", year:"2023", likes:691,
    behance:"https://www.behance.net/gallery/173013387/ADS-Algar-Telecom-Criativos-para-Meta",
    en:{title:"Algar Telecom — Meta Ads", client:"Algar Telecom", tags:["Meta Ads","Creatives","Telecom","Stories"],
-       desc:["These are the ads created for Algar Telecom on the Meta platform, which includes Facebook and Instagram. They promote internet and combo plans: fiber of 300 Mb and 600 Mb, mobile phone and landline.",
-             "In every ad, speed and price are the main message. The brand's vibrant green gradient and the play symbol frame the people. The ads come in feed and stories formats."]},
+       notes:[["Internet and combo plans","Ads for Algar Telecom on Facebook and Instagram. They promote fiber of 300 Mb and 600 Mb, mobile phone and landline."],
+              ["Speed and price first","In every ad, speed and price are the main message."],
+              ["The brand's green","The vibrant green gradient and the play symbol frame the people. The ads come in feed and stories formats."]]},
    pt:{title:"Algar Telecom — Meta Ads", client:"Algar Telecom", tags:["Meta Ads","Criativos","Telecom","Stories"],
-       desc:["Estes são os anúncios criados para a Algar Telecom na plataforma Meta, que inclui o Facebook e o Instagram. Eles divulgam planos de internet e combos: fibra de 300 Mb e 600 Mb, celular e telefone fixo.",
-             "Em todos os anúncios, velocidade e preço são a mensagem principal. O degradê verde vibrante da marca e o símbolo de play emolduram as pessoas. Os anúncios têm formatos de feed e de stories."]}},
+       notes:[["Planos de internet e combos","Anúncios para a Algar Telecom no Facebook e no Instagram. Eles divulgam fibra de 300 Mb e 600 Mb, celular e telefone fixo."],
+              ["Velocidade e preço em primeiro lugar","Em todos os anúncios, velocidade e preço são a mensagem principal."],
+              ["O verde da marca","O degradê verde vibrante e o símbolo de play emolduram as pessoas. Os anúncios têm formatos de feed e de stories."]]}},
 
   {slug:"natura-ads", key:"natura", type:"ads", year:"2023", likes:1832,
    behance:"https://www.behance.net/gallery/173010743/Criativos-Natura-Meta-ADS-Produtos-de-Beleza",
    en:{title:"Natura — Store traffic campaign", client:"Natura", tags:["Meta Ads","Creatives","Beauty","Retail"],
-       desc:["These are the ads from one stage of a campaign that aimed to bring more customers to Natura's physical stores.",
-             "Three moments share one visual system: the Tododia summer line, gift sets with prices for special dates, and Natura Friday with up to 50% off. The ads keep the warm feeling of the brand and make every offer easy to read."]},
+       notes:[["More customers in the stores","Ads from one stage of a campaign that aimed to bring more customers to Natura's physical stores."],
+              ["Three moments, one system","The Tododia summer line, gift sets with prices for special dates, and Natura Friday with up to 50% off."],
+              ["The warmth of the brand","The ads keep the warm feeling of the brand and make every offer easy to read."]]},
    pt:{title:"Natura — Campanha para lojas físicas", client:"Natura", tags:["Meta Ads","Criativos","Beleza","Varejo"],
-       desc:["Estes são os anúncios de uma etapa de campanha que buscava levar mais clientes às lojas físicas da Natura.",
-             "Três momentos compartilham um mesmo sistema visual: a linha Tododia de verão, kits de presente com preço para datas especiais e a Natura Friday, com até 50% de desconto. Os anúncios mantêm o calor da marca e deixam cada oferta fácil de ler."]}}
+       notes:[["Mais clientes nas lojas","Anúncios de uma etapa de campanha que buscava levar mais clientes às lojas físicas da Natura."],
+              ["Três momentos, um sistema","A linha Tododia de verão, kits de presente com preço para datas especiais e a Natura Friday, com até 50% de desconto."],
+              ["O calor da marca","Os anúncios mantêm o calor da marca e deixam cada oferta fácil de ler."]]}}
 ];
 
 
@@ -278,8 +322,8 @@ function bindCmp(root){
 /* casos Blips viram itens da lista de projetos, sempre primeiro */
 CASES.filter(c=>!c.pending).reverse().forEach(c=>PROJECTS.unshift({
   slug:'blips-'+c.id, type:'blips', year:'2026', likes:c.likes, isNew:!!c.isNew, blips:c, key:c.cover||null, behance:null, gallery:[],
-  en:{title:c.en.title, client:'Blips', tags:c.seg, desc:[]},
-  pt:{title:c.pt.title, client:'Blips', tags:c.seg, desc:[]}
+  en:{title:c.en.title, client:'Blips', tags:c.seg},
+  pt:{title:c.pt.title, client:'Blips', tags:c.seg}
 }));
 
 /* =========================================================
@@ -322,7 +366,13 @@ try { lang = localStorage.getItem('lang') === 'pt' ? 'pt' : 'en'; } catch(e){}
 const T = k => I18N[lang][k];
 const typeLabel = t => T('type.' + t);
 /* curtidas: número fixo de cada projeto + 1 se este visitante curtiu (fica salvo só no navegador dele) */
-const fmtNum = n => n.toLocaleString(lang==='pt' ? 'pt-BR' : 'en-US');
+/* curtidas em formato genérico, sempre arredondando para baixo: 829 → +800 · 1.046 → +1k · 1.476 → +1,4k (pt) / +1.4k (en) */
+const fmtNum = n => {
+  if(n >= 1000){ const k = Math.floor(n/100)/10; return '+' + (k % 1 ? k.toFixed(1) : String(k)).replace('.', lang==='pt' ? ',' : '.') + 'k'; }
+  if(n >= 100) return '+' + Math.floor(n/100)*100;
+  if(n >= 10) return '+' + Math.floor(n/10)*10;
+  return String(n);
+};
 const HEART = '<svg class="heart" viewBox="0 0 256 256" aria-hidden="true"><path class="h-o" fill="currentColor" d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62Zm-50 174.8C109.74 204.16 32 155.69 32 102a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8Z"/><path class="h-f" fill="currentColor" d="M240 102c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 228.66 16 172 16 102a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 48.88 157.35 40 178 40a62.07 62.07 0 0 1 62 62Z"/></svg>';
 let liked = new Set();
 try { liked = new Set(JSON.parse(localStorage.getItem('liked') || '[]')); } catch(e){}
@@ -394,6 +444,17 @@ const view = document.getElementById('project');
 const $ = id => document.getElementById(id);
 let current = -1, lastFocus = null;
 
+/* todas as páginas de projeto usam as mesmas seções, na mesma ordem:
+   "Como foi feito" (opcional) → "O projeto" → "Desdobramentos" (opcional) → "Resultados" (opcional) */
+function sectionsHTML(d){
+  const listHTML = (title, items, first) => `<h3 style="font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:-.02em;margin:${first ? '0' : '32px'} 0 8px">${title}</h3>
+      <ol class="p-notes">${items.map(n=>`<li><b>${n[0]}</b><span>${n[1]}</span></li>`).join('')}</ol>`;
+  return (d.process ? listHTML(T('cases.process'), d.process, true) : '') +
+    listHTML(T('cases.improvements'), d.notes || [], !d.process) +
+    (d.rollout ? listHTML(T('cases.rollout'), d.rollout, false) : '') +
+    (d.results ? listHTML(T('cases.results'), d.results, false) : '');
+}
+
 function render(i){
   const p = PROJECTS[i], d = p[lang];
   current = i;
@@ -411,21 +472,15 @@ function render(i){
     $('p-cover').innerHTML = cmpHTML(p.blips);
     bindCmp($('p-cover'));
     const bl = p.blips[lang];
-    const listHTML = (title, items, first) => `<h3 style="font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:-.02em;margin:${first ? '0' : '32px'} 0 8px">${title}</h3>
-      <ol class="p-notes">${items.map(n=>`<li><b>${n[0]}</b><span>${n[1]}</span></li>`).join('')}</ol>`;
-    $('p-desc').innerHTML =
-      (bl.process ? listHTML(T('cases.process'), bl.process, true) : '') +
-      listHTML(T('cases.improvements'), bl.notes, !bl.process) +
-      (bl.rollout ? listHTML(T('cases.rollout'), bl.rollout, false) : '') +
-      (bl.results ? listHTML(T('cases.results'), bl.results, false) : '');
+    $('p-desc').innerHTML = sectionsHTML(bl);
+    $('p-behance').hidden = false;
     $('p-behance').href = caseSrc(p.blips);
     $('p-behance').querySelector('span').textContent = T('cases.open');
   } else {
     $('p-cover').className = 'p-cover plain';
     $('p-cover').innerHTML = `<img src="images/covers/${p.key}.webp" srcset="images/covers/${p.key}-800.webp 800w, images/covers/${p.key}.webp 1280w" sizes="(max-width:1240px) 92vw, 1140px" width="1600" height="1200" alt="${d.title}" decoding="async">`;
-    $('p-desc').innerHTML = d.desc.map(t=>`<p>${t}</p>`).join('');
-    $('p-behance').href = p.behance;
-    $('p-behance').querySelector('span').textContent = T('p.behance');
+    $('p-desc').innerHTML = sectionsHTML(d);
+    $('p-behance').hidden = true;   // sem link para o Behance
   }
   $('p-tags').innerHTML = d.tags.map(t=>`<span>${t}</span>`).join('');
   $('p-gallery').innerHTML = p.blips ? '' : `<img src="images/projects/${p.key}.webp" srcset="images/projects/${p.key}-800.webp 800w, images/projects/${p.key}.webp 1200w" sizes="(max-width:1240px) 92vw, 1140px" alt="${d.title}" loading="lazy" decoding="async">`;
@@ -680,7 +735,7 @@ const CREATIVES = [
   {k:'simulador', ar:1.18, html:()=>`<div class="wc wc--white wc--sim">
     ${eb('faça as contas')}
     <div class="lbl"><span>Peças gravadas por semana</span><b class="n"><em>150</em><em>300</em></b></div>
-    <div class="range"><i class="fill"></i><i class="knob"></i></div>
+    <div class="range"><i class="fill"></i><i class="knobw"><i class="knob"></i></i></div>
     <div class="lbl"><span>Preço médio</span><b>R$ 25</b></div>
     <div class="out"><small>Sobra no seu bolso por mês</small><strong><em>R$ 12.963</em><em>R$ 26.726</em></strong></div></div>`},
   /* como funciona: passos acendem em sequência */
@@ -719,7 +774,7 @@ const CREATIVES = [
   /* cabeça de impressão passando e curando com UV */
   {k:'uv', ar:.9, html:()=>`<div class="wc wc--black wc--uv">
     ${eb('cura UV LED na hora', true)}
-    <div class="plate"><span class="ink"><i style="--c:#00AEEF"></i><i style="--c:#EC008C"></i><i style="--c:#FFF200"></i><i style="--c:#fff"></i></span><i class="headp">${ico('head')}</i></div>
+    <div class="plate"><span class="ink"><i style="--c:#00AEEF"></i><i style="--c:#EC008C"></i><i style="--c:#FFF200"></i><i style="--c:#fff"></i></span><i class="headw"><i class="headp">${ico('head')}</i></i></div>
     <small>A tinta seca ao sair da cabeça. A peça sai pronta.</small></div>`},
   /* área de impressão com cotas sendo desenhadas */
   {k:'area', ar:1, html:()=>`<div class="wc wc--white wc--area">
@@ -743,7 +798,7 @@ const CREATIVES = [
     <b class="btn">${ico('chat')}Quero um orçamento</b><span class="ring"></span><span class="cur">${ico('cursor')}</span></div>`},
   /* antes / depois: o divisor passa */
   {k:'compare', ar:1, html:()=>`<div class="wc wc--white wc--cmp">
-    <div class="box"><img src="${IMG.flatbedFront}" alt="" draggable="false"><img class="top" src="${IMG.flatbed}" alt="" draggable="false"><i class="h"></i></div>
+    <div class="box"><img src="${IMG.flatbedFront}" alt="" draggable="false"><img class="top" src="${IMG.flatbed}" alt="" draggable="false"><i class="hw"><i class="h"></i></i></div>
     <div class="lbls"><span>frontal</span><span>perspectiva</span></div></div>`},
   /* ficha técnica subindo */
   {k:'ticker', ar:1.14, html:()=>`<div class="wc wc--violet wc--ticker">
@@ -787,11 +842,13 @@ function initWall(hero){
   const lite = (navigator.hardwareConcurrency || 8) <= 4 || !!(navigator.connection && navigator.connection.saveData);
   const rnd = (a,b) => a + Math.random()*(b-a);
   const shuffle = a => { a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+  const COLORFUL = new Set(['headline','headline2','prod-fiber','prod-flatbed','prod-vuze','selo','plano','ticker','numeros','cores','uv','video-fiber','video-flatbed','sobra','gauge','sim-color','beneficios']);
+  const isColorful = x => COLORFUL.has(x.k || x.dataset.k) ? 1 : 0;
 
   function card(it, cw){
     const h = Math.round(cw * it.ar);
     const el = document.createElement('div');
-    el.className = 'wcard'; el.style.height = h + 'px';
+    el.className = 'wcard'; el.style.height = h + 'px'; el.dataset.k = it.k;
     el.style.setProperty('--dl', (-rnd(0, 9)).toFixed(2) + 's');   // cada cartão começa num ponto diferente do loop
     el.innerHTML = it.html();
     if(it.video && !lite){
@@ -824,15 +881,22 @@ function initWall(hero){
     const tilt = document.createElement('div'); tilt.className = 'wall__tilt';
     const cols = Array.from({length:n}, ()=>({items:[], h:0}));
     const budget = colH + 2 * g + 160;
-    let order = shuffle(CREATIVES), p = 0, guard = 0;
+    // no celular entram mais cartões coloridos (os amarelos, azuis, roxos, produtos e vídeos aparecem duas vezes na fila)
+    const mobile = vw <= 640;
+    const mix = ()=> mobile ? [...shuffle(CREATIVES.filter(isColorful)), ...shuffle(CREATIVES.filter(c=>!isColorful(c))), ...shuffle(CREATIVES.filter(isColorful))] : shuffle(CREATIVES);
+    let order = mix(), p = 0, guard = 0;
     while(cols.some(c=>c.h < budget) && guard++ < 600){
       for(const c of cols){
         if(c.h >= budget) continue;
-        if(p >= order.length){ order = shuffle(CREATIVES); p = 0; }
+        if(p >= order.length){ order = mix(); p = 0; }
         const [el, h] = card(order[p++], cw);
         c.items.push(el); c.h += h + g;
       }
     }
+    // ordem de entrada: os cartões aparecem um a um (no celular, os mais coloridos primeiro)
+    const all = cols.flatMap(c=>c.items);
+    const rank = shuffle(all).sort((x,y)=>(mobile ? (isColorful(y) - isColorful(x)) : 0));
+    rank.forEach((el,i)=>el.style.setProperty('--rd', Math.min(i * 26, 2600) + 'ms'));
     cols.forEach(c=>{
       const col = document.createElement('div'); col.className = 'wcol';
       const tr = document.createElement('div'); tr.className = 'wtrack';
@@ -843,6 +907,7 @@ function initWall(hero){
       tr.style.animationDelay = (-rnd(0, dur)).toFixed(1) + 's';
       col.append(tr); tilt.append(col);
     });
+    if(wall.classList.contains('on')) wall.classList.add('norev');   // já estava montado (redimensionou): sem entrada um a um
     move.replaceChildren(tilt);
     wall.querySelectorAll('video').forEach(v=>{ v.muted = true; if(!still && visible) v.play().catch(()=>{}); });
   }
@@ -858,7 +923,7 @@ function initWall(hero){
     wall.classList.toggle('paused', !on);
     wall.querySelectorAll('video').forEach(v=>{ if(on && !still) v.play().catch(()=>{}); else v.pause(); });
   };
-  new IntersectionObserver(([e])=>{ visible = e.isIntersecting; setPlaying(visible && !document.hidden); }).observe(hero);
+  new IntersectionObserver(([e])=>{ visible = e.isIntersecting && e.intersectionRatio > .04; setPlaying(visible && !document.hidden); }, {threshold:[0,.04,.1]}).observe(hero);
   document.addEventListener('visibilitychange', ()=>setPlaying(visible && !document.hidden));
 
   let rt = 0;
@@ -920,7 +985,7 @@ function initHighlight(group){
   if(document.fonts && document.fonts.ready) document.fonts.ready.then(()=>moveTo(on));
   moveTo(home);
 }
-document.querySelectorAll('.contact .links').forEach(initHighlight);
+/* (o realce que pulava entre os botões saiu; os botões principais têm brilho próprio no CSS) */
 
 /* ferramentas: entram em sequência quando a dobra aparece na tela */
 (()=>{
