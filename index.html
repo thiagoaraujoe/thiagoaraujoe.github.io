@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261015-2">
 </head>
 <body>
 
@@ -55,16 +55,11 @@
 <main id="top">
 
   <section class="hero" aria-label="Intro">
-    <div class="blob blob-1" aria-hidden="true"></div>
-    <div class="blob blob-2" aria-hidden="true"></div>
-    <div class="blob blob-3" aria-hidden="true"></div>
-    <div class="blob blob-4" aria-hidden="true"></div>
-    <div class="blob blob-cursor" aria-hidden="true"></div>
+    <!-- mural com as peças do portfólio em movimento (montado pelo script.js) -->
+    <div class="wall" id="wall" aria-hidden="true"></div>
 
 
     <div class="hero-stage">
-      <div class="band band-1" aria-hidden="true"><div class="track" id="band-1"></div></div>
-      <div class="band band-2" aria-hidden="true"><div class="track" id="band-2"></div></div>
     <div class="hero-inner">
       <h1 data-i18n="hero.title">Design that solves real problems.</h1>
       <p data-i18n="hero.text">Interfaces, landing pages, brands and paid-media creatives. Digital experiences that are simple, functional and visually engaging.</p>
@@ -73,6 +68,22 @@
         <a class="btn" href="#contact" data-page="contact" data-i18n="hero.cta2">Get in touch</a>
       </div>
     </div>
+    </div>
+  </section>
+
+  <!-- ---------- ferramentas e skills (fundo preto, emenda o hero com os trabalhos) ---------- -->
+  <section class="tools" id="ferramentas" aria-labelledby="tools-title">
+    <div class="wrap">
+      <div class="tools-head">
+        <span class="eyebrow" data-i18n="tools.kicker">Tools &amp; skills</span>
+        <h2 id="tools-title" data-i18n="tools.title">The tools behind the work.</h2>
+        <p data-i18n="tools.lead">Design, code and AI in the same flow: from the first sketch to the page running on the client's domain.</p>
+      </div>
+      <div class="tools-grid" id="tools-grid"></div>
+      <div class="skills">
+        <span class="eyebrow" data-i18n="tools.skills">What I do with them</span>
+        <div class="skills-row" id="skills-row"></div>
+      </div>
     </div>
   </section>
 
@@ -152,6 +163,14 @@
       <div id="p-desc"></div>
     </div>
     <div class="p-gallery" id="p-gallery"></div>
+    <div class="p-like">
+      <p data-i18n="like.ask">Did you like this project?</p>
+      <button type="button" class="like-btn" id="p-like" aria-pressed="false">
+        <svg class="heart" viewBox="0 0 256 256" aria-hidden="true"><path class="h-o" fill="currentColor" d="M178 40c-20.65 0-38.73 8.88-50 23.89C116.73 48.88 98.65 40 78 40a62.07 62.07 0 0 0-62 62c0 70 103.79 126.66 108.21 129a8 8 0 0 0 7.58 0C136.21 228.66 240 172 240 102a62.07 62.07 0 0 0-62-62Zm-50 174.8C109.74 204.16 32 155.69 32 102a46.06 46.06 0 0 1 46-46c19.45 0 35.78 10.36 42.6 27a8 8 0 0 0 14.8 0c6.82-16.67 23.15-27 42.6-27a46.06 46.06 0 0 1 46 46c0 53.61-77.76 102.15-96 112.8Z"/><path class="h-f" fill="currentColor" d="M240 102c0 70-103.79 126.66-108.21 129a8 8 0 0 1-7.58 0C119.79 228.66 16 172 16 102a62.07 62.07 0 0 1 62-62c20.65 0 38.73 8.88 50 23.89C139.27 48.88 157.35 40 178 40a62.07 62.07 0 0 1 62 62Z"/></svg>
+        <span class="like-label">Like</span>
+        <span class="like-n"></span>
+      </button>
+    </div>
   </div>
 
   <div class="p-nav">
@@ -214,6 +233,6 @@
   </div>
 </section>
 
-<script src="script.js"></script>
+<script src="script.js?v=20261015-2"></script>
 </body>
 </html>
